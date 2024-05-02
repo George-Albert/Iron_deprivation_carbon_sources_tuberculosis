@@ -1,0 +1,7 @@
+"Description" "Fraction"
+"1" "non_coh_vs_coh" 36.2637362637363
+"2" "Enhanced_DOWN" 16.4835164835165
+"3" "Enhanced_UP" 36.2637362637363
+"4" "Damped_DOWN" 2.1978021978022
+"5" "Damped_UP" 8.79120879120879
+"6" "total fraction of coherent responses" 63.7362637362637

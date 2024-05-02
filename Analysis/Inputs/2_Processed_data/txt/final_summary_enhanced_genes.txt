@@ -1,0 +1,10 @@
+"C1_C2_Glycerol_Dextrose_summary" "C5_C6_Glycerol_summary" "C7_C8_Glycerol_LCFA_summary" "C11_C12_LCFA_summary"
+"DOWN" 1344 1308 1046 1826
+"UP" 1223 1178 1079 1833
+"Damped_DOWN" 76 64 121 2
+"Damped_UP" 90 120 195 8
+"Enhanced_DOWN" 321 351 526 15
+"Enhanced_UP" 421 393 390 33
+"Non_Coherent" 252 276 422 33
+"Background" 224 261 172 201
+"Coherent" 908 928 1232 58

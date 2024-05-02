@@ -1,0 +1,10 @@
+"C11_C12_LCFA" "C11_C12_LCFA_summary"
+"DOWN" "DOWN" 1826
+"UP" "UP" 1833
+"Damped_DOWN" "Damped_DOWN" 2
+"Damped_UP" "Damped_UP" 8
+"Enhanced_DOWN" "Enhanced_DOWN" 15
+"Enhanced_UP" "Enhanced_UP" 33
+"Non_Coherent" "Non_Coherent" 33
+"Background" "Background" 201
+"Coherent" "Coherent" 58

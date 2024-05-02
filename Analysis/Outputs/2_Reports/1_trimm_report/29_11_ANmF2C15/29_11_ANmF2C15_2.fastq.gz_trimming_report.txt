@@ -1,0 +1,209 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc/29_11_ANmF2C15_2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 3.5
+Python version: 3.10.6
+Number of cores used for trimming: 7
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Illumina adapter for trimming (count: 253029). Second best hit was smallRNA (count: 2)
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 5 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Removing Ns from the start and end of reads
+Running FastQC on the data once trimming has completed
+Output file will be GZIP compressed
+
+
+This is cutadapt 3.5 with Python 3.10.6
+Command line parameters: -j 7 -e 0.1 -q 20 -O 5 --trim-n -a AGATCGGAAGAGC /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc/29_11_ANmF2C15_2.fastq.gz
+Processing reads on 7 cores in single-end mode ...
+Finished in 57.87 s (3 µs/read; 21.99 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              21,208,240
+Reads with adapters:                 6,969,172 (32.9%)
+Reads written (passing filters):    21,208,240 (100.0%)
+
+Total basepairs processed: 3,202,444,240 bp
+Quality-trimmed:               3,948,504 bp (0.1%)
+Total written (filtered):  3,004,859,014 bp (93.8%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 6969172 times
+
+Minimum overlap: 5
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 11.1%
+  C: 28.0%
+  G: 54.7%
+  T: 6.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	233517	20711.2	0	233517
+6	264580	5177.8	0	264580
+7	163268	1294.4	0	163268
+8	196718	323.6	0	196718
+9	151714	80.9	0	151170 544
+10	167852	20.2	1	165190 2662
+11	162755	5.1	1	160269 2486
+12	163016	1.3	1	160438 2578
+13	180243	0.3	1	177132 3111
+14	145743	0.3	1	142883 2860
+15	138901	0.3	1	136621 2280
+16	132430	0.3	1	130049 2381
+17	161869	0.3	1	158949 2920
+18	120824	0.3	1	118638 2186
+19	151743	0.3	1	148814 2929
+20	138362	0.3	1	136245 2117
+21	125614	0.3	1	123356 2258
+22	179965	0.3	1	176883 3082
+23	154072	0.3	1	151348 2724
+24	144909	0.3	1	141947 2962
+25	164306	0.3	1	161823 2483
+26	150378	0.3	1	147939 2439
+27	112398	0.3	1	110549 1849
+28	149382	0.3	1	147064 2318
+29	167568	0.3	1	164879 2689
+30	130540	0.3	1	128326 2214
+31	155332	0.3	1	152785 2547
+32	143582	0.3	1	140964 2618
+33	158656	0.3	1	156120 2536
+34	133128	0.3	1	131103 2025
+35	133693	0.3	1	131599 2094
+36	156255	0.3	1	153890 2365
+37	146302	0.3	1	144121 2181
+38	111117	0.3	1	109315 1802
+39	92402	0.3	1	90982 1420
+40	80738	0.3	1	79488 1250
+41	96009	0.3	1	94526 1483
+42	90750	0.3	1	89372 1378
+43	78029	0.3	1	76839 1190
+44	68876	0.3	1	67823 1053
+45	64428	0.3	1	63430 998
+46	74345	0.3	1	73266 1079
+47	69532	0.3	1	68441 1091
+48	91019	0.3	1	89643 1376
+49	84597	0.3	1	83393 1204
+50	78963	0.3	1	77839 1124
+51	67889	0.3	1	66917 972
+52	63197	0.3	1	62274 923
+53	44752	0.3	1	44021 731
+54	50347	0.3	1	49577 770
+55	44881	0.3	1	44216 665
+56	53879	0.3	1	53089 790
+57	47572	0.3	1	46855 717
+58	32688	0.3	1	32204 484
+59	29789	0.3	1	29325 464
+60	27420	0.3	1	26943 477
+61	27527	0.3	1	27096 431
+62	26348	0.3	1	25906 442
+63	24727	0.3	1	24300 427
+64	14451	0.3	1	14209 242
+65	14381	0.3	1	14172 209
+66	12874	0.3	1	12653 221
+67	15216	0.3	1	14938 278
+68	13533	0.3	1	13302 231
+69	10187	0.3	1	10016 171
+70	8043	0.3	1	7864 179
+71	8163	0.3	1	8017 146
+72	6903	0.3	1	6760 143
+73	8855	0.3	1	8679 176
+74	8805	0.3	1	8638 167
+75	7910	0.3	1	7784 126
+76	3111	0.3	1	3020 91
+77	2416	0.3	1	2345 71
+78	2997	0.3	1	2902 95
+79	2357	0.3	1	2288 69
+80	2412	0.3	1	2347 65
+81	2506	0.3	1	2436 70
+82	2023	0.3	1	1960 63
+83	1616	0.3	1	1557 59
+84	1315	0.3	1	1263 52
+85	1197	0.3	1	1154 43
+86	1156	0.3	1	1111 45
+87	1093	0.3	1	1048 45
+88	1094	0.3	1	1002 92
+89	1051	0.3	1	1004 47
+90	1044	0.3	1	999 45
+91	830	0.3	1	785 45
+92	760	0.3	1	715 45
+93	786	0.3	1	748 38
+94	674	0.3	1	626 48
+95	608	0.3	1	567 41
+96	679	0.3	1	654 25
+97	476	0.3	1	446 30
+98	422	0.3	1	395 27
+99	445	0.3	1	407 38
+100	385	0.3	1	321 64
+101	364	0.3	1	332 32
+102	288	0.3	1	262 26
+103	284	0.3	1	256 28
+104	301	0.3	1	256 45
+105	269	0.3	1	233 36
+106	223	0.3	1	204 19
+107	203	0.3	1	171 32
+108	201	0.3	1	174 27
+109	189	0.3	1	164 25
+110	206	0.3	1	183 23
+111	185	0.3	1	169 16
+112	173	0.3	1	156 17
+113	151	0.3	1	141 10
+114	159	0.3	1	152 7
+115	128	0.3	1	120 8
+116	118	0.3	1	106 12
+117	110	0.3	1	95 15
+118	107	0.3	1	93 14
+119	111	0.3	1	93 18
+120	105	0.3	1	92 13
+121	83	0.3	1	64 19
+122	85	0.3	1	60 25
+123	91	0.3	1	82 9
+124	65	0.3	1	44 21
+125	37	0.3	1	29 8
+126	56	0.3	1	44 12
+127	40	0.3	1	35 5
+128	49	0.3	1	31 18
+129	29	0.3	1	21 8
+130	46	0.3	1	37 9
+131	52	0.3	1	36 16
+132	35	0.3	1	25 10
+133	50	0.3	1	36 14
+134	50	0.3	1	40 10
+135	42	0.3	1	23 19
+136	45	0.3	1	33 12
+137	30	0.3	1	24 6
+138	55	0.3	1	46 9
+139	18	0.3	1	7 11
+140	9	0.3	1	4 5
+141	24	0.3	1	6 18
+142	18	0.3	1	12 6
+143	3	0.3	1	1 2
+144	8	0.3	1	1 7
+145	8	0.3	1	2 6
+146	8	0.3	1	1 7
+147	3	0.3	1	3
+148	28	0.3	1	1 27
+149	9	0.3	1	1 8
+150	7	0.3	1	0 7
+151	4	0.3	1	1 3
+
+RUN STATISTICS FOR INPUT FILE: /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc/29_11_ANmF2C15_2.fastq.gz
+=============================================
+21208240 sequences processed in total
+
+Number of sequence pairs removed because at least one read contained more N(s) than the specified limit of 1: 3173 (0.01%)
+Total number of sequences analysed for the sequence pair length validation: 21208240
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 18033 (0.09%)

@@ -1,0 +1,13 @@
+[1] "cor.test(combined_data$PC1,combined_data$culture_number)"
+
+	Pearson's product-moment correlation
+
+data:  combined_data$PC1 and combined_data$culture_number
+t = 3.767, df = 30, p-value = 0.0007213
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.2716603 0.7643387
+sample estimates:
+      cor 
+0.5666752 
+

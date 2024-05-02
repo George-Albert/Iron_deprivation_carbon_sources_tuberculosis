@@ -1,0 +1,10 @@
+"C1_C2_Glycerol_Dextrose" "C1_C2_Glycerol_Dextrose_summary"
+"DOWN" "DOWN" 1344
+"UP" "UP" 1223
+"Damped_DOWN" "Damped_DOWN" 76
+"Damped_UP" "Damped_UP" 90
+"Enhanced_DOWN" "Enhanced_DOWN" 321
+"Enhanced_UP" "Enhanced_UP" 421
+"Non_Coherent" "Non_Coherent" 252
+"Background" "Background" 224
+"Coherent" "Coherent" 908

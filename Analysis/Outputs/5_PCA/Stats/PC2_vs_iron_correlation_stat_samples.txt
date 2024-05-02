@@ -1,0 +1,13 @@
+[1] "cor.test(datos$PC2[which(datos$Culture==\"C6\")],datos$iron_number[which(datos$Culture==\"C6\")])"
+
+	Pearson's product-moment correlation
+
+data:  combined_data$PC2[which(combined_data$Culture == "C8")] and combined_data$iron_number[which(combined_data$Culture == "C8")]
+t = 1.5691, df = 2, p-value = 0.2572
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.7629474  0.9941609
+sample estimates:
+      cor 
+0.7428164 
+

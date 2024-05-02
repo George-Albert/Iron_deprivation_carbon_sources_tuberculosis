@@ -1,0 +1,10 @@
+"C7_C8_Glycerol_LCFA" "C7_C8_Glycerol_LCFA_summary"
+"DOWN" "DOWN" 1046
+"UP" "UP" 1079
+"Damped_DOWN" "Damped_DOWN" 121
+"Damped_UP" "Damped_UP" 195
+"Enhanced_DOWN" "Enhanced_DOWN" 526
+"Enhanced_UP" "Enhanced_UP" 390
+"Non_Coherent" "Non_Coherent" 422
+"Background" "Background" 172
+"Coherent" "Coherent" 1232

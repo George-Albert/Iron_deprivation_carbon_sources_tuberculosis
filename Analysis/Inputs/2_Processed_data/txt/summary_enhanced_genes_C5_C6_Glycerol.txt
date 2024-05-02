@@ -1,0 +1,10 @@
+"C5_C6_Glycerol" "C5_C6_Glycerol_summary"
+"DOWN" "DOWN" 1308
+"UP" "UP" 1178
+"Damped_DOWN" "Damped_DOWN" 64
+"Damped_UP" "Damped_UP" 120
+"Enhanced_DOWN" "Enhanced_DOWN" 351
+"Enhanced_UP" "Enhanced_UP" 393
+"Non_Coherent" "Non_Coherent" 276
+"Background" "Background" 261
+"Coherent" "Coherent" 928

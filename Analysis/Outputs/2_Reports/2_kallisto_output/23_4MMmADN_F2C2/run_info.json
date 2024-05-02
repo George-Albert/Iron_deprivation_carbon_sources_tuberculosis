@@ -1,0 +1,13 @@
+{
+	"n_targets": 4008,
+	"n_bootstraps": 0,
+	"n_processed": 25709301,
+	"n_pseudoaligned": 23999782,
+	"n_unique": 23944607,
+	"p_pseudoaligned": 93.4,
+	"p_unique": 93.1,
+	"kallisto_version": "0.46.2",
+	"index_version": 10,
+	"start_time": "Fri May  5 04:27:33 2023",
+	"call": "kallisto quant -i /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/1_Kallisto/index/index_ncbi_ASM19595v2.idx -t 12 -o /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/2_kallisto_output/23_4MMmADN_F2C2 /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_files/23_4MMmADN_F2C2/23_4MMmADN_F2C2_1_val_1.fq.gz /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_files/23_4MMmADN_F2C2/23_4MMmADN_F2C2_2_val_2.fq.gz"
+}

@@ -1,0 +1,7 @@
+"Description" "Fraction" "Description.1" "Fraction.1" "Description.2" "Fraction.2" "Description.3" "Fraction.3"
+"1" "non_coh_vs_coh" 21.7241379310345 "non_coh_vs_coh" 22.9235880398671 "non_coh_vs_coh" 25.5139056831923 "non_coh_vs_coh" 36.2637362637363
+"2" "Enhanced_DOWN" 27.6724137931034 "Enhanced_DOWN" 29.1528239202658 "Enhanced_DOWN" 31.8016928657799 "Enhanced_DOWN" 16.4835164835165
+"3" "Enhanced_UP" 36.2931034482759 "Enhanced_UP" 32.641196013289 "Enhanced_UP" 23.5792019347038 "Enhanced_UP" 36.2637362637363
+"4" "Damped_DOWN" 6.55172413793103 "Damped_DOWN" 5.3156146179402 "Damped_DOWN" 7.31559854897219 "Damped_DOWN" 2.1978021978022
+"5" "Damped_UP" 7.75862068965517 "Damped_UP" 9.96677740863787 "Damped_UP" 11.7896009673519 "Damped_UP" 8.79120879120879
+"6" "total fraction of coherent responses" 78.2758620689655 "total fraction of coherent responses" 77.0764119601329 "total fraction of coherent responses" 74.4860943168077 "total fraction of coherent responses" 63.7362637362637

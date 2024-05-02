@@ -1,0 +1,209 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc/29_11_AN_F2C15_2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 3.5
+Python version: 3.10.6
+Number of cores used for trimming: 7
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Illumina adapter for trimming (count: 343971). Second best hit was smallRNA (count: 5)
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 5 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Removing Ns from the start and end of reads
+Running FastQC on the data once trimming has completed
+Output file will be GZIP compressed
+
+
+This is cutadapt 3.5 with Python 3.10.6
+Command line parameters: -j 7 -e 0.1 -q 20 -O 5 --trim-n -a AGATCGGAAGAGC /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc/29_11_AN_F2C15_2.fastq.gz
+Processing reads on 7 cores in single-end mode ...
+Finished in 79.83 s (3 µs/read; 22.47 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              29,893,975
+Reads with adapters:                13,002,265 (43.5%)
+Reads written (passing filters):    29,893,975 (100.0%)
+
+Total basepairs processed: 4,513,990,225 bp
+Quality-trimmed:               4,339,587 bp (0.1%)
+Total written (filtered):  4,122,971,122 bp (91.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 13002265 times
+
+Minimum overlap: 5
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 7.2%
+  C: 27.6%
+  G: 58.9%
+  T: 6.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	295765	29193.3	0	295765
+6	378382	7298.3	0	378382
+7	246275	1824.6	0	246275
+8	318776	456.1	0	318776
+9	241868	114.0	0	241521 347
+10	286468	28.5	1	282955 3513
+11	295813	7.1	1	292254 3559
+12	304055	1.8	1	300240 3815
+13	367665	0.4	1	363004 4661
+14	320361	0.4	1	315836 4525
+15	287863	0.4	1	284322 3541
+16	281026	0.4	1	277761 3265
+17	295555	0.4	1	291692 3863
+18	232251	0.4	1	229634 2617
+19	265598	0.4	1	262010 3588
+20	246303	0.4	1	243272 3031
+21	233824	0.4	1	231175 2649
+22	288843	0.4	1	285631 3212
+23	291936	0.4	1	288391 3545
+24	277971	0.4	1	274298 3673
+25	269918	0.4	1	267051 2867
+26	232543	0.4	1	229903 2640
+27	222591	0.4	1	219934 2657
+28	259150	0.4	1	256415 2735
+29	257748	0.4	1	254938 2810
+30	244353	0.4	1	241648 2705
+31	271049	0.4	1	268301 2748
+32	236274	0.4	1	233662 2612
+33	281185	0.4	1	278112 3073
+34	235640	0.4	1	233213 2427
+35	253733	0.4	1	251069 2664
+36	243918	0.4	1	241553 2365
+37	263142	0.4	1	260456 2686
+38	305282	0.4	1	302309 2973
+39	208705	0.4	1	206970 1735
+40	195409	0.4	1	193552 1857
+41	206343	0.4	1	204387 1956
+42	219108	0.4	1	216922 2186
+43	195820	0.4	1	194140 1680
+44	170278	0.4	1	168633 1645
+45	149912	0.4	1	148481 1431
+46	132093	0.4	1	130812 1281
+47	115581	0.4	1	114469 1112
+48	144721	0.4	1	143279 1442
+49	151854	0.4	1	150451 1403
+50	143709	0.4	1	142519 1190
+51	136071	0.4	1	134945 1126
+52	113396	0.4	1	112369 1027
+53	85597	0.4	1	84800 797
+54	95152	0.4	1	94241 911
+55	83522	0.4	1	82790 732
+56	104935	0.4	1	104036 899
+57	106620	0.4	1	105603 1017
+58	65213	0.4	1	64668 545
+59	65938	0.4	1	65441 497
+60	57519	0.4	1	56949 570
+61	56214	0.4	1	55710 504
+62	55709	0.4	1	55147 562
+63	73149	0.4	1	72516 633
+64	36055	0.4	1	35695 360
+65	41078	0.4	1	40700 378
+66	28049	0.4	1	27767 282
+67	41032	0.4	1	40680 352
+68	44923	0.4	1	44515 408
+69	31891	0.4	1	31621 270
+70	24065	0.4	1	23825 240
+71	22602	0.4	1	22376 226
+72	18722	0.4	1	18528 194
+73	28807	0.4	1	28564 243
+74	24253	0.4	1	24036 217
+75	16802	0.4	1	16672 130
+76	9271	0.4	1	9082 189
+77	9952	0.4	1	9864 88
+78	10878	0.4	1	10774 104
+79	9489	0.4	1	9394 95
+80	8801	0.4	1	8692 109
+81	9200	0.4	1	9104 96
+82	8560	0.4	1	8451 109
+83	7137	0.4	1	6967 170
+84	6454	0.4	1	6303 151
+85	4911	0.4	1	4841 70
+86	4872	0.4	1	4819 53
+87	4719	0.4	1	4673 46
+88	4728	0.4	1	4548 180
+89	5514	0.4	1	5434 80
+90	4692	0.4	1	4559 133
+91	5064	0.4	1	4992 72
+92	4531	0.4	1	4463 68
+93	4008	0.4	1	3936 72
+94	4146	0.4	1	4067 79
+95	3632	0.4	1	3586 46
+96	3057	0.4	1	3011 46
+97	3206	0.4	1	3169 37
+98	2990	0.4	1	2947 43
+99	2909	0.4	1	2854 55
+100	2500	0.4	1	2358 142
+101	2651	0.4	1	2580 71
+102	2198	0.4	1	2153 45
+103	2360	0.4	1	2313 47
+104	2118	0.4	1	2006 112
+105	1974	0.4	1	1928 46
+106	1685	0.4	1	1652 33
+107	1985	0.4	1	1927 58
+108	1331	0.4	1	1292 39
+109	1188	0.4	1	1133 55
+110	1350	0.4	1	1298 52
+111	1053	0.4	1	1022 31
+112	1356	0.4	1	1316 40
+113	1090	0.4	1	1075 15
+114	1057	0.4	1	1038 19
+115	875	0.4	1	859 16
+116	918	0.4	1	900 18
+117	880	0.4	1	861 19
+118	782	0.4	1	748 34
+119	713	0.4	1	691 22
+120	567	0.4	1	555 12
+121	637	0.4	1	610 27
+122	373	0.4	1	324 49
+123	470	0.4	1	452 18
+124	361	0.4	1	326 35
+125	385	0.4	1	356 29
+126	369	0.4	1	361 8
+127	327	0.4	1	322 5
+128	279	0.4	1	251 28
+129	246	0.4	1	230 16
+130	195	0.4	1	178 17
+131	164	0.4	1	143 21
+132	144	0.4	1	130 14
+133	134	0.4	1	102 32
+134	130	0.4	1	94 36
+135	146	0.4	1	109 37
+136	116	0.4	1	86 30
+137	97	0.4	1	92 5
+138	83	0.4	1	46 37
+139	49	0.4	1	30 19
+140	22	0.4	1	16 6
+141	30	0.4	1	8 22
+142	19	0.4	1	15 4
+143	6	0.4	1	3 3
+144	9	0.4	1	2 7
+145	18	0.4	1	1 17
+146	24	0.4	1	4 20
+147	5	0.4	1	1 4
+148	82	0.4	1	3 79
+149	16	0.4	1	4 12
+150	2	0.4	1	0 2
+151	4	0.4	1	0 4
+
+RUN STATISTICS FOR INPUT FILE: /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc/29_11_AN_F2C15_2.fastq.gz
+=============================================
+29893975 sequences processed in total
+
+Number of sequence pairs removed because at least one read contained more N(s) than the specified limit of 1: 3195 (0.01%)
+Total number of sequences analysed for the sequence pair length validation: 29893975
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 20199 (0.07%)

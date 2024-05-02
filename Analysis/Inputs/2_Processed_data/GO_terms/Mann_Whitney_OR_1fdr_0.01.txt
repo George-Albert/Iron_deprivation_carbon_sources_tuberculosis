@@ -1,0 +1,4 @@
+"Comparison" "W" "p_value"
+"1" "Cond GD vs. Cond G" 964 0.73621391282225
+"2" "Cond G vs. Cond GL" 1393 5.24011615477819e-05
+"3" "Cond GD vs. Cond GL" 1448 6.18443818309454e-06

@@ -1,0 +1,3287 @@
+{
+    "report_data_sources": {
+        "Cutadapt": {
+            "all_sections": {
+                "2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/2/2_2.fastq.gz_trimming_report.txt",
+                "1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/1/1_2.fastq.gz_trimming_report.txt",
+                "2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/2/2_1.fastq.gz_trimming_report.txt",
+                "1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/1/1_1.fastq.gz_trimming_report.txt",
+                "29_11_AN_F1C15_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_AN_F1C15/29_11_AN_F1C15_1.fastq.gz_trimming_report.txt",
+                "29_11_AN_F1C15_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_AN_F1C15/29_11_AN_F1C15_2.fastq.gz_trimming_report.txt",
+                "19_01_ADNmF1C2r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADNmF1C2r/19_01_ADNmF1C2r_2.fastq.gz_trimming_report.txt",
+                "19_01_ADNmF1C2r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADNmF1C2r/19_01_ADNmF1C2r_1.fastq.gz_trimming_report.txt",
+                "10_3MMmADNmF1C1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/10_3MMmADNmF1C1/10_3MMmADNmF1C1_1.fastq.gz_trimming_report.txt",
+                "10_3MMmADNmF1C1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/10_3MMmADNmF1C1/10_3MMmADNmF1C1_2.fastq.gz_trimming_report.txt",
+                "18_03_AN_F1C8r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_AN_F1C8r/18_03_AN_F1C8r_1.fastq.gz_trimming_report.txt",
+                "18_03_AN_F1C8r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_AN_F1C8r/18_03_AN_F1C8r_2.fastq.gz_trimming_report.txt",
+                "6_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/6/6_2.fastq.gz_trimming_report.txt",
+                "6_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/6/6_1.fastq.gz_trimming_report.txt",
+                "ANLCFA_F1C12R_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFA_F1C12R/ANLCFA_F1C12R_2.fastq.gz_trimming_report.txt",
+                "ANLCFA_F1C12R_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFA_F1C12R/ANLCFA_F1C12R_1.fastq.gz_trimming_report.txt",
+                "19_01_AN_F1C12_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F1C12/19_01_AN_F1C12_1.fastq.gz_trimming_report.txt",
+                "19_01_AN_F1C12_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F1C12/19_01_AN_F1C12_2.fastq.gz_trimming_report.txt",
+                "19_01_AN_F2C12_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F2C12/19_01_AN_F2C12_1.fastq.gz_trimming_report.txt",
+                "19_01_AN_F2C12_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F2C12/19_01_AN_F2C12_2.fastq.gz_trimming_report.txt",
+                "19_4_MMmANmF1C5_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmANmF/19_4_MMmANmF1C5_1.fastq.gz_trimming_report.txt",
+                "19_4_MMmANmF2C5_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmANmF/19_4_MMmANmF2C5_2.fastq.gz_trimming_report.txt",
+                "19_4_MMmANmF1C5_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmANmF/19_4_MMmANmF1C5_2.fastq.gz_trimming_report.txt",
+                "19_4_MMmANmF2C5_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmANmF/19_4_MMmANmF2C5_1.fastq.gz_trimming_report.txt",
+                "11_10_ANmF2C7_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_ANmF2C7/11_10_ANmF2C7_1.fastq.gz_trimming_report.txt",
+                "11_10_ANmF2C7_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_ANmF2C7/11_10_ANmF2C7_2.fastq.gz_trimming_report.txt",
+                "19_01_AN_F2C11_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F2C11/19_01_AN_F2C11_1.fastq.gz_trimming_report.txt",
+                "19_01_AN_F2C11_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F2C11/19_01_AN_F2C11_2.fastq.gz_trimming_report.txt",
+                "03_12_AN_F2C14_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_AN_F2C14/03_12_AN_F2C14_1.fastq.gz_trimming_report.txt",
+                "03_12_AN_F2C14_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_AN_F2C14/03_12_AN_F2C14_2.fastq.gz_trimming_report.txt",
+                "19_01_ADNmF2C2r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADNmF2C2r/19_01_ADNmF2C2r_2.fastq.gz_trimming_report.txt",
+                "19_01_ADNmF2C2r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADNmF2C2r/19_01_ADNmF2C2r_1.fastq.gz_trimming_report.txt",
+                "ANLCFAmF1C12R_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFAmF1C12R/ANLCFAmF1C12R_2.fastq.gz_trimming_report.txt",
+                "ANLCFAmF1C12R_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFAmF1C12R/ANLCFAmF1C12R_1.fastq.gz_trimming_report.txt",
+                "03_12_ANmF1C14_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_ANmF1C14/03_12_ANmF1C14_1.fastq.gz_trimming_report.txt",
+                "03_12_ANmF1C14_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_ANmF1C14/03_12_ANmF1C14_2.fastq.gz_trimming_report.txt",
+                "16_3MMmADNmF2C1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/16_3MMmADNmF2C1/16_3MMmADNmF2C1_1.fastq.gz_trimming_report.txt",
+                "16_3MMmADNmF2C1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/16_3MMmADNmF2C1/16_3MMmADNmF2C1_2.fastq.gz_trimming_report.txt",
+                "19_01_ANmF1C12_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF1C12/19_01_ANmF1C12_1.fastq.gz_trimming_report.txt",
+                "19_01_ANmF1C12_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF1C12/19_01_ANmF1C12_2.fastq.gz_trimming_report.txt",
+                "12_1_C15R_F2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C15R_F2/12_1_C15R_F2_1.fastq.gz_trimming_report.txt",
+                "12_1_C15R_F2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C15R_F2/12_1_C15R_F2_2.fastq.gz_trimming_report.txt",
+                "19_01_ANmF2C12_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF2C12/19_01_ANmF2C12_1.fastq.gz_trimming_report.txt",
+                "19_01_ANmF2C12_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF2C12/19_01_ANmF2C12_2.fastq.gz_trimming_report.txt",
+                "11_10_AN_F2C7_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_AN_F2C7/11_10_AN_F2C7_2.fastq.gz_trimming_report.txt",
+                "11_10_AN_F2C7_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_AN_F2C7/11_10_AN_F2C7_1.fastq.gz_trimming_report.txt",
+                "19_01_ADN_F1C2r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADN_F1C2r/19_01_ADN_F1C2r_1.fastq.gz_trimming_report.txt",
+                "19_01_ADN_F1C2r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADN_F1C2r/19_01_ADN_F1C2r_2.fastq.gz_trimming_report.txt",
+                "ANLCFAmF2C12R_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFAmF2C12R/ANLCFAmF2C12R_2.fastq.gz_trimming_report.txt",
+                "ANLCFAmF2C12R_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFAmF2C12R/ANLCFAmF2C12R_1.fastq.gz_trimming_report.txt",
+                "16_3MMmADN_F2C1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/16_3MMmADN_F2C1/16_3MMmADN_F2C1_1.fastq.gz_trimming_report.txt",
+                "16_3MMmADN_F2C1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/16_3MMmADN_F2C1/16_3MMmADN_F2C1_2.fastq.gz_trimming_report.txt",
+                "8_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8/8_1.fastq.gz_trimming_report.txt",
+                "8_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8/8_2.fastq.gz_trimming_report.txt",
+                "18_03_AN_F2C8r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_AN_F2C8r/18_03_AN_F2C8r_1.fastq.gz_trimming_report.txt",
+                "18_03_AN_F2C8r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_AN_F2C8r/18_03_AN_F2C8r_2.fastq.gz_trimming_report.txt",
+                "29_11_ANmF1C15_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_ANmF1C15/29_11_ANmF1C15_1.fastq.gz_trimming_report.txt",
+                "29_11_ANmF1C15_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_ANmF1C15/29_11_ANmF1C15_2.fastq.gz_trimming_report.txt",
+                "23_4MMmADNmF1C2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADNmF1C2/23_4MMmADNmF1C2_2.fastq.gz_trimming_report.txt",
+                "23_4MMmADNmF1C2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADNmF1C2/23_4MMmADNmF1C2_1.fastq.gz_trimming_report.txt",
+                "19_10_AN_F2C8_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_AN_F2C8/19_10_AN_F2C8_2.fastq.gz_trimming_report.txt",
+                "19_10_AN_F2C8_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_AN_F2C8/19_10_AN_F2C8_1.fastq.gz_trimming_report.txt",
+                "23_4MMmADN_F2C2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADN_F2C2/23_4MMmADN_F2C2_2.fastq.gz_trimming_report.txt",
+                "23_4MMmADN_F2C2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADN_F2C2/23_4MMmADN_F2C2_1.fastq.gz_trimming_report.txt",
+                "29_11_ANmF2C15_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_ANmF2C15/29_11_ANmF2C15_2.fastq.gz_trimming_report.txt",
+                "29_11_ANmF2C15_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_ANmF2C15/29_11_ANmF2C15_1.fastq.gz_trimming_report.txt",
+                "12_1_C11R6_F2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6_F2/12_1_C11R6_F2_1.fastq.gz_trimming_report.txt",
+                "12_1_C11R6_F2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6_F2/12_1_C11R6_F2_2.fastq.gz_trimming_report.txt",
+                "12_1_C11R6mF1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6mF1/12_1_C11R6mF1_1.fastq.gz_trimming_report.txt",
+                "12_1_C11R6mF1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6mF1/12_1_C11R6mF1_2.fastq.gz_trimming_report.txt",
+                "3_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/3/3_2.fastq.gz_trimming_report.txt",
+                "3_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/3/3_1.fastq.gz_trimming_report.txt",
+                "23_4MMmADN_F1C2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADN_F1C2/23_4MMmADN_F1C2_1.fastq.gz_trimming_report.txt",
+                "23_4MMmADN_F1C2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADN_F1C2/23_4MMmADN_F1C2_2.fastq.gz_trimming_report.txt",
+                "19_01_AN_F1C11_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F1C11/19_01_AN_F1C11_2.fastq.gz_trimming_report.txt",
+                "19_01_AN_F1C11_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_AN_F1C11/19_01_AN_F1C11_1.fastq.gz_trimming_report.txt",
+                "11_10_AN_F1C7_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_AN_F1C7/11_10_AN_F1C7_1.fastq.gz_trimming_report.txt",
+                "11_10_AN_F1C7_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_AN_F1C7/11_10_AN_F1C7_2.fastq.gz_trimming_report.txt",
+                "19_01_ANmF1C11_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF1C11/19_01_ANmF1C11_1.fastq.gz_trimming_report.txt",
+                "19_01_ANmF1C11_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF1C11/19_01_ANmF1C11_2.fastq.gz_trimming_report.txt",
+                "10_3MMmADN_F1C1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/10_3MMmADN_F1C1/10_3MMmADN_F1C1_1.fastq.gz_trimming_report.txt",
+                "10_3MMmADN_F1C1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/10_3MMmADN_F1C1/10_3MMmADN_F1C1_2.fastq.gz_trimming_report.txt",
+                "12_1_C11R6mF2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6mF2/12_1_C11R6mF2_1.fastq.gz_trimming_report.txt",
+                "12_1_C11R6mF2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6mF2/12_1_C11R6mF2_2.fastq.gz_trimming_report.txt",
+                "03_12_AN_F1C14_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_AN_F1C14/03_12_AN_F1C14_2.fastq.gz_trimming_report.txt",
+                "03_12_AN_F1C14_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_AN_F1C14/03_12_AN_F1C14_1.fastq.gz_trimming_report.txt",
+                "12_1_C11R6_F1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6_F1/12_1_C11R6_F1_2.fastq.gz_trimming_report.txt",
+                "12_1_C11R6_F1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C11R6_F1/12_1_C11R6_F1_1.fastq.gz_trimming_report.txt",
+                "19_10_ANmF1C8_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_ANmF1C8/19_10_ANmF1C8_2.fastq.gz_trimming_report.txt",
+                "19_10_ANmF1C8_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_ANmF1C8/19_10_ANmF1C8_1.fastq.gz_trimming_report.txt",
+                "4_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/4/4_1.fastq.gz_trimming_report.txt",
+                "4_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/4/4_2.fastq.gz_trimming_report.txt",
+                "29_11_AN_F2C15_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_AN_F2C15/29_11_AN_F2C15_2.fastq.gz_trimming_report.txt",
+                "29_11_AN_F2C15_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/29_11_AN_F2C15/29_11_AN_F2C15_1.fastq.gz_trimming_report.txt",
+                "18_03_ANmF1C8r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_ANmF1C8r/18_03_ANmF1C8r_2.fastq.gz_trimming_report.txt",
+                "18_03_ANmF1C8r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_ANmF1C8r/18_03_ANmF1C8r_1.fastq.gz_trimming_report.txt",
+                "12_1_C15R_F1_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C15R_F1/12_1_C15R_F1_1.fastq.gz_trimming_report.txt",
+                "12_1_C15R_F1_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/12_1_C15R_F1/12_1_C15R_F1_2.fastq.gz_trimming_report.txt",
+                "19_4_MMmAN_F2C5_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmAN_F/19_4_MMmAN_F2C5_2.fastq.gz_trimming_report.txt",
+                "19_4_MMmAN_F1C5_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmAN_F/19_4_MMmAN_F1C5_2.fastq.gz_trimming_report.txt",
+                "19_4_MMmAN_F1C5_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmAN_F/19_4_MMmAN_F1C5_1.fastq.gz_trimming_report.txt",
+                "19_4_MMmAN_F2C5_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_4_MMmAN_F/19_4_MMmAN_F2C5_1.fastq.gz_trimming_report.txt",
+                "11_10_ANmF1C7_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_ANmF1C7/11_10_ANmF1C7_1.fastq.gz_trimming_report.txt",
+                "11_10_ANmF1C7_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/11_10_ANmF1C7/11_10_ANmF1C7_2.fastq.gz_trimming_report.txt",
+                "03_12_ANmF2C14_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_ANmF2C14/03_12_ANmF2C14_2.fastq.gz_trimming_report.txt",
+                "03_12_ANmF2C14_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/03_12_ANmF2C14/03_12_ANmF2C14_1.fastq.gz_trimming_report.txt",
+                "5_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/5/5_2.fastq.gz_trimming_report.txt",
+                "5_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/5/5_1.fastq.gz_trimming_report.txt",
+                "19_10_ANmF2C8_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_ANmF2C8/19_10_ANmF2C8_1.fastq.gz_trimming_report.txt",
+                "19_10_ANmF2C8_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_ANmF2C8/19_10_ANmF2C8_2.fastq.gz_trimming_report.txt",
+                "19_01_ADN_F2C2r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADN_F2C2r/19_01_ADN_F2C2r_1.fastq.gz_trimming_report.txt",
+                "19_01_ADN_F2C2r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ADN_F2C2r/19_01_ADN_F2C2r_2.fastq.gz_trimming_report.txt",
+                "19_01_ANmF2C11_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF2C11/19_01_ANmF2C11_1.fastq.gz_trimming_report.txt",
+                "19_01_ANmF2C11_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_01_ANmF2C11/19_01_ANmF2C11_2.fastq.gz_trimming_report.txt",
+                "8_4_MMmANmF1C6_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmANmF/8_4_MMmANmF1C6_2.fastq.gz_trimming_report.txt",
+                "8_4_MMmANmF2C6_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmANmF/8_4_MMmANmF2C6_2.fastq.gz_trimming_report.txt",
+                "8_4_MMmANmF2C6_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmANmF/8_4_MMmANmF2C6_1.fastq.gz_trimming_report.txt",
+                "8_4_MMmANmF1C6_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmANmF/8_4_MMmANmF1C6_1.fastq.gz_trimming_report.txt",
+                "19_10_AN_F1C8_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_AN_F1C8/19_10_AN_F1C8_2.fastq.gz_trimming_report.txt",
+                "19_10_AN_F1C8_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/19_10_AN_F1C8/19_10_AN_F1C8_1.fastq.gz_trimming_report.txt",
+                "ANLCFA_F2C12R_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFA_F2C12R/ANLCFA_F2C12R_2.fastq.gz_trimming_report.txt",
+                "ANLCFA_F2C12R_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/ANLCFA_F2C12R/ANLCFA_F2C12R_1.fastq.gz_trimming_report.txt",
+                "18_03_ANmF2C8r_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_ANmF2C8r/18_03_ANmF2C8r_1.fastq.gz_trimming_report.txt",
+                "18_03_ANmF2C8r_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/18_03_ANmF2C8r/18_03_ANmF2C8r_2.fastq.gz_trimming_report.txt",
+                "7_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/7/7_1.fastq.gz_trimming_report.txt",
+                "7_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/7/7_2.fastq.gz_trimming_report.txt",
+                "8_4_MMmAN_F1C6_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmAN_F/8_4_MMmAN_F1C6_2.fastq.gz_trimming_report.txt",
+                "8_4_MMmAN_F2C6_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmAN_F/8_4_MMmAN_F2C6_1.fastq.gz_trimming_report.txt",
+                "8_4_MMmAN_F2C6_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmAN_F/8_4_MMmAN_F2C6_2.fastq.gz_trimming_report.txt",
+                "8_4_MMmAN_F1C6_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/8_4_MMmAN_F/8_4_MMmAN_F1C6_1.fastq.gz_trimming_report.txt",
+                "23_4MMmADNmF2C2_1": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADNmF2C2/23_4MMmADNmF2C2_1.fastq.gz_trimming_report.txt",
+                "23_4MMmADNmF2C2_2": "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report/23_4MMmADNmF2C2/23_4MMmADNmF2C2_2.fastq.gz_trimming_report.txt"
+            }
+        }
+    },
+    "report_general_stats_data": [
+        {
+            "2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29780434,
+                "r_with_adapters": 5612588,
+                "r_written": 29780434,
+                "bp_processed": 4496845534,
+                "quality_trimmed": 7751913,
+                "bp_written": 4353506240,
+                "percent_trimmed": 3.1875520943788773
+            },
+            "1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28723207,
+                "r_with_adapters": 4751358,
+                "r_written": 28723207,
+                "bp_processed": 4337204257,
+                "quality_trimmed": 6850713,
+                "bp_written": 4220330756,
+                "percent_trimmed": 2.6946736670603615
+            },
+            "2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29780434,
+                "r_with_adapters": 5504084,
+                "r_written": 29780434,
+                "bp_processed": 4496845534,
+                "quality_trimmed": 9360507,
+                "bp_written": 4354350617,
+                "percent_trimmed": 3.168774998443164
+            },
+            "1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28723207,
+                "r_with_adapters": 4658604,
+                "r_written": 28723207,
+                "bp_processed": 4337204257,
+                "quality_trimmed": 8753654,
+                "bp_written": 4220954550,
+                "percent_trimmed": 2.6802912685603775
+            },
+            "29_11_AN_F1C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23189344,
+                "r_with_adapters": 7804621,
+                "r_written": 23189344,
+                "bp_processed": 3501590944,
+                "quality_trimmed": 1632214,
+                "bp_written": 3268343026,
+                "percent_trimmed": 6.6611983447030525
+            },
+            "29_11_AN_F1C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23189344,
+                "r_with_adapters": 7923973,
+                "r_written": 23189344,
+                "bp_processed": 3501590944,
+                "quality_trimmed": 4936759,
+                "bp_written": 3264236670,
+                "percent_trimmed": 6.778469495607651
+            },
+            "19_01_ADNmF1C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25175324,
+                "r_with_adapters": 5851629,
+                "r_written": 25175324,
+                "bp_processed": 3801473924,
+                "quality_trimmed": 9364379,
+                "bp_written": 3648752319,
+                "percent_trimmed": 4.017431345137382
+            },
+            "19_01_ADNmF1C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25175324,
+                "r_with_adapters": 5786273,
+                "r_written": 25175324,
+                "bp_processed": 3801473924,
+                "quality_trimmed": 5703778,
+                "bp_written": 3654039154,
+                "percent_trimmed": 3.87835805131252
+            },
+            "10_3MMmADNmF1C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23562816,
+                "r_with_adapters": 3012282,
+                "r_written": 23562816,
+                "bp_processed": 3557985216,
+                "quality_trimmed": 4111391,
+                "bp_written": 3484122714,
+                "percent_trimmed": 2.0759642751702763
+            },
+            "10_3MMmADNmF1C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23562816,
+                "r_with_adapters": 3066263,
+                "r_written": 23562816,
+                "bp_processed": 3557985216,
+                "quality_trimmed": 4007612,
+                "bp_written": 3482589284,
+                "percent_trimmed": 2.119062543063698
+            },
+            "18_03_AN_F1C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29762498,
+                "r_with_adapters": 9893884,
+                "r_written": 29762498,
+                "bp_processed": 4494137198,
+                "quality_trimmed": 4364129,
+                "bp_written": 4224377605,
+                "percent_trimmed": 6.002477919900833
+            },
+            "18_03_AN_F1C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29762498,
+                "r_with_adapters": 10013324,
+                "r_written": 29762498,
+                "bp_processed": 4494137198,
+                "quality_trimmed": 5387613,
+                "bp_written": 4221620726,
+                "percent_trimmed": 6.063821819264362
+            },
+            "6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22760097,
+                "r_with_adapters": 5106563,
+                "r_written": 22760097,
+                "bp_processed": 3436774647,
+                "quality_trimmed": 13424780,
+                "bp_written": 3297741954,
+                "percent_trimmed": 4.045441068455368
+            },
+            "6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22760097,
+                "r_with_adapters": 5008724,
+                "r_written": 22760097,
+                "bp_processed": 3436774647,
+                "quality_trimmed": 5692706,
+                "bp_written": 3306141422,
+                "percent_trimmed": 3.8010413372326064
+            },
+            "ANLCFA_F1C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26205177,
+                "r_with_adapters": 6785128,
+                "r_written": 26205177,
+                "bp_processed": 3956981727,
+                "quality_trimmed": 12514604,
+                "bp_written": 3767742712,
+                "percent_trimmed": 4.782408109412025
+            },
+            "ANLCFA_F1C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26205177,
+                "r_with_adapters": 6673692,
+                "r_written": 26205177,
+                "bp_processed": 3956981727,
+                "quality_trimmed": 4361486,
+                "bp_written": 3776208757,
+                "percent_trimmed": 4.568456022086655
+            },
+            "19_01_AN_F1C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26285644,
+                "r_with_adapters": 6053596,
+                "r_written": 26285644,
+                "bp_processed": 3969132244,
+                "quality_trimmed": 3314395,
+                "bp_written": 3811685433,
+                "percent_trimmed": 3.966781687307267
+            },
+            "19_01_AN_F1C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26285644,
+                "r_with_adapters": 6254611,
+                "r_written": 26285644,
+                "bp_processed": 3969132244,
+                "quality_trimmed": 6520120,
+                "bp_written": 3806916409,
+                "percent_trimmed": 4.086934499227535
+            },
+            "19_01_AN_F2C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25640410,
+                "r_with_adapters": 6868540,
+                "r_written": 25640410,
+                "bp_processed": 3871701910,
+                "quality_trimmed": 6464620,
+                "bp_written": 3686926952,
+                "percent_trimmed": 4.772447938792891
+            },
+            "19_01_AN_F2C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25640410,
+                "r_with_adapters": 7041812,
+                "r_written": 25640410,
+                "bp_processed": 3871701910,
+                "quality_trimmed": 6393692,
+                "bp_written": 3682308116,
+                "percent_trimmed": 4.891745242856261
+            },
+            "19_4_MMmANmF1C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28568819,
+                "r_with_adapters": 8038354,
+                "r_written": 28568819,
+                "bp_processed": 4313891669,
+                "quality_trimmed": 4112491,
+                "bp_written": 4098634396,
+                "percent_trimmed": 4.989862739179508
+            },
+            "19_4_MMmANmF2C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22698369,
+                "r_with_adapters": 5940357,
+                "r_written": 22698369,
+                "bp_processed": 3427453719,
+                "quality_trimmed": 2747635,
+                "bp_written": 3275984443,
+                "percent_trimmed": 4.419294567285738
+            },
+            "19_4_MMmANmF1C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28568819,
+                "r_with_adapters": 8114008,
+                "r_written": 28568819,
+                "bp_processed": 4313891669,
+                "quality_trimmed": 3234245,
+                "bp_written": 4097582700,
+                "percent_trimmed": 5.01424202546427
+            },
+            "19_4_MMmANmF2C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22698369,
+                "r_with_adapters": 5889448,
+                "r_written": 22698369,
+                "bp_processed": 3427453719,
+                "quality_trimmed": 2954197,
+                "bp_written": 3276797044,
+                "percent_trimmed": 4.395585975817519
+            },
+            "11_10_ANmF2C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29746213,
+                "r_with_adapters": 4958082,
+                "r_written": 29746213,
+                "bp_processed": 4491678163,
+                "quality_trimmed": 7574752,
+                "bp_written": 4369667260,
+                "percent_trimmed": 2.7163767877462686
+            },
+            "11_10_ANmF2C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29746213,
+                "r_with_adapters": 5021867,
+                "r_written": 29746213,
+                "bp_processed": 4491678163,
+                "quality_trimmed": 7173914,
+                "bp_written": 4367241840,
+                "percent_trimmed": 2.770374868463166
+            },
+            "19_01_AN_F2C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29948479,
+                "r_with_adapters": 5684078,
+                "r_written": 29948479,
+                "bp_processed": 4522220329,
+                "quality_trimmed": 5440559,
+                "bp_written": 4379884769,
+                "percent_trimmed": 3.1474707034337426
+            },
+            "19_01_AN_F2C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29948479,
+                "r_with_adapters": 5749600,
+                "r_written": 29948479,
+                "bp_processed": 4522220329,
+                "quality_trimmed": 8682286,
+                "bp_written": 4375107854,
+                "percent_trimmed": 3.253102774683493
+            },
+            "03_12_AN_F2C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22885775,
+                "r_with_adapters": 5233106,
+                "r_written": 22885775,
+                "bp_processed": 3455752025,
+                "quality_trimmed": 2561018,
+                "bp_written": 3313594228,
+                "percent_trimmed": 4.113657344959525
+            },
+            "03_12_AN_F2C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22885775,
+                "r_with_adapters": 5277707,
+                "r_written": 22885775,
+                "bp_processed": 3455752025,
+                "quality_trimmed": 5737804,
+                "bp_written": 3309471178,
+                "percent_trimmed": 4.232967120955387
+            },
+            "19_01_ADNmF2C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26666378,
+                "r_with_adapters": 5471066,
+                "r_written": 26666378,
+                "bp_processed": 4026623078,
+                "quality_trimmed": 8687813,
+                "bp_written": 3887082636,
+                "percent_trimmed": 3.465445841265801
+            },
+            "19_01_ADNmF2C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26666378,
+                "r_with_adapters": 5389317,
+                "r_written": 26666378,
+                "bp_processed": 4026623078,
+                "quality_trimmed": 7199777,
+                "bp_written": 3890912403,
+                "percent_trimmed": 3.370334704071847
+            },
+            "ANLCFAmF1C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29672350,
+                "r_with_adapters": 7812610,
+                "r_written": 29672350,
+                "bp_processed": 4480524850,
+                "quality_trimmed": 10945858,
+                "bp_written": 4260322723,
+                "percent_trimmed": 4.914650278080703
+            },
+            "ANLCFAmF1C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29672350,
+                "r_with_adapters": 7695544,
+                "r_written": 29672350,
+                "bp_processed": 4480524850,
+                "quality_trimmed": 6501607,
+                "bp_written": 4265543488,
+                "percent_trimmed": 4.798128995981353
+            },
+            "03_12_ANmF1C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23923290,
+                "r_with_adapters": 7469234,
+                "r_written": 23923290,
+                "bp_processed": 3612416790,
+                "quality_trimmed": 2672683,
+                "bp_written": 3396325871,
+                "percent_trimmed": 5.981893329645387
+            },
+            "03_12_ANmF1C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23923290,
+                "r_with_adapters": 7503336,
+                "r_written": 23923290,
+                "bp_processed": 3612416790,
+                "quality_trimmed": 8516790,
+                "bp_written": 3390264425,
+                "percent_trimmed": 6.149688087348304
+            },
+            "16_3MMmADNmF2C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393619,
+                "r_with_adapters": 4590699,
+                "r_written": 26393619,
+                "bp_processed": 3985436469,
+                "quality_trimmed": 4986982,
+                "bp_written": 3875724689,
+                "percent_trimmed": 2.7528171846013185
+            },
+            "16_3MMmADNmF2C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393619,
+                "r_with_adapters": 4643768,
+                "r_written": 26393619,
+                "bp_processed": 3985436469,
+                "quality_trimmed": 7596367,
+                "bp_written": 3871695100,
+                "percent_trimmed": 2.853925031416678
+            },
+            "19_01_ANmF1C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26436403,
+                "r_with_adapters": 6202991,
+                "r_written": 26436403,
+                "bp_processed": 3991896853,
+                "quality_trimmed": 4261871,
+                "bp_written": 3832227924,
+                "percent_trimmed": 3.999826019552715
+            },
+            "19_01_ANmF1C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26436403,
+                "r_with_adapters": 6398794,
+                "r_written": 26436403,
+                "bp_processed": 3991896853,
+                "quality_trimmed": 6189248,
+                "bp_written": 3827697338,
+                "percent_trimmed": 4.1133205853402846
+            },
+            "12_1_C15R_F2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29831860,
+                "r_with_adapters": 7132748,
+                "r_written": 29831860,
+                "bp_processed": 4504610860,
+                "quality_trimmed": 11082326,
+                "bp_written": 4299180586,
+                "percent_trimmed": 4.560444406511953
+            },
+            "12_1_C15R_F2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29831860,
+                "r_with_adapters": 7378226,
+                "r_written": 29831860,
+                "bp_processed": 4504610860,
+                "quality_trimmed": 5986559,
+                "bp_written": 4296218880,
+                "percent_trimmed": 4.626192727333611
+            },
+            "19_01_ANmF2C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23639771,
+                "r_with_adapters": 5984154,
+                "r_written": 23639771,
+                "bp_processed": 3569605421,
+                "quality_trimmed": 4141153,
+                "bp_written": 3412399565,
+                "percent_trimmed": 4.404012137452432
+            },
+            "19_01_ANmF2C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23639771,
+                "r_with_adapters": 6157453,
+                "r_written": 23639771,
+                "bp_processed": 3569605421,
+                "quality_trimmed": 5481950,
+                "bp_written": 3408523401,
+                "percent_trimmed": 4.5126001616972555
+            },
+            "11_10_AN_F2C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27768463,
+                "r_with_adapters": 3821589,
+                "r_written": 27768463,
+                "bp_processed": 4193037913,
+                "quality_trimmed": 6036237,
+                "bp_written": 4092993668,
+                "percent_trimmed": 2.3859608969865285
+            },
+            "11_10_AN_F2C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27768463,
+                "r_with_adapters": 3762694,
+                "r_written": 27768463,
+                "bp_processed": 4193037913,
+                "quality_trimmed": 5271633,
+                "bp_written": 4094916401,
+                "percent_trimmed": 2.340105528161009
+            },
+            "19_01_ADN_F1C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24536082,
+                "r_with_adapters": 4609833,
+                "r_written": 24536082,
+                "bp_processed": 3704948382,
+                "quality_trimmed": 5085971,
+                "bp_written": 3590477420,
+                "percent_trimmed": 3.0896776472282848
+            },
+            "19_01_ADN_F1C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24536082,
+                "r_with_adapters": 4708352,
+                "r_written": 24536082,
+                "bp_processed": 3704948382,
+                "quality_trimmed": 7746509,
+                "bp_written": 3585650294,
+                "percent_trimmed": 3.219966264026617
+            },
+            "ANLCFAmF2C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24163661,
+                "r_with_adapters": 5759904,
+                "r_written": 24163661,
+                "bp_processed": 3648712811,
+                "quality_trimmed": 10303490,
+                "bp_written": 3490613610,
+                "percent_trimmed": 4.3330130155316295
+            },
+            "ANLCFAmF2C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24163661,
+                "r_with_adapters": 5670466,
+                "r_written": 24163661,
+                "bp_processed": 3648712811,
+                "quality_trimmed": 5452566,
+                "bp_written": 3496101925,
+                "percent_trimmed": 4.1825951754798165
+            },
+            "16_3MMmADN_F2C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25424843,
+                "r_with_adapters": 4169231,
+                "r_written": 25424843,
+                "bp_processed": 3839151293,
+                "quality_trimmed": 5885530,
+                "bp_written": 3740098251,
+                "percent_trimmed": 2.5800765440165216
+            },
+            "16_3MMmADN_F2C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25424843,
+                "r_with_adapters": 4220433,
+                "r_written": 25424843,
+                "bp_processed": 3839151293,
+                "quality_trimmed": 5200398,
+                "bp_written": 3738654627,
+                "percent_trimmed": 2.617679229866183
+            },
+            "8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27644491,
+                "r_with_adapters": 6458565,
+                "r_written": 27644491,
+                "bp_processed": 4174318141,
+                "quality_trimmed": 11304741,
+                "bp_written": 4000950075,
+                "percent_trimmed": 4.153206826695484
+            },
+            "8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27644491,
+                "r_with_adapters": 6601357,
+                "r_written": 27644491,
+                "bp_processed": 4174318141,
+                "quality_trimmed": 8949165,
+                "bp_written": 3998358146,
+                "percent_trimmed": 4.2152990993122295
+            },
+            "18_03_AN_F2C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29586410,
+                "r_with_adapters": 10643625,
+                "r_written": 29586410,
+                "bp_processed": 4467547910,
+                "quality_trimmed": 9820941,
+                "bp_written": 4163772085,
+                "percent_trimmed": 6.7996097886278735
+            },
+            "18_03_AN_F2C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29586410,
+                "r_with_adapters": 10749445,
+                "r_written": 29586410,
+                "bp_processed": 4467547910,
+                "quality_trimmed": 5918448,
+                "bp_written": 4160999515,
+                "percent_trimmed": 6.8616700072501295
+            },
+            "29_11_ANmF1C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24720775,
+                "r_with_adapters": 9001149,
+                "r_written": 24720775,
+                "bp_processed": 3732837025,
+                "quality_trimmed": 2290600,
+                "bp_written": 3471458548,
+                "percent_trimmed": 7.002140067982207
+            },
+            "29_11_ANmF1C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24720775,
+                "r_with_adapters": 9126019,
+                "r_written": 24720775,
+                "bp_processed": 3732837025,
+                "quality_trimmed": 5952883,
+                "bp_written": 3466794613,
+                "percent_trimmed": 7.127083508286837
+            },
+            "23_4MMmADNmF1C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21913278,
+                "r_with_adapters": 5795045,
+                "r_written": 21913278,
+                "bp_processed": 3308904978,
+                "quality_trimmed": 3796614,
+                "bp_written": 3154754690,
+                "percent_trimmed": 4.658649584225081
+            },
+            "23_4MMmADNmF1C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21913278,
+                "r_with_adapters": 5718924,
+                "r_written": 21913278,
+                "bp_processed": 3308904978,
+                "quality_trimmed": 4704518,
+                "bp_written": 3156935032,
+                "percent_trimmed": 4.592756425778511
+            },
+            "19_10_AN_F2C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29000544,
+                "r_with_adapters": 6577839,
+                "r_written": 29000544,
+                "bp_processed": 4379082144,
+                "quality_trimmed": 8692445,
+                "bp_written": 4200025421,
+                "percent_trimmed": 4.088909892803326
+            },
+            "19_10_AN_F2C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29000544,
+                "r_with_adapters": 6455526,
+                "r_written": 29000544,
+                "bp_processed": 4379082144,
+                "quality_trimmed": 4849532,
+                "bp_written": 4204666443,
+                "percent_trimmed": 3.982928277309794
+            },
+            "23_4MMmADN_F2C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25730058,
+                "r_with_adapters": 5275217,
+                "r_written": 25730058,
+                "bp_processed": 3885238758,
+                "quality_trimmed": 4908140,
+                "bp_written": 3752551421,
+                "percent_trimmed": 3.415165586073359
+            },
+            "23_4MMmADN_F2C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25730058,
+                "r_with_adapters": 5180981,
+                "r_written": 25730058,
+                "bp_processed": 3885238758,
+                "quality_trimmed": 3602828,
+                "bp_written": 3755929647,
+                "percent_trimmed": 3.328215305526405
+            },
+            "29_11_ANmF2C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21208240,
+                "r_with_adapters": 6969172,
+                "r_written": 21208240,
+                "bp_processed": 3202444240,
+                "quality_trimmed": 3948504,
+                "bp_written": 3004859014,
+                "percent_trimmed": 6.169825645426382
+            },
+            "29_11_ANmF2C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21208240,
+                "r_with_adapters": 6851352,
+                "r_written": 21208240,
+                "bp_processed": 3202444240,
+                "quality_trimmed": 1465911,
+                "bp_written": 3008219829,
+                "percent_trimmed": 6.064880336526953
+            },
+            "12_1_C11R6_F2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29596055,
+                "r_with_adapters": 7372767,
+                "r_written": 29596055,
+                "bp_processed": 4469004305,
+                "quality_trimmed": 10355401,
+                "bp_written": 4260898089,
+                "percent_trimmed": 4.6566573177646555
+            },
+            "12_1_C11R6_F2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29596055,
+                "r_with_adapters": 7521650,
+                "r_written": 29596055,
+                "bp_processed": 4469004305,
+                "quality_trimmed": 6733593,
+                "bp_written": 4260464498,
+                "percent_trimmed": 4.666359501302829
+            },
+            "12_1_C11R6mF1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29864720,
+                "r_with_adapters": 7414210,
+                "r_written": 29864720,
+                "bp_processed": 4509572720,
+                "quality_trimmed": 11231245,
+                "bp_written": 4299933401,
+                "percent_trimmed": 4.648762355472116
+            },
+            "12_1_C11R6mF1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29864720,
+                "r_with_adapters": 7558095,
+                "r_written": 29864720,
+                "bp_processed": 4509572720,
+                "quality_trimmed": 7109713,
+                "bp_written": 4298852201,
+                "percent_trimmed": 4.672738019401536
+            },
+            "3_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29835619,
+                "r_with_adapters": 6177493,
+                "r_written": 29835619,
+                "bp_processed": 4505178469,
+                "quality_trimmed": 8637106,
+                "bp_written": 4339260750,
+                "percent_trimmed": 3.6828223374872926
+            },
+            "3_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29835619,
+                "r_with_adapters": 6076709,
+                "r_written": 29835619,
+                "bp_processed": 4505178469,
+                "quality_trimmed": 11980993,
+                "bp_written": 4340696736,
+                "percent_trimmed": 3.650948217296916
+            },
+            "23_4MMmADN_F1C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 20748213,
+                "r_with_adapters": 4684325,
+                "r_written": 20748213,
+                "bp_processed": 3132980163,
+                "quality_trimmed": 4861704,
+                "bp_written": 3014793180,
+                "percent_trimmed": 3.7723501857997563
+            },
+            "23_4MMmADN_F1C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 20748213,
+                "r_with_adapters": 4777506,
+                "r_written": 20748213,
+                "bp_processed": 3132980163,
+                "quality_trimmed": 3407171,
+                "bp_written": 3012803699,
+                "percent_trimmed": 3.835851417741645
+            },
+            "19_01_AN_F1C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28509069,
+                "r_with_adapters": 4680243,
+                "r_written": 28509069,
+                "bp_processed": 4304869419,
+                "quality_trimmed": 8387087,
+                "bp_written": 4187062203,
+                "percent_trimmed": 2.7366037046337643
+            },
+            "19_01_AN_F1C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28509069,
+                "r_with_adapters": 4623541,
+                "r_written": 28509069,
+                "bp_processed": 4304869419,
+                "quality_trimmed": 5092483,
+                "bp_written": 4191542061,
+                "percent_trimmed": 2.632538805934917
+            },
+            "11_10_AN_F1C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29774152,
+                "r_with_adapters": 4309130,
+                "r_written": 29774152,
+                "bp_processed": 4495896952,
+                "quality_trimmed": 6061110,
+                "bp_written": 4385357394,
+                "percent_trimmed": 2.4586764149660163
+            },
+            "11_10_AN_F1C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29774152,
+                "r_with_adapters": 4373302,
+                "r_written": 29774152,
+                "bp_processed": 4495896952,
+                "quality_trimmed": 5778739,
+                "bp_written": 4383795032,
+                "percent_trimmed": 2.493427255936804
+            },
+            "19_01_ANmF1C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24542403,
+                "r_with_adapters": 16610221,
+                "r_written": 24542403,
+                "bp_processed": 3705902853,
+                "quality_trimmed": 2263965,
+                "bp_written": 3108918046,
+                "percent_trimmed": 16.109024728393223
+            },
+            "19_01_ANmF1C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24542403,
+                "r_with_adapters": 16550703,
+                "r_written": 24542403,
+                "bp_processed": 3705902853,
+                "quality_trimmed": 4705500,
+                "bp_written": 3109409637,
+                "percent_trimmed": 16.095759647804236
+            },
+            "10_3MMmADN_F1C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393692,
+                "r_with_adapters": 4205639,
+                "r_written": 26393692,
+                "bp_processed": 3985447492,
+                "quality_trimmed": 4723081,
+                "bp_written": 3881739104,
+                "percent_trimmed": 2.602176749491096
+            },
+            "10_3MMmADN_F1C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393692,
+                "r_with_adapters": 4265944,
+                "r_written": 26393692,
+                "bp_processed": 3985447492,
+                "quality_trimmed": 4035108,
+                "bp_written": 3880740034,
+                "percent_trimmed": 2.6272446998782337
+            },
+            "12_1_C11R6mF2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29654716,
+                "r_with_adapters": 5901008,
+                "r_written": 29654716,
+                "bp_processed": 4477862116,
+                "quality_trimmed": 11418939,
+                "bp_written": 4313379183,
+                "percent_trimmed": 3.6732469365744977
+            },
+            "12_1_C11R6mF2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29654716,
+                "r_with_adapters": 6028440,
+                "r_written": 29654716,
+                "bp_processed": 4477862116,
+                "quality_trimmed": 6393178,
+                "bp_written": 4313646791,
+                "percent_trimmed": 3.6672706918160047
+            },
+            "03_12_AN_F1C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25004506,
+                "r_with_adapters": 6293392,
+                "r_written": 25004506,
+                "bp_processed": 3775680406,
+                "quality_trimmed": 8137917,
+                "bp_written": 3606911475,
+                "percent_trimmed": 4.469894505154788
+            },
+            "03_12_AN_F1C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25004506,
+                "r_with_adapters": 6234140,
+                "r_written": 25004506,
+                "bp_processed": 3775680406,
+                "quality_trimmed": 5158503,
+                "bp_written": 3613433791,
+                "percent_trimmed": 4.297149058012724
+            },
+            "12_1_C11R6_F1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29717693,
+                "r_with_adapters": 6178222,
+                "r_written": 29717693,
+                "bp_processed": 4487371643,
+                "quality_trimmed": 5557519,
+                "bp_written": 4324634921,
+                "percent_trimmed": 3.6265487895092976
+            },
+            "12_1_C11R6_F1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29717693,
+                "r_with_adapters": 6038489,
+                "r_written": 29717693,
+                "bp_processed": 4487371643,
+                "quality_trimmed": 10009234,
+                "bp_written": 4323659287,
+                "percent_trimmed": 3.6482905590264703
+            },
+            "19_10_ANmF1C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25574101,
+                "r_with_adapters": 3839922,
+                "r_written": 25574101,
+                "bp_processed": 3861689251,
+                "quality_trimmed": 8594562,
+                "bp_written": 3763416559,
+                "percent_trimmed": 2.544810978111506
+            },
+            "19_10_ANmF1C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25574101,
+                "r_with_adapters": 3737648,
+                "r_written": 25574101,
+                "bp_processed": 3861689251,
+                "quality_trimmed": 4846061,
+                "bp_written": 3768598128,
+                "percent_trimmed": 2.4106321598998077
+            },
+            "4_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29803769,
+                "r_with_adapters": 5883662,
+                "r_written": 29803769,
+                "bp_processed": 4500369119,
+                "quality_trimmed": 10569411,
+                "bp_written": 4335100362,
+                "percent_trimmed": 3.6723378156306294
+            },
+            "4_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29803769,
+                "r_with_adapters": 5995970,
+                "r_written": 29803769,
+                "bp_processed": 4500369119,
+                "quality_trimmed": 8284600,
+                "bp_written": 4334181364,
+                "percent_trimmed": 3.692758318387172
+            },
+            "29_11_AN_F2C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29893975,
+                "r_with_adapters": 13002265,
+                "r_written": 29893975,
+                "bp_processed": 4513990225,
+                "quality_trimmed": 4339587,
+                "bp_written": 4122971122,
+                "percent_trimmed": 8.662382581920633
+            },
+            "29_11_AN_F2C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29893975,
+                "r_with_adapters": 12835552,
+                "r_written": 29893975,
+                "bp_processed": 4513990225,
+                "quality_trimmed": 5216612,
+                "bp_written": 4125490245,
+                "percent_trimmed": 8.606575571394819
+            },
+            "18_03_ANmF1C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29911154,
+                "r_with_adapters": 12717938,
+                "r_written": 29911154,
+                "bp_processed": 4516584254,
+                "quality_trimmed": 4474280,
+                "bp_written": 4137680726,
+                "percent_trimmed": 8.389161071542805
+            },
+            "18_03_ANmF1C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29911154,
+                "r_with_adapters": 12608912,
+                "r_written": 29911154,
+                "bp_processed": 4516584254,
+                "quality_trimmed": 5241180,
+                "bp_written": 4139137617,
+                "percent_trimmed": 8.356904593681028
+            },
+            "12_1_C15R_F1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29731220,
+                "r_with_adapters": 6413189,
+                "r_written": 29731220,
+                "bp_processed": 4489414220,
+                "quality_trimmed": 6629569,
+                "bp_written": 4306413091,
+                "percent_trimmed": 4.076280780346439
+            },
+            "12_1_C15R_F1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29731220,
+                "r_with_adapters": 6648272,
+                "r_written": 29731220,
+                "bp_processed": 4489414220,
+                "quality_trimmed": 7113357,
+                "bp_written": 4302798640,
+                "percent_trimmed": 4.156791306283162
+            },
+            "19_4_MMmAN_F2C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29933374,
+                "r_with_adapters": 8278245,
+                "r_written": 29933374,
+                "bp_processed": 4519939474,
+                "quality_trimmed": 3139084,
+                "bp_written": 4299719722,
+                "percent_trimmed": 4.87218364906804
+            },
+            "19_4_MMmAN_F1C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25943449,
+                "r_with_adapters": 7186594,
+                "r_written": 25943449,
+                "bp_processed": 3917460799,
+                "quality_trimmed": 2937976,
+                "bp_written": 3725435854,
+                "percent_trimmed": 4.9017706839342905
+            },
+            "19_4_MMmAN_F1C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25943449,
+                "r_with_adapters": 7119253,
+                "r_written": 25943449,
+                "bp_processed": 3917460799,
+                "quality_trimmed": 3475413,
+                "bp_written": 3726760209,
+                "percent_trimmed": 4.867964219289179
+            },
+            "19_4_MMmAN_F2C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29933374,
+                "r_with_adapters": 8204800,
+                "r_written": 29933374,
+                "bp_processed": 4519939474,
+                "quality_trimmed": 4083564,
+                "bp_written": 4300430309,
+                "percent_trimmed": 4.85646248722312
+            },
+            "11_10_ANmF1C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29939367,
+                "r_with_adapters": 4427478,
+                "r_written": 29939367,
+                "bp_processed": 4520844417,
+                "quality_trimmed": 6187542,
+                "bp_written": 4402603980,
+                "percent_trimmed": 2.6154502587032957
+            },
+            "11_10_ANmF1C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29939367,
+                "r_with_adapters": 4489771,
+                "r_written": 29939367,
+                "bp_processed": 4520844417,
+                "quality_trimmed": 6805875,
+                "bp_written": 4400382306,
+                "percent_trimmed": 2.6645931575751463
+            },
+            "03_12_ANmF2C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22379740,
+                "r_with_adapters": 6564576,
+                "r_written": 22379740,
+                "bp_processed": 3379340740,
+                "quality_trimmed": 5295291,
+                "bp_written": 3196255183,
+                "percent_trimmed": 5.417789180974985
+            },
+            "03_12_ANmF2C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22379740,
+                "r_with_adapters": 6515828,
+                "r_written": 22379740,
+                "bp_processed": 3379340740,
+                "quality_trimmed": 2455043,
+                "bp_written": 3200077976,
+                "percent_trimmed": 5.304666732127166
+            },
+            "5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29923481,
+                "r_with_adapters": 6451192,
+                "r_written": 29923481,
+                "bp_processed": 4518445631,
+                "quality_trimmed": 8233262,
+                "bp_written": 4347281407,
+                "percent_trimmed": 3.788121800684781
+            },
+            "5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29923481,
+                "r_with_adapters": 6248830,
+                "r_written": 29923481,
+                "bp_processed": 4518445631,
+                "quality_trimmed": 9253413,
+                "bp_written": 4350407804,
+                "percent_trimmed": 3.7189299312828226
+            },
+            "19_10_ANmF2C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28500181,
+                "r_with_adapters": 5934278,
+                "r_written": 28500181,
+                "bp_processed": 4303527331,
+                "quality_trimmed": 5289024,
+                "bp_written": 4146216118,
+                "percent_trimmed": 3.6554017414232614
+            },
+            "19_10_ANmF2C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28500181,
+                "r_with_adapters": 6075283,
+                "r_written": 28500181,
+                "bp_processed": 4303527331,
+                "quality_trimmed": 6375221,
+                "bp_written": 4143052398,
+                "percent_trimmed": 3.728916320434076
+            },
+            "19_01_ADN_F2C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23777855,
+                "r_with_adapters": 5427361,
+                "r_written": 23777855,
+                "bp_processed": 3590456105,
+                "quality_trimmed": 4475172,
+                "bp_written": 3450133197,
+                "percent_trimmed": 3.908219565881589
+            },
+            "19_01_ADN_F2C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23777855,
+                "r_with_adapters": 5520870,
+                "r_written": 23777855,
+                "bp_processed": 3590456105,
+                "quality_trimmed": 8674540,
+                "bp_written": 3444497946,
+                "percent_trimmed": 4.06517040541845
+            },
+            "19_01_ANmF2C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22234995,
+                "r_with_adapters": 12663286,
+                "r_written": 22234995,
+                "bp_processed": 3357484245,
+                "quality_trimmed": 2121663,
+                "bp_written": 2937591459,
+                "percent_trimmed": 12.506172936635776
+            },
+            "19_01_ANmF2C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22234995,
+                "r_with_adapters": 12499885,
+                "r_written": 22234995,
+                "bp_processed": 3357484245,
+                "quality_trimmed": 13455923,
+                "bp_written": 2932102826,
+                "percent_trimmed": 12.669647508651227
+            },
+            "8_4_MMmANmF1C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 19931435,
+                "r_with_adapters": 6502427,
+                "r_written": 19931435,
+                "bp_processed": 3009646685,
+                "quality_trimmed": 2245728,
+                "bp_written": 2834266017,
+                "percent_trimmed": 5.827284274732069
+            },
+            "8_4_MMmANmF2C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23385582,
+                "r_with_adapters": 8490947,
+                "r_written": 23385582,
+                "bp_processed": 3531222882,
+                "quality_trimmed": 2492930,
+                "bp_written": 3290126653,
+                "percent_trimmed": 6.827556261853653
+            },
+            "8_4_MMmANmF2C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23385582,
+                "r_with_adapters": 8373233,
+                "r_written": 23385582,
+                "bp_processed": 3531222882,
+                "quality_trimmed": 1983626,
+                "bp_written": 3291797735,
+                "percent_trimmed": 6.780233222333316
+            },
+            "8_4_MMmANmF1C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 19931435,
+                "r_with_adapters": 6388275,
+                "r_written": 19931435,
+                "bp_processed": 3009646685,
+                "quality_trimmed": 3948834,
+                "bp_written": 2835839285,
+                "percent_trimmed": 5.77501009890136
+            },
+            "19_10_AN_F1C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29750787,
+                "r_with_adapters": 5899868,
+                "r_written": 29750787,
+                "bp_processed": 4492368837,
+                "quality_trimmed": 9145371,
+                "bp_written": 4339921326,
+                "percent_trimmed": 3.3934771727649222
+            },
+            "19_10_AN_F1C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29750787,
+                "r_with_adapters": 5731488,
+                "r_written": 29750787,
+                "bp_processed": 4492368837,
+                "quality_trimmed": 7364683,
+                "bp_written": 4345380870,
+                "percent_trimmed": 3.27194788169171
+            },
+            "ANLCFA_F2C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24303939,
+                "r_with_adapters": 6688155,
+                "r_written": 24303939,
+                "bp_processed": 3669894789,
+                "quality_trimmed": 8168574,
+                "bp_written": 3481915538,
+                "percent_trimmed": 5.122197278337289
+            },
+            "ANLCFA_F2C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24303939,
+                "r_with_adapters": 6567376,
+                "r_written": 24303939,
+                "bp_processed": 3669894789,
+                "quality_trimmed": 4060421,
+                "bp_written": 3486873295,
+                "percent_trimmed": 4.9871046589286845
+            },
+            "18_03_ANmF2C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29860332,
+                "r_with_adapters": 12690749,
+                "r_written": 29860332,
+                "bp_processed": 4508910132,
+                "quality_trimmed": 11320215,
+                "bp_written": 4134281564,
+                "percent_trimmed": 8.308627961804763
+            },
+            "18_03_ANmF2C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29860332,
+                "r_with_adapters": 12796550,
+                "r_written": 29860332,
+                "bp_processed": 4508910132,
+                "quality_trimmed": 4368648,
+                "bp_written": 4132492927,
+                "percent_trimmed": 8.348296905022458
+            },
+            "7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22767204,
+                "r_with_adapters": 4819952,
+                "r_written": 22767204,
+                "bp_processed": 3437847804,
+                "quality_trimmed": 5223696,
+                "bp_written": 3311014822,
+                "percent_trimmed": 3.6893134667691645
+            },
+            "7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22767204,
+                "r_with_adapters": 4937921,
+                "r_written": 22767204,
+                "bp_processed": 3437847804,
+                "quality_trimmed": 12842300,
+                "bp_written": 3302505204,
+                "percent_trimmed": 3.9368409457372247
+            },
+            "8_4_MMmAN_F1C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23532430,
+                "r_with_adapters": 8322706,
+                "r_written": 23532430,
+                "bp_processed": 3553396930,
+                "quality_trimmed": 2603176,
+                "bp_written": 3325432525,
+                "percent_trimmed": 6.415393762384998
+            },
+            "8_4_MMmAN_F2C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24888581,
+                "r_with_adapters": 9795608,
+                "r_written": 24888581,
+                "bp_processed": 3758175731,
+                "quality_trimmed": 3051036,
+                "bp_written": 3480521202,
+                "percent_trimmed": 7.388013463812132
+            },
+            "8_4_MMmAN_F2C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24888581,
+                "r_with_adapters": 9933597,
+                "r_written": 24888581,
+                "bp_processed": 3758175731,
+                "quality_trimmed": 2757149,
+                "bp_written": 3478363747,
+                "percent_trimmed": 7.445420438749569
+            },
+            "8_4_MMmAN_F1C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23532430,
+                "r_with_adapters": 8138713,
+                "r_written": 23532430,
+                "bp_processed": 3553396930,
+                "quality_trimmed": 3038451,
+                "bp_written": 3327999795,
+                "percent_trimmed": 6.3431454307019965
+            },
+            "23_4MMmADNmF2C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23919591,
+                "r_with_adapters": 5029226,
+                "r_written": 23919591,
+                "bp_processed": 3611858241,
+                "quality_trimmed": 6272668,
+                "bp_written": 3483159965,
+                "percent_trimmed": 3.5632150381507737
+            },
+            "23_4MMmADNmF2C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23919591,
+                "r_with_adapters": 5120069,
+                "r_written": 23919591,
+                "bp_processed": 3611858241,
+                "quality_trimmed": 4277597,
+                "bp_written": 3482047326,
+                "percent_trimmed": 3.5940202061767463
+            }
+        }
+    ],
+    "report_general_stats_headers": [
+        {
+            "percent_trimmed": {
+                "title": "% BP Trimmed",
+                "description": "% Total Base Pairs trimmed",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "RdYlBu-rev",
+                "namespace": "Cutadapt",
+                "rid": "mqc-generalstats-cutadapt-percent_trimmed",
+                "format": "{:,.1f}",
+                "colour": "55,126,184",
+                "hidden": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            }
+        }
+    ],
+    "report_multiqc_command": "/home/george_a/.local/bin/multiqc /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report --profile-runtime -n /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports_txt -o /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports",
+    "report_plot_data": {
+        "multiqc_runtime_files_searched_plot": {
+            "plot_type": "bar_graph",
+            "samples": [
+                [
+                    "Skipped: Module specific max filesize",
+                    "cutadapt",
+                    "Skipped: Symlinks",
+                    "Skipped: Not a file",
+                    "Skipped: Ignore pattern",
+                    "Skipped: Filesize limit",
+                    "Skipped: No match",
+                    "Skipped: Directory fn ignore dirs",
+                    "Skipped: File contents search errors"
+                ]
+            ],
+            "datasets": [
+                [
+                    {
+                        "name": "skipped_module_specific_max_filesize",
+                        "data": [
+                            680.0,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN
+                        ],
+                        "color": "#999999"
+                    },
+                    {
+                        "name": "cutadapt",
+                        "data": [
+                            NaN,
+                            136.0,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN,
+                            NaN
+                        ],
+                        "color": "#7cb5ec"
+                    }
+                ]
+            ],
+            "config": {
+                "id": "multiqc_runtime_files_searched_plot",
+                "title": "MultiQC: Files searched",
+                "ylab": "Number of files",
+                "use_legend": false,
+                "cpswitch": false
+            }
+        }
+    },
+    "report_saved_raw_data": {
+        "multiqc_cutadapt": {
+            "2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29780434,
+                "r_with_adapters": 5612588,
+                "r_written": 29780434,
+                "bp_processed": 4496845534,
+                "quality_trimmed": 7751913,
+                "bp_written": 4353506240,
+                "percent_trimmed": 3.1875520943788773
+            },
+            "1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28723207,
+                "r_with_adapters": 4751358,
+                "r_written": 28723207,
+                "bp_processed": 4337204257,
+                "quality_trimmed": 6850713,
+                "bp_written": 4220330756,
+                "percent_trimmed": 2.6946736670603615
+            },
+            "2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29780434,
+                "r_with_adapters": 5504084,
+                "r_written": 29780434,
+                "bp_processed": 4496845534,
+                "quality_trimmed": 9360507,
+                "bp_written": 4354350617,
+                "percent_trimmed": 3.168774998443164
+            },
+            "1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28723207,
+                "r_with_adapters": 4658604,
+                "r_written": 28723207,
+                "bp_processed": 4337204257,
+                "quality_trimmed": 8753654,
+                "bp_written": 4220954550,
+                "percent_trimmed": 2.6802912685603775
+            },
+            "29_11_AN_F1C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23189344,
+                "r_with_adapters": 7804621,
+                "r_written": 23189344,
+                "bp_processed": 3501590944,
+                "quality_trimmed": 1632214,
+                "bp_written": 3268343026,
+                "percent_trimmed": 6.6611983447030525
+            },
+            "29_11_AN_F1C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23189344,
+                "r_with_adapters": 7923973,
+                "r_written": 23189344,
+                "bp_processed": 3501590944,
+                "quality_trimmed": 4936759,
+                "bp_written": 3264236670,
+                "percent_trimmed": 6.778469495607651
+            },
+            "19_01_ADNmF1C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25175324,
+                "r_with_adapters": 5851629,
+                "r_written": 25175324,
+                "bp_processed": 3801473924,
+                "quality_trimmed": 9364379,
+                "bp_written": 3648752319,
+                "percent_trimmed": 4.017431345137382
+            },
+            "19_01_ADNmF1C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25175324,
+                "r_with_adapters": 5786273,
+                "r_written": 25175324,
+                "bp_processed": 3801473924,
+                "quality_trimmed": 5703778,
+                "bp_written": 3654039154,
+                "percent_trimmed": 3.87835805131252
+            },
+            "10_3MMmADNmF1C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23562816,
+                "r_with_adapters": 3012282,
+                "r_written": 23562816,
+                "bp_processed": 3557985216,
+                "quality_trimmed": 4111391,
+                "bp_written": 3484122714,
+                "percent_trimmed": 2.0759642751702763
+            },
+            "10_3MMmADNmF1C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23562816,
+                "r_with_adapters": 3066263,
+                "r_written": 23562816,
+                "bp_processed": 3557985216,
+                "quality_trimmed": 4007612,
+                "bp_written": 3482589284,
+                "percent_trimmed": 2.119062543063698
+            },
+            "18_03_AN_F1C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29762498,
+                "r_with_adapters": 9893884,
+                "r_written": 29762498,
+                "bp_processed": 4494137198,
+                "quality_trimmed": 4364129,
+                "bp_written": 4224377605,
+                "percent_trimmed": 6.002477919900833
+            },
+            "18_03_AN_F1C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29762498,
+                "r_with_adapters": 10013324,
+                "r_written": 29762498,
+                "bp_processed": 4494137198,
+                "quality_trimmed": 5387613,
+                "bp_written": 4221620726,
+                "percent_trimmed": 6.063821819264362
+            },
+            "6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22760097,
+                "r_with_adapters": 5106563,
+                "r_written": 22760097,
+                "bp_processed": 3436774647,
+                "quality_trimmed": 13424780,
+                "bp_written": 3297741954,
+                "percent_trimmed": 4.045441068455368
+            },
+            "6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22760097,
+                "r_with_adapters": 5008724,
+                "r_written": 22760097,
+                "bp_processed": 3436774647,
+                "quality_trimmed": 5692706,
+                "bp_written": 3306141422,
+                "percent_trimmed": 3.8010413372326064
+            },
+            "ANLCFA_F1C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26205177,
+                "r_with_adapters": 6785128,
+                "r_written": 26205177,
+                "bp_processed": 3956981727,
+                "quality_trimmed": 12514604,
+                "bp_written": 3767742712,
+                "percent_trimmed": 4.782408109412025
+            },
+            "ANLCFA_F1C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26205177,
+                "r_with_adapters": 6673692,
+                "r_written": 26205177,
+                "bp_processed": 3956981727,
+                "quality_trimmed": 4361486,
+                "bp_written": 3776208757,
+                "percent_trimmed": 4.568456022086655
+            },
+            "19_01_AN_F1C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26285644,
+                "r_with_adapters": 6053596,
+                "r_written": 26285644,
+                "bp_processed": 3969132244,
+                "quality_trimmed": 3314395,
+                "bp_written": 3811685433,
+                "percent_trimmed": 3.966781687307267
+            },
+            "19_01_AN_F1C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26285644,
+                "r_with_adapters": 6254611,
+                "r_written": 26285644,
+                "bp_processed": 3969132244,
+                "quality_trimmed": 6520120,
+                "bp_written": 3806916409,
+                "percent_trimmed": 4.086934499227535
+            },
+            "19_01_AN_F2C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25640410,
+                "r_with_adapters": 6868540,
+                "r_written": 25640410,
+                "bp_processed": 3871701910,
+                "quality_trimmed": 6464620,
+                "bp_written": 3686926952,
+                "percent_trimmed": 4.772447938792891
+            },
+            "19_01_AN_F2C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25640410,
+                "r_with_adapters": 7041812,
+                "r_written": 25640410,
+                "bp_processed": 3871701910,
+                "quality_trimmed": 6393692,
+                "bp_written": 3682308116,
+                "percent_trimmed": 4.891745242856261
+            },
+            "19_4_MMmANmF1C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28568819,
+                "r_with_adapters": 8038354,
+                "r_written": 28568819,
+                "bp_processed": 4313891669,
+                "quality_trimmed": 4112491,
+                "bp_written": 4098634396,
+                "percent_trimmed": 4.989862739179508
+            },
+            "19_4_MMmANmF2C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22698369,
+                "r_with_adapters": 5940357,
+                "r_written": 22698369,
+                "bp_processed": 3427453719,
+                "quality_trimmed": 2747635,
+                "bp_written": 3275984443,
+                "percent_trimmed": 4.419294567285738
+            },
+            "19_4_MMmANmF1C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28568819,
+                "r_with_adapters": 8114008,
+                "r_written": 28568819,
+                "bp_processed": 4313891669,
+                "quality_trimmed": 3234245,
+                "bp_written": 4097582700,
+                "percent_trimmed": 5.01424202546427
+            },
+            "19_4_MMmANmF2C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22698369,
+                "r_with_adapters": 5889448,
+                "r_written": 22698369,
+                "bp_processed": 3427453719,
+                "quality_trimmed": 2954197,
+                "bp_written": 3276797044,
+                "percent_trimmed": 4.395585975817519
+            },
+            "11_10_ANmF2C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29746213,
+                "r_with_adapters": 4958082,
+                "r_written": 29746213,
+                "bp_processed": 4491678163,
+                "quality_trimmed": 7574752,
+                "bp_written": 4369667260,
+                "percent_trimmed": 2.7163767877462686
+            },
+            "11_10_ANmF2C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29746213,
+                "r_with_adapters": 5021867,
+                "r_written": 29746213,
+                "bp_processed": 4491678163,
+                "quality_trimmed": 7173914,
+                "bp_written": 4367241840,
+                "percent_trimmed": 2.770374868463166
+            },
+            "19_01_AN_F2C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29948479,
+                "r_with_adapters": 5684078,
+                "r_written": 29948479,
+                "bp_processed": 4522220329,
+                "quality_trimmed": 5440559,
+                "bp_written": 4379884769,
+                "percent_trimmed": 3.1474707034337426
+            },
+            "19_01_AN_F2C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29948479,
+                "r_with_adapters": 5749600,
+                "r_written": 29948479,
+                "bp_processed": 4522220329,
+                "quality_trimmed": 8682286,
+                "bp_written": 4375107854,
+                "percent_trimmed": 3.253102774683493
+            },
+            "03_12_AN_F2C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22885775,
+                "r_with_adapters": 5233106,
+                "r_written": 22885775,
+                "bp_processed": 3455752025,
+                "quality_trimmed": 2561018,
+                "bp_written": 3313594228,
+                "percent_trimmed": 4.113657344959525
+            },
+            "03_12_AN_F2C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22885775,
+                "r_with_adapters": 5277707,
+                "r_written": 22885775,
+                "bp_processed": 3455752025,
+                "quality_trimmed": 5737804,
+                "bp_written": 3309471178,
+                "percent_trimmed": 4.232967120955387
+            },
+            "19_01_ADNmF2C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26666378,
+                "r_with_adapters": 5471066,
+                "r_written": 26666378,
+                "bp_processed": 4026623078,
+                "quality_trimmed": 8687813,
+                "bp_written": 3887082636,
+                "percent_trimmed": 3.465445841265801
+            },
+            "19_01_ADNmF2C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26666378,
+                "r_with_adapters": 5389317,
+                "r_written": 26666378,
+                "bp_processed": 4026623078,
+                "quality_trimmed": 7199777,
+                "bp_written": 3890912403,
+                "percent_trimmed": 3.370334704071847
+            },
+            "ANLCFAmF1C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29672350,
+                "r_with_adapters": 7812610,
+                "r_written": 29672350,
+                "bp_processed": 4480524850,
+                "quality_trimmed": 10945858,
+                "bp_written": 4260322723,
+                "percent_trimmed": 4.914650278080703
+            },
+            "ANLCFAmF1C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29672350,
+                "r_with_adapters": 7695544,
+                "r_written": 29672350,
+                "bp_processed": 4480524850,
+                "quality_trimmed": 6501607,
+                "bp_written": 4265543488,
+                "percent_trimmed": 4.798128995981353
+            },
+            "03_12_ANmF1C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23923290,
+                "r_with_adapters": 7469234,
+                "r_written": 23923290,
+                "bp_processed": 3612416790,
+                "quality_trimmed": 2672683,
+                "bp_written": 3396325871,
+                "percent_trimmed": 5.981893329645387
+            },
+            "03_12_ANmF1C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23923290,
+                "r_with_adapters": 7503336,
+                "r_written": 23923290,
+                "bp_processed": 3612416790,
+                "quality_trimmed": 8516790,
+                "bp_written": 3390264425,
+                "percent_trimmed": 6.149688087348304
+            },
+            "16_3MMmADNmF2C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393619,
+                "r_with_adapters": 4590699,
+                "r_written": 26393619,
+                "bp_processed": 3985436469,
+                "quality_trimmed": 4986982,
+                "bp_written": 3875724689,
+                "percent_trimmed": 2.7528171846013185
+            },
+            "16_3MMmADNmF2C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393619,
+                "r_with_adapters": 4643768,
+                "r_written": 26393619,
+                "bp_processed": 3985436469,
+                "quality_trimmed": 7596367,
+                "bp_written": 3871695100,
+                "percent_trimmed": 2.853925031416678
+            },
+            "19_01_ANmF1C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26436403,
+                "r_with_adapters": 6202991,
+                "r_written": 26436403,
+                "bp_processed": 3991896853,
+                "quality_trimmed": 4261871,
+                "bp_written": 3832227924,
+                "percent_trimmed": 3.999826019552715
+            },
+            "19_01_ANmF1C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26436403,
+                "r_with_adapters": 6398794,
+                "r_written": 26436403,
+                "bp_processed": 3991896853,
+                "quality_trimmed": 6189248,
+                "bp_written": 3827697338,
+                "percent_trimmed": 4.1133205853402846
+            },
+            "12_1_C15R_F2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29831860,
+                "r_with_adapters": 7132748,
+                "r_written": 29831860,
+                "bp_processed": 4504610860,
+                "quality_trimmed": 11082326,
+                "bp_written": 4299180586,
+                "percent_trimmed": 4.560444406511953
+            },
+            "12_1_C15R_F2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29831860,
+                "r_with_adapters": 7378226,
+                "r_written": 29831860,
+                "bp_processed": 4504610860,
+                "quality_trimmed": 5986559,
+                "bp_written": 4296218880,
+                "percent_trimmed": 4.626192727333611
+            },
+            "19_01_ANmF2C12_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23639771,
+                "r_with_adapters": 5984154,
+                "r_written": 23639771,
+                "bp_processed": 3569605421,
+                "quality_trimmed": 4141153,
+                "bp_written": 3412399565,
+                "percent_trimmed": 4.404012137452432
+            },
+            "19_01_ANmF2C12_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23639771,
+                "r_with_adapters": 6157453,
+                "r_written": 23639771,
+                "bp_processed": 3569605421,
+                "quality_trimmed": 5481950,
+                "bp_written": 3408523401,
+                "percent_trimmed": 4.5126001616972555
+            },
+            "11_10_AN_F2C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27768463,
+                "r_with_adapters": 3821589,
+                "r_written": 27768463,
+                "bp_processed": 4193037913,
+                "quality_trimmed": 6036237,
+                "bp_written": 4092993668,
+                "percent_trimmed": 2.3859608969865285
+            },
+            "11_10_AN_F2C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27768463,
+                "r_with_adapters": 3762694,
+                "r_written": 27768463,
+                "bp_processed": 4193037913,
+                "quality_trimmed": 5271633,
+                "bp_written": 4094916401,
+                "percent_trimmed": 2.340105528161009
+            },
+            "19_01_ADN_F1C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24536082,
+                "r_with_adapters": 4609833,
+                "r_written": 24536082,
+                "bp_processed": 3704948382,
+                "quality_trimmed": 5085971,
+                "bp_written": 3590477420,
+                "percent_trimmed": 3.0896776472282848
+            },
+            "19_01_ADN_F1C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24536082,
+                "r_with_adapters": 4708352,
+                "r_written": 24536082,
+                "bp_processed": 3704948382,
+                "quality_trimmed": 7746509,
+                "bp_written": 3585650294,
+                "percent_trimmed": 3.219966264026617
+            },
+            "ANLCFAmF2C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24163661,
+                "r_with_adapters": 5759904,
+                "r_written": 24163661,
+                "bp_processed": 3648712811,
+                "quality_trimmed": 10303490,
+                "bp_written": 3490613610,
+                "percent_trimmed": 4.3330130155316295
+            },
+            "ANLCFAmF2C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24163661,
+                "r_with_adapters": 5670466,
+                "r_written": 24163661,
+                "bp_processed": 3648712811,
+                "quality_trimmed": 5452566,
+                "bp_written": 3496101925,
+                "percent_trimmed": 4.1825951754798165
+            },
+            "16_3MMmADN_F2C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25424843,
+                "r_with_adapters": 4169231,
+                "r_written": 25424843,
+                "bp_processed": 3839151293,
+                "quality_trimmed": 5885530,
+                "bp_written": 3740098251,
+                "percent_trimmed": 2.5800765440165216
+            },
+            "16_3MMmADN_F2C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25424843,
+                "r_with_adapters": 4220433,
+                "r_written": 25424843,
+                "bp_processed": 3839151293,
+                "quality_trimmed": 5200398,
+                "bp_written": 3738654627,
+                "percent_trimmed": 2.617679229866183
+            },
+            "8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27644491,
+                "r_with_adapters": 6458565,
+                "r_written": 27644491,
+                "bp_processed": 4174318141,
+                "quality_trimmed": 11304741,
+                "bp_written": 4000950075,
+                "percent_trimmed": 4.153206826695484
+            },
+            "8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 27644491,
+                "r_with_adapters": 6601357,
+                "r_written": 27644491,
+                "bp_processed": 4174318141,
+                "quality_trimmed": 8949165,
+                "bp_written": 3998358146,
+                "percent_trimmed": 4.2152990993122295
+            },
+            "18_03_AN_F2C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29586410,
+                "r_with_adapters": 10643625,
+                "r_written": 29586410,
+                "bp_processed": 4467547910,
+                "quality_trimmed": 9820941,
+                "bp_written": 4163772085,
+                "percent_trimmed": 6.7996097886278735
+            },
+            "18_03_AN_F2C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29586410,
+                "r_with_adapters": 10749445,
+                "r_written": 29586410,
+                "bp_processed": 4467547910,
+                "quality_trimmed": 5918448,
+                "bp_written": 4160999515,
+                "percent_trimmed": 6.8616700072501295
+            },
+            "29_11_ANmF1C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24720775,
+                "r_with_adapters": 9001149,
+                "r_written": 24720775,
+                "bp_processed": 3732837025,
+                "quality_trimmed": 2290600,
+                "bp_written": 3471458548,
+                "percent_trimmed": 7.002140067982207
+            },
+            "29_11_ANmF1C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24720775,
+                "r_with_adapters": 9126019,
+                "r_written": 24720775,
+                "bp_processed": 3732837025,
+                "quality_trimmed": 5952883,
+                "bp_written": 3466794613,
+                "percent_trimmed": 7.127083508286837
+            },
+            "23_4MMmADNmF1C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21913278,
+                "r_with_adapters": 5795045,
+                "r_written": 21913278,
+                "bp_processed": 3308904978,
+                "quality_trimmed": 3796614,
+                "bp_written": 3154754690,
+                "percent_trimmed": 4.658649584225081
+            },
+            "23_4MMmADNmF1C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21913278,
+                "r_with_adapters": 5718924,
+                "r_written": 21913278,
+                "bp_processed": 3308904978,
+                "quality_trimmed": 4704518,
+                "bp_written": 3156935032,
+                "percent_trimmed": 4.592756425778511
+            },
+            "19_10_AN_F2C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29000544,
+                "r_with_adapters": 6577839,
+                "r_written": 29000544,
+                "bp_processed": 4379082144,
+                "quality_trimmed": 8692445,
+                "bp_written": 4200025421,
+                "percent_trimmed": 4.088909892803326
+            },
+            "19_10_AN_F2C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29000544,
+                "r_with_adapters": 6455526,
+                "r_written": 29000544,
+                "bp_processed": 4379082144,
+                "quality_trimmed": 4849532,
+                "bp_written": 4204666443,
+                "percent_trimmed": 3.982928277309794
+            },
+            "23_4MMmADN_F2C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25730058,
+                "r_with_adapters": 5275217,
+                "r_written": 25730058,
+                "bp_processed": 3885238758,
+                "quality_trimmed": 4908140,
+                "bp_written": 3752551421,
+                "percent_trimmed": 3.415165586073359
+            },
+            "23_4MMmADN_F2C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25730058,
+                "r_with_adapters": 5180981,
+                "r_written": 25730058,
+                "bp_processed": 3885238758,
+                "quality_trimmed": 3602828,
+                "bp_written": 3755929647,
+                "percent_trimmed": 3.328215305526405
+            },
+            "29_11_ANmF2C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21208240,
+                "r_with_adapters": 6969172,
+                "r_written": 21208240,
+                "bp_processed": 3202444240,
+                "quality_trimmed": 3948504,
+                "bp_written": 3004859014,
+                "percent_trimmed": 6.169825645426382
+            },
+            "29_11_ANmF2C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 21208240,
+                "r_with_adapters": 6851352,
+                "r_written": 21208240,
+                "bp_processed": 3202444240,
+                "quality_trimmed": 1465911,
+                "bp_written": 3008219829,
+                "percent_trimmed": 6.064880336526953
+            },
+            "12_1_C11R6_F2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29596055,
+                "r_with_adapters": 7372767,
+                "r_written": 29596055,
+                "bp_processed": 4469004305,
+                "quality_trimmed": 10355401,
+                "bp_written": 4260898089,
+                "percent_trimmed": 4.6566573177646555
+            },
+            "12_1_C11R6_F2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29596055,
+                "r_with_adapters": 7521650,
+                "r_written": 29596055,
+                "bp_processed": 4469004305,
+                "quality_trimmed": 6733593,
+                "bp_written": 4260464498,
+                "percent_trimmed": 4.666359501302829
+            },
+            "12_1_C11R6mF1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29864720,
+                "r_with_adapters": 7414210,
+                "r_written": 29864720,
+                "bp_processed": 4509572720,
+                "quality_trimmed": 11231245,
+                "bp_written": 4299933401,
+                "percent_trimmed": 4.648762355472116
+            },
+            "12_1_C11R6mF1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29864720,
+                "r_with_adapters": 7558095,
+                "r_written": 29864720,
+                "bp_processed": 4509572720,
+                "quality_trimmed": 7109713,
+                "bp_written": 4298852201,
+                "percent_trimmed": 4.672738019401536
+            },
+            "3_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29835619,
+                "r_with_adapters": 6177493,
+                "r_written": 29835619,
+                "bp_processed": 4505178469,
+                "quality_trimmed": 8637106,
+                "bp_written": 4339260750,
+                "percent_trimmed": 3.6828223374872926
+            },
+            "3_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29835619,
+                "r_with_adapters": 6076709,
+                "r_written": 29835619,
+                "bp_processed": 4505178469,
+                "quality_trimmed": 11980993,
+                "bp_written": 4340696736,
+                "percent_trimmed": 3.650948217296916
+            },
+            "23_4MMmADN_F1C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 20748213,
+                "r_with_adapters": 4684325,
+                "r_written": 20748213,
+                "bp_processed": 3132980163,
+                "quality_trimmed": 4861704,
+                "bp_written": 3014793180,
+                "percent_trimmed": 3.7723501857997563
+            },
+            "23_4MMmADN_F1C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 20748213,
+                "r_with_adapters": 4777506,
+                "r_written": 20748213,
+                "bp_processed": 3132980163,
+                "quality_trimmed": 3407171,
+                "bp_written": 3012803699,
+                "percent_trimmed": 3.835851417741645
+            },
+            "19_01_AN_F1C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28509069,
+                "r_with_adapters": 4680243,
+                "r_written": 28509069,
+                "bp_processed": 4304869419,
+                "quality_trimmed": 8387087,
+                "bp_written": 4187062203,
+                "percent_trimmed": 2.7366037046337643
+            },
+            "19_01_AN_F1C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28509069,
+                "r_with_adapters": 4623541,
+                "r_written": 28509069,
+                "bp_processed": 4304869419,
+                "quality_trimmed": 5092483,
+                "bp_written": 4191542061,
+                "percent_trimmed": 2.632538805934917
+            },
+            "11_10_AN_F1C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29774152,
+                "r_with_adapters": 4309130,
+                "r_written": 29774152,
+                "bp_processed": 4495896952,
+                "quality_trimmed": 6061110,
+                "bp_written": 4385357394,
+                "percent_trimmed": 2.4586764149660163
+            },
+            "11_10_AN_F1C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29774152,
+                "r_with_adapters": 4373302,
+                "r_written": 29774152,
+                "bp_processed": 4495896952,
+                "quality_trimmed": 5778739,
+                "bp_written": 4383795032,
+                "percent_trimmed": 2.493427255936804
+            },
+            "19_01_ANmF1C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24542403,
+                "r_with_adapters": 16610221,
+                "r_written": 24542403,
+                "bp_processed": 3705902853,
+                "quality_trimmed": 2263965,
+                "bp_written": 3108918046,
+                "percent_trimmed": 16.109024728393223
+            },
+            "19_01_ANmF1C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24542403,
+                "r_with_adapters": 16550703,
+                "r_written": 24542403,
+                "bp_processed": 3705902853,
+                "quality_trimmed": 4705500,
+                "bp_written": 3109409637,
+                "percent_trimmed": 16.095759647804236
+            },
+            "10_3MMmADN_F1C1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393692,
+                "r_with_adapters": 4205639,
+                "r_written": 26393692,
+                "bp_processed": 3985447492,
+                "quality_trimmed": 4723081,
+                "bp_written": 3881739104,
+                "percent_trimmed": 2.602176749491096
+            },
+            "10_3MMmADN_F1C1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 26393692,
+                "r_with_adapters": 4265944,
+                "r_written": 26393692,
+                "bp_processed": 3985447492,
+                "quality_trimmed": 4035108,
+                "bp_written": 3880740034,
+                "percent_trimmed": 2.6272446998782337
+            },
+            "12_1_C11R6mF2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29654716,
+                "r_with_adapters": 5901008,
+                "r_written": 29654716,
+                "bp_processed": 4477862116,
+                "quality_trimmed": 11418939,
+                "bp_written": 4313379183,
+                "percent_trimmed": 3.6732469365744977
+            },
+            "12_1_C11R6mF2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29654716,
+                "r_with_adapters": 6028440,
+                "r_written": 29654716,
+                "bp_processed": 4477862116,
+                "quality_trimmed": 6393178,
+                "bp_written": 4313646791,
+                "percent_trimmed": 3.6672706918160047
+            },
+            "03_12_AN_F1C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25004506,
+                "r_with_adapters": 6293392,
+                "r_written": 25004506,
+                "bp_processed": 3775680406,
+                "quality_trimmed": 8137917,
+                "bp_written": 3606911475,
+                "percent_trimmed": 4.469894505154788
+            },
+            "03_12_AN_F1C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25004506,
+                "r_with_adapters": 6234140,
+                "r_written": 25004506,
+                "bp_processed": 3775680406,
+                "quality_trimmed": 5158503,
+                "bp_written": 3613433791,
+                "percent_trimmed": 4.297149058012724
+            },
+            "12_1_C11R6_F1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29717693,
+                "r_with_adapters": 6178222,
+                "r_written": 29717693,
+                "bp_processed": 4487371643,
+                "quality_trimmed": 5557519,
+                "bp_written": 4324634921,
+                "percent_trimmed": 3.6265487895092976
+            },
+            "12_1_C11R6_F1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29717693,
+                "r_with_adapters": 6038489,
+                "r_written": 29717693,
+                "bp_processed": 4487371643,
+                "quality_trimmed": 10009234,
+                "bp_written": 4323659287,
+                "percent_trimmed": 3.6482905590264703
+            },
+            "19_10_ANmF1C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25574101,
+                "r_with_adapters": 3839922,
+                "r_written": 25574101,
+                "bp_processed": 3861689251,
+                "quality_trimmed": 8594562,
+                "bp_written": 3763416559,
+                "percent_trimmed": 2.544810978111506
+            },
+            "19_10_ANmF1C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25574101,
+                "r_with_adapters": 3737648,
+                "r_written": 25574101,
+                "bp_processed": 3861689251,
+                "quality_trimmed": 4846061,
+                "bp_written": 3768598128,
+                "percent_trimmed": 2.4106321598998077
+            },
+            "4_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29803769,
+                "r_with_adapters": 5883662,
+                "r_written": 29803769,
+                "bp_processed": 4500369119,
+                "quality_trimmed": 10569411,
+                "bp_written": 4335100362,
+                "percent_trimmed": 3.6723378156306294
+            },
+            "4_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29803769,
+                "r_with_adapters": 5995970,
+                "r_written": 29803769,
+                "bp_processed": 4500369119,
+                "quality_trimmed": 8284600,
+                "bp_written": 4334181364,
+                "percent_trimmed": 3.692758318387172
+            },
+            "29_11_AN_F2C15_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29893975,
+                "r_with_adapters": 13002265,
+                "r_written": 29893975,
+                "bp_processed": 4513990225,
+                "quality_trimmed": 4339587,
+                "bp_written": 4122971122,
+                "percent_trimmed": 8.662382581920633
+            },
+            "29_11_AN_F2C15_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29893975,
+                "r_with_adapters": 12835552,
+                "r_written": 29893975,
+                "bp_processed": 4513990225,
+                "quality_trimmed": 5216612,
+                "bp_written": 4125490245,
+                "percent_trimmed": 8.606575571394819
+            },
+            "18_03_ANmF1C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29911154,
+                "r_with_adapters": 12717938,
+                "r_written": 29911154,
+                "bp_processed": 4516584254,
+                "quality_trimmed": 4474280,
+                "bp_written": 4137680726,
+                "percent_trimmed": 8.389161071542805
+            },
+            "18_03_ANmF1C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29911154,
+                "r_with_adapters": 12608912,
+                "r_written": 29911154,
+                "bp_processed": 4516584254,
+                "quality_trimmed": 5241180,
+                "bp_written": 4139137617,
+                "percent_trimmed": 8.356904593681028
+            },
+            "12_1_C15R_F1_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29731220,
+                "r_with_adapters": 6413189,
+                "r_written": 29731220,
+                "bp_processed": 4489414220,
+                "quality_trimmed": 6629569,
+                "bp_written": 4306413091,
+                "percent_trimmed": 4.076280780346439
+            },
+            "12_1_C15R_F1_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29731220,
+                "r_with_adapters": 6648272,
+                "r_written": 29731220,
+                "bp_processed": 4489414220,
+                "quality_trimmed": 7113357,
+                "bp_written": 4302798640,
+                "percent_trimmed": 4.156791306283162
+            },
+            "19_4_MMmAN_F2C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29933374,
+                "r_with_adapters": 8278245,
+                "r_written": 29933374,
+                "bp_processed": 4519939474,
+                "quality_trimmed": 3139084,
+                "bp_written": 4299719722,
+                "percent_trimmed": 4.87218364906804
+            },
+            "19_4_MMmAN_F1C5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25943449,
+                "r_with_adapters": 7186594,
+                "r_written": 25943449,
+                "bp_processed": 3917460799,
+                "quality_trimmed": 2937976,
+                "bp_written": 3725435854,
+                "percent_trimmed": 4.9017706839342905
+            },
+            "19_4_MMmAN_F1C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 25943449,
+                "r_with_adapters": 7119253,
+                "r_written": 25943449,
+                "bp_processed": 3917460799,
+                "quality_trimmed": 3475413,
+                "bp_written": 3726760209,
+                "percent_trimmed": 4.867964219289179
+            },
+            "19_4_MMmAN_F2C5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29933374,
+                "r_with_adapters": 8204800,
+                "r_written": 29933374,
+                "bp_processed": 4519939474,
+                "quality_trimmed": 4083564,
+                "bp_written": 4300430309,
+                "percent_trimmed": 4.85646248722312
+            },
+            "11_10_ANmF1C7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29939367,
+                "r_with_adapters": 4427478,
+                "r_written": 29939367,
+                "bp_processed": 4520844417,
+                "quality_trimmed": 6187542,
+                "bp_written": 4402603980,
+                "percent_trimmed": 2.6154502587032957
+            },
+            "11_10_ANmF1C7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29939367,
+                "r_with_adapters": 4489771,
+                "r_written": 29939367,
+                "bp_processed": 4520844417,
+                "quality_trimmed": 6805875,
+                "bp_written": 4400382306,
+                "percent_trimmed": 2.6645931575751463
+            },
+            "03_12_ANmF2C14_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22379740,
+                "r_with_adapters": 6564576,
+                "r_written": 22379740,
+                "bp_processed": 3379340740,
+                "quality_trimmed": 5295291,
+                "bp_written": 3196255183,
+                "percent_trimmed": 5.417789180974985
+            },
+            "03_12_ANmF2C14_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22379740,
+                "r_with_adapters": 6515828,
+                "r_written": 22379740,
+                "bp_processed": 3379340740,
+                "quality_trimmed": 2455043,
+                "bp_written": 3200077976,
+                "percent_trimmed": 5.304666732127166
+            },
+            "5_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29923481,
+                "r_with_adapters": 6451192,
+                "r_written": 29923481,
+                "bp_processed": 4518445631,
+                "quality_trimmed": 8233262,
+                "bp_written": 4347281407,
+                "percent_trimmed": 3.788121800684781
+            },
+            "5_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29923481,
+                "r_with_adapters": 6248830,
+                "r_written": 29923481,
+                "bp_processed": 4518445631,
+                "quality_trimmed": 9253413,
+                "bp_written": 4350407804,
+                "percent_trimmed": 3.7189299312828226
+            },
+            "19_10_ANmF2C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28500181,
+                "r_with_adapters": 5934278,
+                "r_written": 28500181,
+                "bp_processed": 4303527331,
+                "quality_trimmed": 5289024,
+                "bp_written": 4146216118,
+                "percent_trimmed": 3.6554017414232614
+            },
+            "19_10_ANmF2C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 28500181,
+                "r_with_adapters": 6075283,
+                "r_written": 28500181,
+                "bp_processed": 4303527331,
+                "quality_trimmed": 6375221,
+                "bp_written": 4143052398,
+                "percent_trimmed": 3.728916320434076
+            },
+            "19_01_ADN_F2C2r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23777855,
+                "r_with_adapters": 5427361,
+                "r_written": 23777855,
+                "bp_processed": 3590456105,
+                "quality_trimmed": 4475172,
+                "bp_written": 3450133197,
+                "percent_trimmed": 3.908219565881589
+            },
+            "19_01_ADN_F2C2r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23777855,
+                "r_with_adapters": 5520870,
+                "r_written": 23777855,
+                "bp_processed": 3590456105,
+                "quality_trimmed": 8674540,
+                "bp_written": 3444497946,
+                "percent_trimmed": 4.06517040541845
+            },
+            "19_01_ANmF2C11_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22234995,
+                "r_with_adapters": 12663286,
+                "r_written": 22234995,
+                "bp_processed": 3357484245,
+                "quality_trimmed": 2121663,
+                "bp_written": 2937591459,
+                "percent_trimmed": 12.506172936635776
+            },
+            "19_01_ANmF2C11_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22234995,
+                "r_with_adapters": 12499885,
+                "r_written": 22234995,
+                "bp_processed": 3357484245,
+                "quality_trimmed": 13455923,
+                "bp_written": 2932102826,
+                "percent_trimmed": 12.669647508651227
+            },
+            "8_4_MMmANmF1C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 19931435,
+                "r_with_adapters": 6502427,
+                "r_written": 19931435,
+                "bp_processed": 3009646685,
+                "quality_trimmed": 2245728,
+                "bp_written": 2834266017,
+                "percent_trimmed": 5.827284274732069
+            },
+            "8_4_MMmANmF2C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23385582,
+                "r_with_adapters": 8490947,
+                "r_written": 23385582,
+                "bp_processed": 3531222882,
+                "quality_trimmed": 2492930,
+                "bp_written": 3290126653,
+                "percent_trimmed": 6.827556261853653
+            },
+            "8_4_MMmANmF2C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23385582,
+                "r_with_adapters": 8373233,
+                "r_written": 23385582,
+                "bp_processed": 3531222882,
+                "quality_trimmed": 1983626,
+                "bp_written": 3291797735,
+                "percent_trimmed": 6.780233222333316
+            },
+            "8_4_MMmANmF1C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 19931435,
+                "r_with_adapters": 6388275,
+                "r_written": 19931435,
+                "bp_processed": 3009646685,
+                "quality_trimmed": 3948834,
+                "bp_written": 2835839285,
+                "percent_trimmed": 5.77501009890136
+            },
+            "19_10_AN_F1C8_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29750787,
+                "r_with_adapters": 5899868,
+                "r_written": 29750787,
+                "bp_processed": 4492368837,
+                "quality_trimmed": 9145371,
+                "bp_written": 4339921326,
+                "percent_trimmed": 3.3934771727649222
+            },
+            "19_10_AN_F1C8_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29750787,
+                "r_with_adapters": 5731488,
+                "r_written": 29750787,
+                "bp_processed": 4492368837,
+                "quality_trimmed": 7364683,
+                "bp_written": 4345380870,
+                "percent_trimmed": 3.27194788169171
+            },
+            "ANLCFA_F2C12R_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24303939,
+                "r_with_adapters": 6688155,
+                "r_written": 24303939,
+                "bp_processed": 3669894789,
+                "quality_trimmed": 8168574,
+                "bp_written": 3481915538,
+                "percent_trimmed": 5.122197278337289
+            },
+            "ANLCFA_F2C12R_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24303939,
+                "r_with_adapters": 6567376,
+                "r_written": 24303939,
+                "bp_processed": 3669894789,
+                "quality_trimmed": 4060421,
+                "bp_written": 3486873295,
+                "percent_trimmed": 4.9871046589286845
+            },
+            "18_03_ANmF2C8r_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29860332,
+                "r_with_adapters": 12690749,
+                "r_written": 29860332,
+                "bp_processed": 4508910132,
+                "quality_trimmed": 11320215,
+                "bp_written": 4134281564,
+                "percent_trimmed": 8.308627961804763
+            },
+            "18_03_ANmF2C8r_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 29860332,
+                "r_with_adapters": 12796550,
+                "r_written": 29860332,
+                "bp_processed": 4508910132,
+                "quality_trimmed": 4368648,
+                "bp_written": 4132492927,
+                "percent_trimmed": 8.348296905022458
+            },
+            "7_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22767204,
+                "r_with_adapters": 4819952,
+                "r_written": 22767204,
+                "bp_processed": 3437847804,
+                "quality_trimmed": 5223696,
+                "bp_written": 3311014822,
+                "percent_trimmed": 3.6893134667691645
+            },
+            "7_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 22767204,
+                "r_with_adapters": 4937921,
+                "r_written": 22767204,
+                "bp_processed": 3437847804,
+                "quality_trimmed": 12842300,
+                "bp_written": 3302505204,
+                "percent_trimmed": 3.9368409457372247
+            },
+            "8_4_MMmAN_F1C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23532430,
+                "r_with_adapters": 8322706,
+                "r_written": 23532430,
+                "bp_processed": 3553396930,
+                "quality_trimmed": 2603176,
+                "bp_written": 3325432525,
+                "percent_trimmed": 6.415393762384998
+            },
+            "8_4_MMmAN_F2C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24888581,
+                "r_with_adapters": 9795608,
+                "r_written": 24888581,
+                "bp_processed": 3758175731,
+                "quality_trimmed": 3051036,
+                "bp_written": 3480521202,
+                "percent_trimmed": 7.388013463812132
+            },
+            "8_4_MMmAN_F2C6_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 24888581,
+                "r_with_adapters": 9933597,
+                "r_written": 24888581,
+                "bp_processed": 3758175731,
+                "quality_trimmed": 2757149,
+                "bp_written": 3478363747,
+                "percent_trimmed": 7.445420438749569
+            },
+            "8_4_MMmAN_F1C6_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23532430,
+                "r_with_adapters": 8138713,
+                "r_written": 23532430,
+                "bp_processed": 3553396930,
+                "quality_trimmed": 3038451,
+                "bp_written": 3327999795,
+                "percent_trimmed": 6.3431454307019965
+            },
+            "23_4MMmADNmF2C2_1": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23919591,
+                "r_with_adapters": 5029226,
+                "r_written": 23919591,
+                "bp_processed": 3611858241,
+                "quality_trimmed": 6272668,
+                "bp_written": 3483159965,
+                "percent_trimmed": 3.5632150381507737
+            },
+            "23_4MMmADNmF2C2_2": {
+                "cutadapt_version": "3.5",
+                "r_processed": 23919591,
+                "r_with_adapters": 5120069,
+                "r_written": 23919591,
+                "bp_processed": 3611858241,
+                "quality_trimmed": 4277597,
+                "bp_written": 3482047326,
+                "percent_trimmed": 3.5940202061767463
+            }
+        },
+        "multiqc_general_stats": {
+            "2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.1875520943788773
+            },
+            "1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.6946736670603615
+            },
+            "2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.168774998443164
+            },
+            "1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.6802912685603775
+            },
+            "29_11_AN_F1C15_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.6611983447030525
+            },
+            "29_11_AN_F1C15_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.778469495607651
+            },
+            "19_01_ADNmF1C2r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.017431345137382
+            },
+            "19_01_ADNmF1C2r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.87835805131252
+            },
+            "10_3MMmADNmF1C1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.0759642751702763
+            },
+            "10_3MMmADNmF1C1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.119062543063698
+            },
+            "18_03_AN_F1C8r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.002477919900833
+            },
+            "18_03_AN_F1C8r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.063821819264362
+            },
+            "6_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.045441068455368
+            },
+            "6_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.8010413372326064
+            },
+            "ANLCFA_F1C12R_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.782408109412025
+            },
+            "ANLCFA_F1C12R_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.568456022086655
+            },
+            "19_01_AN_F1C12_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.966781687307267
+            },
+            "19_01_AN_F1C12_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.086934499227535
+            },
+            "19_01_AN_F2C12_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.772447938792891
+            },
+            "19_01_AN_F2C12_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.891745242856261
+            },
+            "19_4_MMmANmF1C5_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.989862739179508
+            },
+            "19_4_MMmANmF2C5_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.419294567285738
+            },
+            "19_4_MMmANmF1C5_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.01424202546427
+            },
+            "19_4_MMmANmF2C5_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.395585975817519
+            },
+            "11_10_ANmF2C7_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.7163767877462686
+            },
+            "11_10_ANmF2C7_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.770374868463166
+            },
+            "19_01_AN_F2C11_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.1474707034337426
+            },
+            "19_01_AN_F2C11_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.253102774683493
+            },
+            "03_12_AN_F2C14_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.113657344959525
+            },
+            "03_12_AN_F2C14_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.232967120955387
+            },
+            "19_01_ADNmF2C2r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.465445841265801
+            },
+            "19_01_ADNmF2C2r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.370334704071847
+            },
+            "ANLCFAmF1C12R_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.914650278080703
+            },
+            "ANLCFAmF1C12R_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.798128995981353
+            },
+            "03_12_ANmF1C14_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.981893329645387
+            },
+            "03_12_ANmF1C14_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.149688087348304
+            },
+            "16_3MMmADNmF2C1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.7528171846013185
+            },
+            "16_3MMmADNmF2C1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.853925031416678
+            },
+            "19_01_ANmF1C12_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.999826019552715
+            },
+            "19_01_ANmF1C12_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.1133205853402846
+            },
+            "12_1_C15R_F2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.560444406511953
+            },
+            "12_1_C15R_F2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.626192727333611
+            },
+            "19_01_ANmF2C12_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.404012137452432
+            },
+            "19_01_ANmF2C12_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.5126001616972555
+            },
+            "11_10_AN_F2C7_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.3859608969865285
+            },
+            "11_10_AN_F2C7_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.340105528161009
+            },
+            "19_01_ADN_F1C2r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.0896776472282848
+            },
+            "19_01_ADN_F1C2r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.219966264026617
+            },
+            "ANLCFAmF2C12R_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.3330130155316295
+            },
+            "ANLCFAmF2C12R_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.1825951754798165
+            },
+            "16_3MMmADN_F2C1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.5800765440165216
+            },
+            "16_3MMmADN_F2C1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.617679229866183
+            },
+            "8_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.153206826695484
+            },
+            "8_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.2152990993122295
+            },
+            "18_03_AN_F2C8r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.7996097886278735
+            },
+            "18_03_AN_F2C8r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.8616700072501295
+            },
+            "29_11_ANmF1C15_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 7.002140067982207
+            },
+            "29_11_ANmF1C15_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 7.127083508286837
+            },
+            "23_4MMmADNmF1C2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.658649584225081
+            },
+            "23_4MMmADNmF1C2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.592756425778511
+            },
+            "19_10_AN_F2C8_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.088909892803326
+            },
+            "19_10_AN_F2C8_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.982928277309794
+            },
+            "23_4MMmADN_F2C2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.415165586073359
+            },
+            "23_4MMmADN_F2C2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.328215305526405
+            },
+            "29_11_ANmF2C15_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.169825645426382
+            },
+            "29_11_ANmF2C15_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.064880336526953
+            },
+            "12_1_C11R6_F2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.6566573177646555
+            },
+            "12_1_C11R6_F2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.666359501302829
+            },
+            "12_1_C11R6mF1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.648762355472116
+            },
+            "12_1_C11R6mF1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.672738019401536
+            },
+            "3_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6828223374872926
+            },
+            "3_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.650948217296916
+            },
+            "23_4MMmADN_F1C2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.7723501857997563
+            },
+            "23_4MMmADN_F1C2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.835851417741645
+            },
+            "19_01_AN_F1C11_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.7366037046337643
+            },
+            "19_01_AN_F1C11_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.632538805934917
+            },
+            "11_10_AN_F1C7_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.4586764149660163
+            },
+            "11_10_AN_F1C7_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.493427255936804
+            },
+            "19_01_ANmF1C11_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 16.109024728393223
+            },
+            "19_01_ANmF1C11_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 16.095759647804236
+            },
+            "10_3MMmADN_F1C1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.602176749491096
+            },
+            "10_3MMmADN_F1C1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.6272446998782337
+            },
+            "12_1_C11R6mF2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6732469365744977
+            },
+            "12_1_C11R6mF2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6672706918160047
+            },
+            "03_12_AN_F1C14_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.469894505154788
+            },
+            "03_12_AN_F1C14_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.297149058012724
+            },
+            "12_1_C11R6_F1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6265487895092976
+            },
+            "12_1_C11R6_F1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6482905590264703
+            },
+            "19_10_ANmF1C8_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.544810978111506
+            },
+            "19_10_ANmF1C8_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.4106321598998077
+            },
+            "4_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6723378156306294
+            },
+            "4_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.692758318387172
+            },
+            "29_11_AN_F2C15_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 8.662382581920633
+            },
+            "29_11_AN_F2C15_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 8.606575571394819
+            },
+            "18_03_ANmF1C8r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 8.389161071542805
+            },
+            "18_03_ANmF1C8r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 8.356904593681028
+            },
+            "12_1_C15R_F1_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.076280780346439
+            },
+            "12_1_C15R_F1_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.156791306283162
+            },
+            "19_4_MMmAN_F2C5_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.87218364906804
+            },
+            "19_4_MMmAN_F1C5_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.9017706839342905
+            },
+            "19_4_MMmAN_F1C5_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.867964219289179
+            },
+            "19_4_MMmAN_F2C5_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.85646248722312
+            },
+            "11_10_ANmF1C7_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.6154502587032957
+            },
+            "11_10_ANmF1C7_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 2.6645931575751463
+            },
+            "03_12_ANmF2C14_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.417789180974985
+            },
+            "03_12_ANmF2C14_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.304666732127166
+            },
+            "5_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.788121800684781
+            },
+            "5_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.7189299312828226
+            },
+            "19_10_ANmF2C8_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6554017414232614
+            },
+            "19_10_ANmF2C8_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.728916320434076
+            },
+            "19_01_ADN_F2C2r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.908219565881589
+            },
+            "19_01_ADN_F2C2r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.06517040541845
+            },
+            "19_01_ANmF2C11_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 12.506172936635776
+            },
+            "19_01_ANmF2C11_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 12.669647508651227
+            },
+            "8_4_MMmANmF1C6_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.827284274732069
+            },
+            "8_4_MMmANmF2C6_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.827556261853653
+            },
+            "8_4_MMmANmF2C6_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.780233222333316
+            },
+            "8_4_MMmANmF1C6_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.77501009890136
+            },
+            "19_10_AN_F1C8_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.3934771727649222
+            },
+            "19_10_AN_F1C8_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.27194788169171
+            },
+            "ANLCFA_F2C12R_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 5.122197278337289
+            },
+            "ANLCFA_F2C12R_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 4.9871046589286845
+            },
+            "18_03_ANmF2C8r_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 8.308627961804763
+            },
+            "18_03_ANmF2C8r_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 8.348296905022458
+            },
+            "7_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.6893134667691645
+            },
+            "7_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.9368409457372247
+            },
+            "8_4_MMmAN_F1C6_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.415393762384998
+            },
+            "8_4_MMmAN_F2C6_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 7.388013463812132
+            },
+            "8_4_MMmAN_F2C6_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 7.445420438749569
+            },
+            "8_4_MMmAN_F1C6_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 6.3431454307019965
+            },
+            "23_4MMmADNmF2C2_1": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.5632150381507737
+            },
+            "23_4MMmADNmF2C2_2": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 3.5940202061767463
+            }
+        }
+    },
+    "config_analysis_dir_abs": [
+        "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report"
+    ],
+    "config_analysis_dir": [
+        "/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/1_trimm_report"
+    ],
+    "config_creation_date": "2023-05-16, 12:22 CEST",
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": null,
+    "config_report_header_info": null,
+    "config_script_path": "/home/george_a/.local/lib/python3.10/site-packages/multiqc/utils",
+    "config_short_version": "1.14",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.14"
+}

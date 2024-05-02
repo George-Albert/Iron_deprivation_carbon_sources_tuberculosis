@@ -1,0 +1,30 @@
+[2023-05-16 12:22:17,466] multiqc                                            [DEBUG  ]  This is MultiQC v1.14
+[2023-05-16 12:22:17,466] multiqc                                            [DEBUG  ]  Command used: /home/george_a/.local/bin/multiqc /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc_output --profile-runtime -n /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports_raw -o /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports
+[2023-05-16 12:22:17,842] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.14
+[2023-05-16 12:22:17,842] multiqc                                            [DEBUG  ]  Working dir : /home/george_a/Documentos/Mtb_UAM_unizar
+[2023-05-16 12:22:17,842] multiqc                                            [DEBUG  ]  Template    : default
+[2023-05-16 12:22:17,843] multiqc                                            [DEBUG  ]  Running Python 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+[2023-05-16 12:22:17,844] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, humid, kat, leehom, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2023-05-16 12:22:17,844] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpyjxbcaho
+[2023-05-16 12:22:17,964] multiqc                                            [INFO   ]  Search path : /home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/raw_fastqc_output
+[2023-05-16 12:22:21,935] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_module_specific_max_filesize: 1496] // [skipped_no_match: 136]
+[2023-05-16 12:22:22,131] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.7.1
+[2023-05-16 12:22:22,131] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.7.1
+[2023-05-16 12:22:22,132] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2023-05-16 12:22:25,809] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping '12_1_C11R6_F2_2_fastqc.zip' as already parsed '12_1_C11R6_F2_2'
+[2023-05-16 12:22:25,809] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping '12_1_C11R6_F2_1_fastqc.zip' as already parsed '12_1_C11R6_F2_1'
+[2023-05-16 12:22:27,027] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping '12_1_C11R6_F1_1_fastqc.zip' as already parsed '12_1_C11R6_F1_1'
+[2023-05-16 12:22:27,027] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping '12_1_C11R6_F1_2_fastqc.zip' as already parsed '12_1_C11R6_F1_2'
+[2023-05-16 12:22:29,468] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 132 reports
+[2023-05-16 12:22:33,996] multiqc.utils.profile_runtime                      [INFO   ]  Running run time profiling module
+[2023-05-16 12:22:35,033] multiqc                                            [INFO   ]  Compressing plot data
+[2023-05-16 12:22:35,056] multiqc                                            [INFO   ]  Report      : Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports_raw.html
+[2023-05-16 12:22:35,056] multiqc                                            [INFO   ]  Data        : Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports_raw_data
+[2023-05-16 12:22:35,056] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpyjxbcaho/multiqc_data' to '/home/george_a/Documentos/Mtb_UAM_unizar/Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports_raw_data'
+[2023-05-16 12:22:35,111] multiqc                                            [INFO   ]  MultiQC complete
+[2023-05-16 12:22:35,111] multiqc                                            [INFO   ]  Run took 17.65 seconds
+[2023-05-16 12:22:35,111] multiqc                                            [INFO   ]   - 3.97s: Searching files
+[2023-05-16 12:22:35,111] multiqc                                            [INFO   ]   - 12.06s: Running modules
+[2023-05-16 12:22:35,111] multiqc                                            [INFO   ]   - 0.01s: Compressing report data
+[2023-05-16 12:22:35,111] multiqc                                            [INFO   ]  For more information, see the 'Run Time' section in Analysis/Outputs/2_Reports/3_multiqc_reports/multiqc_reports_raw.html
+[2023-05-16 12:22:35,111] multiqc                                            [WARNING]  9 flat-image plots used in the report due to large sample numbers
