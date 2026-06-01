@@ -150,7 +150,7 @@ for (i in 1:ncol(LogFC_df_int)) {
       max.overlaps = 20,
       box.padding = 0.3,
       point.padding = 0.2,
-      segment.linewidth = 0.3,
+      segment.size = 0.3,
       show.legend = FALSE
     ) +
     scale_color_manual(
@@ -254,7 +254,7 @@ for (i in 1:ncol(LogFC_df_int)) {
       max.overlaps = 20,
       box.padding = 0.3,
       point.padding = 0.2,
-      segment.linewidth = 0.3,
+      segment.size = 0.3,
       show.legend = FALSE
     ) +
     scale_color_manual(

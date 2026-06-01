@@ -1,4 +1,14 @@
 
+library(openxlsx)
+
+main_wd <- getwd()
+setwd(main_wd)
+
+input_dir <- "Inputs/002_Processed_data"
+
+metadata <- read.table(file.path(input_dir, "txt/metadata_32_samples.txt"), check.names = FALSE)
+reads_32 <- read.table(file.path(input_dir, "txt/reads_32_samples.txt"), check.names = FALSE)
+
 x <- metadata$Full_path
 batch <- gsub("^Mtb_Latency/|/RawFASTQ.*$", "", x)
 unique_batches <- unique(batch)

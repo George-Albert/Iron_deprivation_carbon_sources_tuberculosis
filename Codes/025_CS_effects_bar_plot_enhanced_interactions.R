@@ -17,6 +17,13 @@ setwd(main_wd)
 input_dir  <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
 
+safe_path_name <- function(x) {
+  x <- gsub("->", "to", x, fixed = TRUE)
+  x <- gsub("[<>:\"/\\\\|?*]", "_", x)
+  x <- gsub("\\s+", "_", x)
+  x
+}
+
 ###########################
 ####### 3. Load data ######
 ###########################
@@ -39,13 +46,14 @@ unique(batch)
 # "HN00189620_C11_C15_Abril_2023"     "HN00166209_C11_C12_C2r_Marzo_2022"
 
 # Get the contrasts names of interest and its file names
-file_names <- paste0(df_name_contrast$title,".txt")
+file_names <- paste0(safe_path_name(df_name_contrast$title),".txt")
 # file_names <- file_names[c(9:42,50:51)]
 current_folder <- file.path(output_dir,"Data/txt/th_0.05_th_size_0")
 ### Get full names including folder path
 list.of.files = list.files(current_folder, full.names = TRUE)
 ### Keep only the basename (file names) matching dataframe column
 clean_list <- list.of.files[basename(list.of.files) %in% file_names]
+stopifnot(length(clean_list) == length(file_names))
 data_name <- basename(clean_list)
 data_name <- substr(data_name,1,nchar(data_name)-4)
 
@@ -60,8 +68,9 @@ length(which(rownames(feature_data_filtered)!= rownames(myData[[1]])))
 # cs_effect     <- myData[c(1:10)]
 
 names(myData)
-order_desired <- df_name_contrast$title
+order_desired <- safe_path_name(df_name_contrast$title)
 myData <- myData[order_desired]
+stopifnot(!any(vapply(myData, is.null, logical(1))))
 
 # Define and index and a name to save data
 configs <- list(
