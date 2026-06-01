@@ -51,7 +51,7 @@ volcan_plot <- function(data,x,y,xintercept,th,ymax,title){
 
 main_wd <- getwd()
 setwd(main_wd)
-input_dir  <- "Inputs/2_Processed_data"
+input_dir  <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
 
 ####################
@@ -115,11 +115,11 @@ symbol_fill <- coalesce(symbol,RV)
 
 df_genes$RV <- symbol_fill
 ### Save the list of DE genes in Lipids
-write.table(data.frame(genes),file.path(input_dir,"txt/DE_genes_in_Lipids_th<0.05.txt"))
-write_xlsx(data.frame(genes),file.path(input_dir,"xlsx/DE_genes_in_Lipids_th<0.05.xlsx"))
+write.table(data.frame(genes),file.path(input_dir,"txt/DE_genes_in_Lipids_th_0.05.txt"))
+write_xlsx(data.frame(genes),file.path(input_dir,"xlsx/DE_genes_in_Lipids_th_0.05.xlsx"))
 
-write.table(df_genes,file.path(input_dir,"txt/DE_lfc_BH_in_Lipids_th<0.05.txt"))
-write_xlsx(df_genes,file.path(input_dir,"xlsx/DE_lfc_BH_in_Lipids_th<0.05.xlsx"))
+write.table(df_genes,file.path(input_dir,"txt/DE_lfc_BH_in_Lipids_th_0.05.txt"))
+write_xlsx(df_genes,file.path(input_dir,"xlsx/DE_lfc_BH_in_Lipids_th_0.05.xlsx"))
 
 ### Create the vector of genes names and fill the empty spaces with the RV codes
 lipid_df_filt$symbol <- feature_data$symbol

@@ -49,8 +49,10 @@ color_without <- "white"
 # color <- color_with
 # combination_names <- combination_names_with
 
-# Ask the user to choose between combination_names_without and combination_names_with
-data_to_select <- readline("Choose between 'combination_names_without' or 'combination_names_with': ")
+# Select the contrast block. In non-interactive Rscript runs, default to the
+# with-iron panel so the workflow does not block waiting for console input.
+args <- commandArgs(trailingOnly = TRUE)
+data_to_select <- if (length(args) > 0) args[1] else "combination_names_with"
 
 # Check if the chosen variable is valid
 if (data_to_select == "combination_names_without") {

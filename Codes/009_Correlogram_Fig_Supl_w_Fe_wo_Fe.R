@@ -29,6 +29,7 @@ myData <- readRDS(file.path(input_dir,"RDS/Contrasts_stat_0.05.RDS"))
 LogFC_df <- read.table(file.path(input_dir,"txt/LogFC_0.05.txt"))
 BH_df    <- read.table(file.path(input_dir,"txt/BH_0.05.txt"))
 lfcSE_df <- read.table(file.path(input_dir,"txt/lfcSE_0.05.txt"))
+df_name_contrast <- read.table(file.path(input_dir,"txt/contrasts_nomenclature.txt"))
 
 # # Define the pattern to remove the parenthesis
 # names(myData)

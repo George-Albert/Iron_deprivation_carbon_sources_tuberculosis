@@ -234,8 +234,8 @@ filtered_carbon_results <- lapply(carbon_results_final, function(df) {
   return(df_filtered)
 })
 
-openxlsx::write.xlsx(carbon_results_final, "Carbon_source_classification_full.xlsx",rowNames = TRUE)
-openxlsx::write.xlsx(filtered_carbon_results, "Carbon_source_classification_filtered.xlsx",rowNames = TRUE)
+openxlsx::write.xlsx(carbon_results_final, file.path(input_dir, "xlsx/Carbon_source_classification_full.xlsx"), rowNames = TRUE)
+openxlsx::write.xlsx(filtered_carbon_results, file.path(input_dir, "xlsx/Carbon_source_classification_filtered.xlsx"), rowNames = TRUE)
 
 write.table(final_summary,file.path(input_dir,paste0("txt/final_summary_enhanced_genes.txt")))
 write.table(fraction_list,file.path(input_dir,paste0("txt/final_summary_fraction_enhanced_genes.txt")))

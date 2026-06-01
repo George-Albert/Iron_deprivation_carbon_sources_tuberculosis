@@ -164,11 +164,11 @@ iron_effects_in_lipids_name <- rownames(iron_effects[which(iron_effects[,"Patter
 iron_effects_in_lipids <- iron_effects[which(iron_effects[,"Pattern_L_stat"]=="UP" | iron_effects[,"Pattern_L_stat"]=="DOWN"),c(8,16,24)]
 iron_effects_in_lipids$RV <- rownames(iron_effects_in_lipids)
 ### Save the list of DE genes in Lipids
-write.table(iron_effects_in_lipids_name,file.path(input_dir,"txt/DE_genes_iron_effects_in_lipids_th<0.05.txt"))
-write_xlsx(data.frame(iron_effects_in_lipids_name),file.path(input_dir,"xlsx/DE_genes_iron_effects_in_lipids_th<0.05.xlsx"))
+write.table(iron_effects_in_lipids_name,file.path(input_dir,"txt/DE_genes_iron_effects_in_lipids_th_0.05.txt"))
+write_xlsx(data.frame(iron_effects_in_lipids_name),file.path(input_dir,"xlsx/DE_genes_iron_effects_in_lipids_th_0.05.xlsx"))
 
-write.table(iron_effects_in_lipids,file.path(input_dir,"txt/DE_lfc_BH_iron_effects_in_lipids_th<0.05.txt"))
-write_xlsx(iron_effects_in_lipids,file.path(input_dir,"xlsx/DE_lfc_BH_iron_effects_in_lipids_th<0.05.xlsx"))
+write.table(iron_effects_in_lipids,file.path(input_dir,"txt/DE_lfc_BH_iron_effects_in_lipids_th_0.05.txt"))
+write_xlsx(iron_effects_in_lipids,file.path(input_dir,"xlsx/DE_lfc_BH_iron_effects_in_lipids_th_0.05.xlsx"))
 
 write.table(DE_genes_df,file = file.path(input_dir, paste0("txt/DE_genes_iron_effects_",threshold,".txt")))
 
