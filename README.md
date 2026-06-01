@@ -138,12 +138,9 @@ be versioned directly.
 
 ### R version
 
-The workflow has been validated locally with R 4.6.0. On the development
-machine, `Rscript` is available at:
-
-```text
-C:/Users/JorgeAlbertoCardenas/AppData/Local/Programs/R/R-4.6.0/bin/Rscript.exe
-```
+The workflow has been validated locally with R 4.6.0. Any recent R installation
+with `Rscript` available on `PATH` should be able to run the validation helper
+and the analysis scripts once the required packages are installed.
 
 ### Package requirements
 
@@ -165,7 +162,7 @@ Package versions are not frozen yet. A future improvement would be to add
 From the repository root:
 
 ```powershell
-& "C:\Users\JorgeAlbertoCardenas\AppData\Local\Programs\R\R-4.6.0\bin\Rscript.exe" scripts\validate_r_parse.R
+Rscript scripts\validate_r_parse.R
 ```
 
 Expected result:
@@ -179,8 +176,8 @@ Expected result:
 Run scripts from the project root in numeric order:
 
 ```powershell
-& "C:\Users\JorgeAlbertoCardenas\AppData\Local\Programs\R\R-4.6.0\bin\Rscript.exe" Codes\001_Corr_new_reads_vs_bowtie_reads.R
-& "C:\Users\JorgeAlbertoCardenas\AppData\Local\Programs\R\R-4.6.0\bin\Rscript.exe" Codes\002_Create_metadata.R
+Rscript Codes\001_Corr_new_reads_vs_bowtie_reads.R
+Rscript Codes\002_Create_metadata.R
 ```
 
 Continue through the numbered scripts as needed. Several later scripts depend
