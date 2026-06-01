@@ -26,7 +26,7 @@ output_dir <- "Outputs"
 ### 3. Load data  ###
 #####################
 
-DE_genes_per_cond <- read.table(file = file.path(input_dir,"txt/DE_genes_per_cond_th<0.05.txt"))
+DE_genes_per_cond <- read.table(file = file.path(input_dir,"txt/DE_genes_per_cond_th_0.05.txt"))
 
 df <- DE_genes_per_cond[c(9:16),]
 df$Conditions <- rownames(df)

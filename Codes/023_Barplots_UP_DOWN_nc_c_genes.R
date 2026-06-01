@@ -31,7 +31,7 @@ feat_path = file.path(input_dir,"txt/feature_data_filtered.txt")
 feature_data = read.table(feat_path)
 
 # DE genes per condition
-DE_genes_per_cond <- read.table(file = file.path(input_dir,"txt/DE_genes_per_cond_th<0.05.txt"))
+DE_genes_per_cond <- read.table(file = file.path(input_dir,"txt/DE_genes_per_cond_th_0.05.txt"))
 # ncRNA reads data(to obtain all the gene names)
 # reads_nc          <- read.table(file.path(input_dir,"txt/reads_nc.txt"),check.names = F)
 # Iron effects data frame

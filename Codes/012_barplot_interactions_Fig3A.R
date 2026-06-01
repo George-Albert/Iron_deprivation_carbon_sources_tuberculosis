@@ -28,7 +28,7 @@ output_dir <- "Outputs"
 ###########################
 
 ### Load DE genes.txt of interest
-DE_genes_count <- read.table(file=file.path(input_dir,"txt/DE_genes_of_interest_th<0.05.txt"))
+DE_genes_count <- read.table(file=file.path(input_dir,"txt/DE_genes_of_interest_th_0.05.txt"))
 
 ### load the logFc,BH and lfcSE dfs
 LogFC_df <- read.table(file.path(input_dir,"txt/LogFC_0.05.txt"))

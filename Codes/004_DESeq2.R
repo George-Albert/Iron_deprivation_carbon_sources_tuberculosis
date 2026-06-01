@@ -11,10 +11,9 @@
   library(reshape2)
   library(DESeq2)
   library(fdrtool)
-  # library(ashr)
+  library(ashr)
   library(dplyr)
   library(locfdr)
-  library(xlsx)
   library(writexl)
   library(stringr)
 }
@@ -23,10 +22,11 @@
 ### 1. Declare functions ###
 ############################
 {
-  dcols=function(x){data.frame(colnames(x))}
-
-  my_name <- function(v1) {
-    deparse(substitute(v1))
+  safe_path_name <- function(x) {
+    x <- gsub("->", "to", x, fixed = TRUE)
+    x <- gsub("[<>:\"/\\\\|?*]", "_", x)
+    x <- gsub("\\s+", "_", x)
+    x
   }
 
   histogram <- function(data,pvalue,title){
@@ -68,15 +68,16 @@
     if(length(which(rownames(fdata)!=rownames(tab)))>0){
       print("tablas no congruentes")
     } else {
+      safe_name <- safe_path_name(name)
 
-      dir.create(paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",name),showWarnings = FALSE,recursive=TRUE)
+      dir.create(paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",safe_name),showWarnings = FALSE,recursive=TRUE)
       dir.create(paste0("Outputs/Data/txt/th_",th,"_th_size_",th_size),showWarnings = FALSE,recursive=TRUE)
 
       #tab$t=tab$log2FoldChange_raw/tab$lfcSE_raw
       tab$RV=rownames(tab)
       tab$Gene=fdata$symbol
       tab=tab[order(tolower(tab$RV)),c(9,10,1:8)]
-      write.table(tab,paste0("Outputs/Data/txt/th_",th,"_th_size_",th_size,"/",name,".txt"))
+      write.table(tab,paste0("Outputs/Data/txt/th_",th,"_th_size_",th_size,"/",safe_name,".txt"))
 
       tab=tab[order(-tab$stat),]
 
@@ -84,9 +85,9 @@
       downreg=tab[which(tab$BH<th & tab$log2FoldChange_shrunken<(-th_size)),]
       downreg=downreg[order(downreg$BH),]
 
-      write_xlsx(tab,paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",name,"/all.xlsx"))
-      write_xlsx(upreg,paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",name,"/upreg.xlsx"))
-      write_xlsx(downreg,paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",name,"/downreg.xlsx"))
+      write_xlsx(tab,paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",safe_name,"/all.xlsx"))
+      write_xlsx(upreg,paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",safe_name,"/upreg.xlsx"))
+      write_xlsx(downreg,paste0("Outputs/Data/xlsx/th_",th,"_th_size_",th_size,"/",safe_name,"/downreg.xlsx"))
 
       output=list(up=upreg,down=downreg)
 
@@ -96,16 +97,17 @@
 
 
    target_genesets=function(tab,name){
+    safe_name <- safe_path_name(name)
     for(th in c(0.05,0.01))
     {
       for(th_size in c(0,0.2,0.5,1))
       {
-        dir.create(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",name),showWarnings = FALSE,recursive=TRUE)
+        dir.create(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",safe_name),showWarnings = FALSE,recursive=TRUE)
 
         set=(which(abs(tab$log2FoldChange_shrunken)>th_size & tab$BH<th))
         print(paste("All: th=",th,"th_size=",th_size,":",length(set)))
         target=rownames(tab)[set]
-        sink(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",name,"/all.txt"))
+        sink(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",safe_name,"/all.txt"))
         for(gen in target)
           cat(gen,"\n")
         sink()
@@ -113,7 +115,7 @@
         set=(which((tab$log2FoldChange_shrunken)>th_size & tab$BH<th))
         print(paste("UP: th=",th,"th_size=",th_size,":",length(set)))
         target=rownames(tab)[set]
-        sink(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",name,"/upreg.txt"))
+        sink(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",safe_name,"/upreg.txt"))
         for(gen in target)
           cat(gen,"\n")
         sink()
@@ -121,7 +123,7 @@
         set=(which((tab$log2FoldChange_shrunken)<(-th_size) & tab$BH<th))
         print(paste("DOWN: th=",th,"th_size=",th_size,":",length(set)))
         target=rownames(tab)[set]
-        sink(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",name,"/downreg.txt"))
+        sink(paste0("Outputs/Data/target_sets/th_",th,"_th_size_",th_size,"/",safe_name,"/downreg.txt"))
         for(gen in target)
           cat(gen,"\n")
         sink()
@@ -136,7 +138,7 @@
 
   get_voom_like_normalized_data=function(desq){
     cuentas=counts(desq)
-    normalization_coeficients=dds@colData$sizeFactor
+    normalization_coeficients=desq@colData$sizeFactor
     depths=apply(cuentas,2,sum)+1
     cuentas=cuentas+0.5
 
@@ -186,13 +188,13 @@ feature_data <- read.table(file.path(input_dir,"txt/feature_data_genes_type_adde
 # rownames(feature_data) <- feature_data$locus_tag
 feature_data <- feature_data[rownames(reads),]
 
-length(which(rownames(feature_data)!=(rownames(reads))))
-length(which(colnames(reads)!=rownames(metadata)))
+stopifnot(identical(rownames(feature_data), rownames(reads)))
+stopifnot(identical(colnames(reads), rownames(metadata)))
 
 ### Extract the rRNA genes
 feature_data <- feature_data[which(feature_data$class!="rRNA"),]
 reads <- reads[rownames(feature_data),]
-length(which(rownames(feature_data)!=(rownames(reads))))
+stopifnot(identical(rownames(feature_data), rownames(reads)))
 
 #############################
 ### 4. Select sampleset:  ###
@@ -416,7 +418,7 @@ filtered_dds <- dds[keep, ]
 resultsNames(filtered_dds)
 
 feature_data <- feature_data[rownames(filtered_dds),]
-length(which(rownames(feature_data)!=rownames(filtered_dds)))
+stopifnot(identical(rownames(feature_data), rownames(filtered_dds)))
 write.table(feature_data,file.path(input_dir,"txt/feature_data_filtered.txt"))
 
 ##############################################
@@ -529,7 +531,7 @@ for (res in contrast_res) {
 
   dir <- "001_Figures_paper/1_signal/histograms"
   dir.create(file.path(output_dir,dir),recursive=TRUE,showWarnings = F)
-  pdf(file.path(file.path(output_dir,dir),paste0(title,".pdf")),width=6,height=5)
+  pdf(file.path(file.path(output_dir,dir),paste0(safe_path_name(title),".pdf")),width=6,height=5)
   print(pl_hist)
   dev.off()
 
@@ -572,14 +574,14 @@ y <-y[c(paste0("genes with BH <",th),"up","down")]
 colnames(y) <- c("DE","upreg","downreg")
 DE_genes <- y
 
-write.table(DE_genes,file.path(input_dir,"txt/DE_genes_per_cond_th<0.05.txt"))
-write_xlsx(DE_genes,file.path(input_dir,"xlsx/DE_genes_per_cond_th<0.05.xlsx"))
+write.table(DE_genes,file.path(input_dir,"txt/DE_genes_per_cond_th_0.05.txt"))
+write_xlsx(DE_genes,file.path(input_dir,"xlsx/DE_genes_per_cond_th_0.05.xlsx"))
 
 # DE_genes_of_interest <- DE_genes[c(1:16,44:47),]
 DE_genes_of_interest <- DE_genes[c(9:16,44:47),]
 
-write.table(DE_genes_of_interest,file.path(input_dir,"txt/DE_genes_of_interest_th<0.05.txt"))
-write_xlsx(DE_genes_of_interest,file.path(input_dir,"xlsx/DE_genes_of_interest_th<0.05.xlsx"))
+write.table(DE_genes_of_interest,file.path(input_dir,"txt/DE_genes_of_interest_th_0.05.txt"))
+write_xlsx(DE_genes_of_interest,file.path(input_dir,"xlsx/DE_genes_of_interest_th_0.05.xlsx"))
 
 # "Contrast" "hits"
 # "1" "Fe_at_C1" 0

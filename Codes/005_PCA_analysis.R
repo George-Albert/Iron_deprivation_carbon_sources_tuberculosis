@@ -9,7 +9,6 @@
   library(edgeR)
   library(dplyr)
   library(locfdr)
-  library(xlsx)
   library(writexl)
   library(stringr)
   library(ggrepel)
@@ -28,7 +27,9 @@ generate_pca_plt <- function(reads_data, met_df, samples_to_compare) {
 
   # Filter the reads by selected cultures
   filtered_reads <- reads_data[, samples_to_compare]
-  met_df <- subset(metadata, Sample_ID %in% samples_to_compare)
+  met_df <- subset(met_df, Sample_ID %in% samples_to_compare)
+  met_df <- met_df[match(samples_to_compare, met_df$Sample_ID), ]
+  stopifnot(identical(colnames(filtered_reads), met_df$Sample_ID))
   # Do the PCA 2D
   y <- DGEList(counts = filtered_reads)
   y <- calcNormFactors(y)
@@ -94,7 +95,7 @@ input_dir  <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
 
 pca_dir <- file.path(output_dir,"001_Figures_paper")
-dir.create(pca_dir)
+dir.create(pca_dir, recursive = TRUE, showWarnings = FALSE)
 
 ###########################
 ####### 3. Load data ######
@@ -105,8 +106,8 @@ feature_data <- read.table(file.path(input_dir,"txt/feature_data_filtered.txt"),
 # DE_genes_df<- read.table(file.path(input_dir,"DE_genes_per_cond.txt"),check.names = F)
 
 reads <- reads[rownames(feature_data),]
-length(which(rownames(feature_data)!=(rownames(reads))))
-length(which(colnames(reads)!=rownames(metadata)))
+stopifnot(identical(rownames(feature_data), rownames(reads)))
+stopifnot(identical(colnames(reads), rownames(metadata)))
 
 metadata <- metadata[order(metadata$short_setup),]
 cult <- paste0("C",c(1:2,5:6,7:8,11:12))

@@ -2,16 +2,7 @@
 ### 0. Load dependencies. ###
 #############################
 
-{
-  library(tidyverse)
-  library(dplyr)
-
-}
-
-############################
-### 1. Declare functions ###
-############################
-dcols <- function(df){data.frame(colnames(df))}
+### This script currently uses base R only.
 
 ###################################################
 ### 2. Set working directory and create folders ###
@@ -63,10 +54,11 @@ feature_data <- read.table(file.path(input_dir,"txt/feature_data_filtered.txt"))
 
   names(myData) <- list_name
   myData <- lapply(myData, function(df) df[rownames(feature_data), ])
+  stopifnot(length(myData) == length(list_name))
   lapply(names(myData), function(x) assign(x,myData[[x]],envir = .GlobalEnv))
 
   Iron_effect_in_EXP_G_D <- Iron_effect_in_EXP_G_D[rownames(feature_data),]
-  length(which(rownames(feature_data)!= rownames(Iron_effect_in_EXP_G_D)))
+  stopifnot(identical(rownames(feature_data), rownames(Iron_effect_in_EXP_G_D)))
 
 
 ### Create log Fold Change df
@@ -118,9 +110,9 @@ lfcSE_df <- data.frame(Iron_effect_in_EXP_G_D$lfcSE_shrunken, Iron_effect_in_EXP
 rownames(lfcSE_df) <- rownames(Iron_effect_in_EXP_G_D)
 }
 ### Check congruence
-length(which(rownames(feature_data)!= rownames(LogFC_df)))
-length(which(rownames(feature_data)!= rownames(BH_df)))
-length(which(rownames(feature_data)!= rownames(lfcSE_df)))
+stopifnot(identical(rownames(feature_data), rownames(LogFC_df)))
+stopifnot(identical(rownames(feature_data), rownames(BH_df)))
+stopifnot(identical(rownames(feature_data), rownames(lfcSE_df)))
 
 ### Save the data
 
