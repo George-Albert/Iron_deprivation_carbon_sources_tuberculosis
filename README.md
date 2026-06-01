@@ -9,6 +9,19 @@ iron limitation, carbon metabolism, and the transition from exponential growth
 to stationary phase. The local repository is the canonical working copy for the
 analysis.
 
+## Table of Contents
+
+- [Scientific Scope](#scientific-scope)
+- [Main Questions](#main-questions)
+- [Repository Layout](#repository-layout)
+- [Workflow Overview](#workflow-overview)
+- [Key Inputs](#key-inputs)
+- [Key Outputs](#key-outputs)
+- [Reproducibility](#reproducibility)
+- [Current Validation Status](#current-validation-status)
+- [Traceability](#traceability)
+- [Public Release Notes](#public-release-notes)
+
 ## Scientific Scope
 
 Iron restriction is a major host-imposed stress during tuberculosis infection.
