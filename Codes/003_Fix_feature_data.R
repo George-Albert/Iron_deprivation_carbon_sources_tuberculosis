@@ -2,14 +2,9 @@
 ### 0. Load dependencies. ###
 #############################
 
-{
-  library(tidyverse)
-  library(ggplot2)
-  library(cowplot)
-  library(xlsx)
-  library(writexl)
-  library(stringr)
-}
+library(dplyr)
+library(tibble)
+library(writexl)
 
 ###################################################
 ### 2. Set working directory and create folders ###
@@ -19,20 +14,19 @@ main_wd <- getwd()
 setwd(main_wd)
 input_dir <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
-input_dir <- "Inputs/002_Processed_data"
-output_dir <- "Outputs"
 
 ###########################
 ####### 3. Load data ######
 ###########################
 reads        <- read.table(file.path(input_dir,"txt/reads_32_samples.txt"),check.names = F)
 reads_nc     <- read.table(file.path(input_dir,"txt/reads_nc.txt"),check.names = F)
+metadata     <- read.table(file.path(input_dir,"txt/metadata_32_samples.txt"),check.names = F)
 feature_data <- read.table(file.path(input_dir,"txt/feature_data_genes.txt"),check.names = F)
-#Release 5 (2024-07-11) of the M. tuberculosis H37Rv genome annotation
+
+### Release 5 (2024-07-11) of the M. tuberculosis H37Rv genome annotation.
 mtb_meta     <- read.delim(file.path(input_dir,"txt/Mycobacterium_tuberculosis_H37Rv_txt_v5.txt"),check.names = F)
 
-# Create a new column for the ncRNA custom class
-# new_locus <- setdiff(rownames(reads_nc), feature_data$locus_tag)
+### Create feature rows for custom ncRNA loci absent from the base annotation.
 new_rows <- tibble(locus_tag = rownames(reads_nc), class="ncRNA_custom", symbol=NA, product=NA, genome=NA,
                    description=NA, gene_type="ncRNA", gene_name=NA,
                    gene_id=NA, transcript_id=NA, GO_terms=NA,
@@ -49,8 +43,8 @@ feature_data <- bind_rows(feature_data, new_rows)
 rownames(feature_data) <- feature_data$locus_tag
 feature_data <- feature_data[rownames(reads),]
 
-length(which(rownames(feature_data)!=(rownames(reads))))
-length(which(colnames(reads)!=rownames(metadata)))
+stopifnot(identical(rownames(feature_data), rownames(reads)))
+stopifnot(identical(colnames(reads), rownames(metadata)))
 
 unique(feature_data$class)
 # "ncRNA_custom"   "protein_coding" "tRNA" "pseudogene"     "ncRNA"
@@ -58,12 +52,11 @@ unique(feature_data$class)
 #  "other"
 
 
-# Create directory to save gene names by class
+### Create directory to save gene names by class.
 gene_names_by_class_dir <- file.path(output_dir, "gene_names_by_class")
 dir.create(gene_names_by_class_dir, showWarnings = FALSE)
 
-# Save gene names by class
-
+### Save gene names by class.
 for (gene_class in unique(feature_data$class)) {
   gene_names <- feature_data %>%
     filter(class == gene_class) %>%
@@ -75,42 +68,42 @@ for (gene_class in unique(feature_data$class)) {
 }
 
 
-# Create pseudogene data frame
+### Create pseudogene data frame.
 pseudogene_data <- feature_data %>%
   filter(class == "pseudogene")
-# Search for pseudogene information in the MTB metadata
+
+### Search for pseudogene information in the MTB metadata.
 mtb_pseudogene_data <- mtb_meta[mtb_meta$Locus %in% pseudogene_data$locus_tag, ]
 mtb_pseudogene_data <- mtb_pseudogene_data[order(mtb_pseudogene_data$Locus), ]
 
-# Check for missing pseudogenes
+### Check for pseudogenes not found in the MTB metadata.
 missing <- pseudogene_data[!pseudogene_data$locus_tag %in% mtb_meta$Locus , ]
 # Rv1887a this is the one missing pseudogene in the MTB metadata
 
-# safe <- pseudogene_data
-# Remove missing pseudogenes from the pseudogene data
+### Remove missing pseudogenes from the pseudogene data.
 pseudogene_data <- pseudogene_data[-which(pseudogene_data$locus_tag %in% missing$locus_tag), ]
 
-# Ensure the order matches
-length(which(mtb_pseudogene_data$Locus != pseudogene_data$locus_tag))
+### Ensure the order matches.
+stopifnot(identical(mtb_pseudogene_data$Locus, pseudogene_data$locus_tag))
 
-# Update pseudogene data with MTB metadata
+### Update pseudogene data with MTB metadata.
 pseudogene_data$New_Feature   <- mtb_pseudogene_data$Feature
 pseudogene_data$New_Name      <- mtb_pseudogene_data$Name
 pseudogene_data$New_Function  <- mtb_pseudogene_data$Function
 pseudogene_data$Is_Pseudogene <- mtb_pseudogene_data$Is_Pseudogene
 pseudogene_data$New_Functional_Category <- mtb_pseudogene_data$Functional_Category
 
-# Save the updated pseudogene data
+### Save the updated pseudogene data.
 write.table(pseudogene_data, file.path(input_dir, "txt/pseudogene_data_updated.txt"), sep = "\t")
 write_xlsx (pseudogene_data, path = file.path(input_dir, "xlsx/pseudogene_data_updated.xlsx"))
 
-### let's check the whole feature data with the MTB metadata
+### Check the whole feature data against the MTB metadata.
 
 unique(mtb_meta$Feature)
 # "ncRNA"      "tRNA"       "CDS"        "rRNA"       "promoter"   "misc_RNA"
 #  "-10_signal" "-35_signal"
 
-#Check how many features are in each class
+### Check how many features are in each class.
 class_summary <- feature_data %>%
   group_by(class) %>%
   summarise(count = n())
@@ -142,7 +135,7 @@ class_summary_mtb <- mtb_meta %>%
 # 7 rRNA            3
 # 8 tRNA           45
 
-#### Add a new column to feature_data calles Type based on what we decided
+### Add the Type column used downstream to separate coding and stable RNA features.
 feature_data <- feature_data %>%
   mutate(Type = case_when(
     class == "protein_coding" ~ "CDS",

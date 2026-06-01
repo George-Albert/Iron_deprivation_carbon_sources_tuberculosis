@@ -1,14 +1,9 @@
-########################
-####### Depencies ######
-########################
-{
-  library(stringr)
-  library(tidyverse)
-  library(dplyr)
-  library(readxl)
-  library(writexl)
-  library(dplyr)
-  }
+#############################
+### 0. Load dependencies. ###
+#############################
+library(stringr)
+library(writexl)
+
 ###################################################
 ### 1. Set working directory and create folders ###
 ###################################################
@@ -18,11 +13,6 @@ main_wd <- getwd()
 setwd(main_wd)
 input_dir <- "Inputs/001_Raw_data"
 output_dir <- "Outputs"
-
-###########################
-####### 1. Functions ######
-###########################
-dcols=function(x){data.frame(colnames(x))}
 
 ###########################
 ####### 2. Load data ######
@@ -63,9 +53,8 @@ sample_name <- apply(sample_name,1,function(x) {substr(x,1,nchar(x)-11)})
 sample_name <- sample_name[-53]
 sample_name <- unique(sample_name)
 
-# check congruence between full_path and sample name
-all.equal(base_name,sample_name)
-# TRUE
+### Check congruence between full FASTQ paths and sample names.
+stopifnot(isTRUE(all.equal(base_name, sample_name)))
 
 full_path_df <- substr(full_path_df$fastq_paths,1,nchar(full_path_df$fastq_paths)-11)
 full_path_df <- full_path_df[-53]
@@ -78,7 +67,7 @@ reads_nc <- reads_bowtie[which(rownames(reads_bowtie)!=rownames(reads_new[rownam
 write.table(reads_nc,file.path(input_dir,"reads_nc.txt"))
 
 length(which(rownames(reads_bowtie)!=rownames(reads_new[rownames(reads_bowtie),])))
-length(which(colnames(reads_bowtie)!=colnames(reads_new)))
+stopifnot(identical(colnames(reads_bowtie), colnames(reads_new)))
 
 ### change the samples names from HN00153515_C1_C2_Julio_2021
 # 1 10_3MMmADN_F1C1
@@ -97,8 +86,7 @@ real_names <-paste0(real_names,"_rep1")
 # reads <- reads_new
 reads <- reads_bowtie
 colnames(reads)[9:16] <- real_names
-### Create metadata
-#Lets name reads to reads_news
+### Create metadata.
 
 metadata=data.frame(Original_ID=substr(colnames(reads),1,(nchar(colnames(reads)))),Full_path=full_path_df)
 
@@ -213,8 +201,7 @@ metadata=data.frame(Original_ID=substr(colnames(reads),1,(nchar(colnames(reads))
   metadata$setup=paste0("Fe.",metadata$Iron,"_Dextrose.",metadata$Dextrose,"_Growth.",
                         metadata$Growth,"_LCFA.",metadata$LCFA,"_Glycerol.",metadata$Glycerol)
 
-  length(which(metadata$Original_ID==colnames(reads)))
-  length(which(metadata$Original_ID!=colnames(reads)))
+  stopifnot(identical(metadata$Original_ID, colnames(reads)))
 
   # reads=reads[,order(metadata$setup)]
   # metadata=metadata[order(metadata$setup),]
@@ -228,8 +215,7 @@ metadata=data.frame(Original_ID=substr(colnames(reads),1,(nchar(colnames(reads))
 
   metadata$Sample_ID <- rownames(metadata)
 
-  length(which(metadata$Original_ID!=colnames(reads)))
-  # duplicated(colnames(reads))
+  stopifnot(!anyDuplicated(colnames(reads)))
 
   colnames(reads)=rownames(metadata)
 
@@ -257,7 +243,7 @@ metadata=data.frame(Original_ID=substr(colnames(reads),1,(nchar(colnames(reads))
   color_vec <- c(C1 = "#d3c7d9", C2 = "#5f4290", C5 = "#76c6e7", C6 = "#3c8ec8",
                  C7 = "#bbdd93", C8 = "#559d3f", C11 = "#ee9f9b", C12 = "#d1382c")
 
-   cultures <- metadata$short_setup
+  cultures <- metadata$short_setup
 
   ### Add color and fill columns to the metadata
   metadata$color <- color_vec[match(metadata$Culture, unique(metadata$Culture))]

@@ -1,17 +1,13 @@
 
-########################
-####### Depencies ######
-########################
-library(stringr)
-library(tidyverse)
-library(dplyr)
-library(xlsx)
-library(purrr)
+#############################
+### 0. Load dependencies. ###
+#############################
+library(ggplot2)
 library(ggridges)
+
 ###################################################
 ### 1. Set working directory and create folders ###
 ###################################################
-
 
 main_wd <- getwd()
 setwd(main_wd)
@@ -25,11 +21,10 @@ output_dir <- "Outputs"
 ###########################
 ####### 2. Load data ######
 ###########################
-### Load ncRNA reads news
-reads_ncRNA <- read.table(file.path(input_dir,"reads_bowtie.txt"))
+### Load bowtie and Macrogen read tables.
+reads_ncRNA <- read.table(file.path(input_dir,"reads_bowtie.txt"), check.names = FALSE)
 
-### Load reads news
-reads_new   <- read.table(file.path(input_dir,"reads_new.txt"))
+reads_new   <- read.table(file.path(input_dir,"reads_new.txt"), check.names = FALSE)
 
 #############################################################
 ### Correlate the new reads with the reads of the company ###
@@ -37,8 +32,8 @@ reads_new   <- read.table(file.path(input_dir,"reads_new.txt"))
 
 reads_ncRNA <- reads_ncRNA[,colnames(reads_new)]
 
-# Check if the column names match
-length(which(colnames(reads_ncRNA)!= colnames(reads_new)))
+# Check if the column names match before and after normalizing R's X prefix.
+sum(colnames(reads_ncRNA) != colnames(reads_new))
 
 #Remove the "X" prefix from column names in reads_new
 column_names <- colnames(reads_new)
@@ -49,8 +44,7 @@ column_names <- colnames(reads_ncRNA)
 column_names <- gsub("^X","",column_names)
 colnames(reads_ncRNA) <- column_names
 
-# Check if the column names match
-length(which(colnames(reads_ncRNA)!= colnames(reads_new)))
+stopifnot(identical(colnames(reads_ncRNA), colnames(reads_new)))
 
 # Extract the gene names
 ncgenes <- rownames(reads_ncRNA)
@@ -61,8 +55,8 @@ idx_ncRNA <- which(ncgenes %in% genes)
 reads_ncRNA_filtered <- reads_ncRNA[idx_ncRNA,]
 reads_ncRNA_filtered <- reads_ncRNA_filtered[order(rownames(reads_ncRNA_filtered)),]
 
-#Check if the row names match
-length(which(rownames(reads_ncRNA_filtered)!= rownames(reads_new)))
+# Check if the row names match after filtering ncRNA reads.
+stopifnot(identical(rownames(reads_ncRNA_filtered), rownames(reads_new)))
 
 zero_sd_rows <- sapply(1:nrow(reads_new), function(i) {
       sd1 <- sd(as.numeric(reads_new[i, ]), na.rm = TRUE)
@@ -70,8 +64,7 @@ zero_sd_rows <- sapply(1:nrow(reads_new), function(i) {
       return(sd1 == 0 || sd2 == 0)
   })
 reads_sd <- reads_new[which(zero_sd_rows),]
-# Correlate the new reads with the ncRNA reads
-
+### Correlate the new read table with the bowtie/ncRNA read table.
 corr_matrix <- cor(reads_new,reads_ncRNA_filtered,method = "pearson")
 corr_matrix_row <- sapply(1:nrow(as.matrix(reads_new)), function(i) cor(as.matrix(reads_new)[i,],
                                                                         as.matrix(reads_ncRNA_filtered)[i,],method = "pearson"))

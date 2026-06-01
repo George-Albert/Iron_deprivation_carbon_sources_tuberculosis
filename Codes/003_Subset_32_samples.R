@@ -1,15 +1,8 @@
-########################
-####### Depencies ######
-########################
-{
-  library(stringr)
-  library(tidyverse)
-  library(dplyr)
-  library(readxl)
-  library(writexl)
-  library(dplyr)
-  library(writexl)
-}
+#############################
+### 0. Load dependencies. ###
+#############################
+### This script currently uses base R only.
+
 ###################################################
 ### 1. Set working directory and create folders ###
 ###################################################
@@ -20,11 +13,6 @@ input_dir <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
 
 ###########################
-####### 1. Functions ######
-###########################
-dcols=function(x){data.frame(colnames(x))}
-
-###########################
 ####### 2. Load data ######
 ###########################
 metadata_66_samples <- read.table(file.path(input_dir,"txt/metadata_66_samples.txt"),check.names = F)
@@ -32,7 +20,7 @@ metadata_old        <- read.table(file.path(input_dir,"txt/metadata_32_samples_o
 reads_66_samples    <- read.table(file.path(input_dir,"txt/reads_66_samples.txt"),check.names = F)
 # reads_C11_C12 <- read.table(file.path(input_dir,"reads_C11_C12_samples.txt"),check.names = F)
 
-### Subset the data
+### Subset the data to the 32 samples used in the final analysis.
 # metadata_66_samples$short_setup <- paste0(metadata_66_samples$Culture,"_Fe_",metadata_66_samples$Iron)
 metadata <- metadata_66_samples[which(metadata_66_samples$Original_ID %in% metadata_old$Original_ID),]
 
@@ -56,7 +44,7 @@ rownames(metadata) <- metadata$Sample_ID
 
 reads_32 <- reads_66_samples[,rownames(metadata)]
 
-length(which(colnames(reads_32) != rownames(metadata)))
+stopifnot(identical(colnames(reads_32), rownames(metadata)))
 
 ### Save the data
 write.table(metadata,file.path(input_dir,"txt/metadata_32_samples.txt"))
