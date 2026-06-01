@@ -1,6 +1,6 @@
 # Publication Data Review
 
-This repository currently publishes the analysis code, documentation, project metadata, and validation helpers. Data inputs, generated outputs, figures, and large result tables are intentionally kept out of Git until a publication decision is made.
+This repository currently publishes the analysis code, documentation, project metadata, and validation helpers. Data inputs, generated outputs, figures, and large result tables are currently kept out of Git until a publication decision is made. The review focus is reproducibility, file size, provenance, and manuscript timing rather than privacy.
 
 ## Current Local-Only Candidates
 
@@ -19,7 +19,7 @@ This repository currently publishes the analysis code, documentation, project me
 
 ## Current Recommendation
 
-Keep the first public commit code-only. For a reproducible public release, choose one of these follow-up strategies:
+The first public baseline is code-only. For a reproducible public release, choose one of these follow-up strategies:
 
 1. Publish a minimal reproducibility bundle with selected processed input tables and final result tables.
 2. Publish final figures/tables only, while documenting how private/local inputs are expected to be placed.

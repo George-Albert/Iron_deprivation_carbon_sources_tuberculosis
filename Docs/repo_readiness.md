@@ -3,12 +3,12 @@
 ## Current Git State
 
 The local `.git` directory was incomplete and had to be reinitialized so Git
-could recognize the repository. This repository currently has no historical
-commits and no remote configured.
+could recognize the repository.
 
-The old GitHub repository `Iron_deprivation_carbon_sources_tuberculosis` should
-not be treated as canonical for this local project unless explicitly reconnected
-later.
+The public GitHub repository
+`George-Albert/Iron_deprivation_carbon_sources_tuberculosis` has since been
+replaced with this cleaned local history and is now the active remote for the
+project.
 
 ## Publishing Policy
 
@@ -18,11 +18,15 @@ Track:
 - project README and lightweight documentation;
 - validation/configuration files.
 
-Do not track by default:
+Review before tracking:
 
 - `Inputs/`;
 - `Outputs/`;
 - root-level generated PDFs/XLSX tables;
+- manuscript drafts and internal working documents.
+
+Do not track by default:
+
 - local IDE/session files;
 - `Codes/trash_codes/`.
 

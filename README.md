@@ -1,57 +1,98 @@
-# Iron Deprivation and Carbon-Source Growth Arrest
+# Iron Deprivation and Carbon-Source Growth Arrest in *Mycobacterium tuberculosis*
 
-R analysis repository for studying the transcriptional response of
-*Mycobacterium tuberculosis* to iron deprivation across growth phase and
-carbon-source contexts.
+This repository contains the R analysis code for an RNA-seq study of how carbon
+source availability reshapes the transcriptional response of *Mycobacterium
+tuberculosis* H37Rv to iron deprivation during the transition from exponential
+growth to stationary phase.
 
-This local repository is intended to become the canonical working version for
-the current iron-deprivation/carbon-source manuscript analysis. An older GitHub
-repository named `Iron_deprivation_carbon_sources_tuberculosis` exists, but it
-is not treated as the source of truth for this cleanup.
+The project supports a manuscript in preparation on the transcriptomic effect of
+lipid carbon sources during in vitro iron deprivation. The central biological
+question is whether lipid-rich environments, used here as an in vitro proxy for
+conditions encountered during long-lasting infection, modify or dampen the
+classical iron-starvation response of *M. tuberculosis*.
 
-## Scientific Scope
+## Scientific Context
 
-The analysis compares transcriptional responses associated with:
+Iron restriction is a major host-imposed stress during tuberculosis infection.
+At the same time, chronic and latent infection environments can be enriched in
+host-derived lipids. This analysis combines those two environmental dimensions:
+iron availability and carbon-source composition.
 
-- iron availability;
-- growth phase or growth-arrest state;
-- carbon-source conditions, including glycerol, dextrose/glycerol, LCFA, and
-  mixed carbon-source contexts;
-- coding and non-coding RNA-associated features;
-- enriched, damped, and coherent response patterns across contrasts.
+The study compares axenic cultures grown with four carbon-source profiles:
 
-The workflow generates differential expression summaries, PCA and correlogram
-diagnostics, volcano plots, GO enrichment summaries, regulon ORA, gene panels,
-and manuscript-oriented figure outputs.
+- `G_D`: glycerol plus dextrose;
+- `G`: glycerol;
+- `G_L`: glycerol plus long-chain fatty acids;
+- `L`: long-chain fatty acids as the sole carbon source.
+
+For each carbon-source context, the analysis compares iron-replete and
+iron-deprived cultures across exponential and stationary phases. The lipid
+condition uses even long-chain fatty acids, including palmitic, oleic, and
+stearic acids.
+
+## Analysis Goals
+
+The scripts are organized to address several connected questions:
+
+- how iron deprivation affects the transcriptome at exponential and stationary
+  phases;
+- how growth arrest changes expression under iron-rich and iron-depleted
+  conditions;
+- how the interaction between iron availability and growth arrest depends on
+  carbon source;
+- whether lipid availability reduces, redirects, or rewires the global
+  iron-starvation response;
+- which coding and non-coding RNA features, functional categories, GO terms,
+  regulons, and pathway-level gene sets explain those differences.
+
+Major outputs include differential expression tables, PCA diagnostics,
+correlograms, volcano plots, functional-category summaries, coherent-response
+classifications, non-coding RNA summaries, GO enrichment analyses, regulon
+over-representation analyses, and manuscript-oriented figure panels.
+
+## Experimental and Statistical Overview
+
+The working analysis uses 32 RNA-seq samples from *M. tuberculosis* H37Rv
+cultures spanning carbon source, iron availability, and growth phase. Reads were
+mapped against the *M. tuberculosis* H37Rv ASM19595v2 reference, with custom
+feature annotation used for coding and non-coding RNA analyses.
+
+Differential expression is modeled in R with DESeq2. The main design considers:
+
+1. iron deprivation effects during exponential phase;
+2. iron deprivation effects during stationary phase;
+3. growth-arrest effects under iron-replete conditions;
+4. growth-arrest effects under iron-deprived conditions;
+5. the interaction between iron availability and growth arrest.
+
+The repository currently preserves the existing script-based workflow before
+deeper refactoring. The next development steps are to review individual scripts,
+centralize repeated setup code, and improve reproducibility without changing the
+scientific results.
 
 ## Repository Layout
 
 - `Codes/`: active R scripts, ordered by approximate execution stage.
-- `Codes/trash_codes/`: legacy/exploratory scripts, ignored by git.
-- `Inputs/`: local input data and processed intermediates, ignored by git.
-- `Outputs/`: generated figures, tables, RDS objects, and manuscript artifacts,
-  ignored by git.
-- `Docs/`: lightweight repository documentation.
+- `Codes/trash_codes/`: legacy or exploratory scripts kept local and ignored by
+  git.
+- `Inputs/`: local raw inputs and processed intermediates.
+- `Outputs/`: generated figures, tables, RDS objects, and manuscript artifacts.
+- `Docs/`: repository notes, script inventory, and publication-data review.
 - `scripts/`: validation and utility scripts.
 
-## Workflow Overview
+See `Docs/script_inventory.md` for a current map of the active scripts.
 
-The active workflow is script based:
+## Data and Outputs
 
-1. compare read tables and build metadata;
-2. clean feature annotations and subset the final sample set;
-3. run DESeq2 differential expression models;
-4. consolidate contrast statistics;
-5. generate figure-level analyses and functional summaries;
-6. produce GO/regulon enrichment heatmaps and manuscript-ready panels.
+The current public commit tracks code and documentation. Data and generated
+outputs are available locally and are intended to be reviewed for publication
+readiness step by step.
 
-See `Docs/script_inventory.md` for the current script inventory.
-
-## Local Data Policy
-
-This repository tracks code and documentation only. Raw inputs, processed
-intermediates, generated figures, RDS/RData objects, and root-level manuscript
-tables are intentionally excluded from version control.
+Because these data are associated with a manuscript in preparation, the decision
+to add files to git, attach them as GitHub release assets, or deposit them in an
+external repository should be made deliberately. See
+`Docs/publication_data_review.md` for the current inventory of local-only data
+and output groups.
 
 ## Validation
 
@@ -67,12 +108,13 @@ On this machine, `Rscript` is available at:
 C:/Users/JorgeAlbertoCardenas/AppData/Local/Programs/R/R-4.6.0/bin/Rscript.exe
 ```
 
+The latest validation pass parsed 34 active R scripts successfully.
+
 ## Reproducibility Notes
 
 - Scripts currently assume they are run from the project root.
-- The workflow is order-dependent because several scripts write intermediate
-  tables consumed by later scripts.
+- Several scripts write intermediate files that are consumed by later scripts.
 - Package versions are not yet frozen; adding `renv` or a documented package
-  preflight is a recommended future step.
-- Path/bootstrap centralization should be handled in a later refactor once this
-  initial clean repository baseline is committed.
+  preflight is a good future step.
+- The manuscript draft is used locally for scientific context but is not tracked
+  in this repository at this stage.
