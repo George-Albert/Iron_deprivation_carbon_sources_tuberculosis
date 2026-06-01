@@ -12,6 +12,8 @@
   library(ggdendro)
   library(dendextend)
   # library(dendsort)
+  library(tidyverse)
+  library(shadowtext)
 }
 
 ###########################
@@ -172,8 +174,8 @@ OR <- 4
 fdr <- 0.05
 write.table(hclust_df_up,file = file.path(input_folder,paste0("Cluster_OR_",OR,"_fdr_",fdr,"_up_k=",k,"Short.txt")))
 
-dir.create(file.path(output_dir,"4_Figures_paper"),recursive = T,showWarnings=F)
-filename <- file.path(output_dir,"4_Figures_paper","13_Figure_4A_Heatmap_GO_up_short.pdf")
+dir.create(file.path(output_dir,"001_Figures_paper"),recursive = T,showWarnings=F)
+filename <- file.path(output_dir,"001_Figures_paper","13_Figure_4A_Heatmap_GO_up_short.pdf")
 
 pdf(file =filename ,width=size[1]+0.5,height=size[2]+1)
 draw(ht_plt)
@@ -264,7 +266,7 @@ hclust_df_down <- hclust_df
 
 write.table(hclust_df_down,file = file.path(input_folder,paste0("Cluster_OR_",OR,"_fdr_",fdr,"_down_k=",k,"_short.txt")))
 
-filename <- file.path(output_dir,"4_Figures_paper","13_Figure_4A_Heatmap_GO_down_short.pdf")
+filename <- file.path(output_dir,"001_Figures_paper","13_Figure_4A_Heatmap_GO_down_short.pdf")
 
 pdf(file =filename ,width=size[1]+0.5,height=size[2]+1)
 draw(ht_plt_down)
@@ -345,14 +347,14 @@ plot_and_save <- function(dataframe, filename) {
   print(mean_plt_fun)
   dev.off()
 }
-dir.create(file.path(output_dir,"4_Figures_paper/Trends"),recursive = T,showWarnings = F)
+dir.create(file.path(output_dir,"001_Figures_paper/Trends"),recursive = T,showWarnings = F)
 for (i in 1:length(list_cluster_down)) {
-  filename <- file.path(output_dir,"4_Figures_paper/Trends",paste("plot_mean_k_", i,"_down.pdf"))
+  filename <- file.path(output_dir,"001_Figures_paper/Trends",paste("plot_mean_k_", i,"_down.pdf"))
   plot_and_save(list_cluster_down[[i]], filename)
 }
 
 for (i in 1:length(list_cluster_up)) {
-  filename <- file.path(output_dir,"4_Figures_paper/Trends",paste("plot_mean_k_", i,"_up.pdf"))
+  filename <- file.path(output_dir,"001_Figures_paper/Trends",paste("plot_mean_k_", i,"_up.pdf"))
   plot_and_save(list_cluster_up[[i]], filename)
 }
 
@@ -484,7 +486,7 @@ bar_pl_1 <- bar_plt+
 
 bar_pl_1
 
-pdf(file = file.path(output_dir,"4_Figures_paper","14_Figure_4B_Most_Least_enrich_UP_wo_REST.pdf"),width=7,height=4)
+pdf(file = file.path(output_dir,"001_Figures_paper","14_Figure_4B_Most_Least_enrich_UP_wo_REST.pdf"),width=7,height=4)
 print(bar_pl_1)
 dev.off()
 
@@ -533,6 +535,6 @@ bar_pl_3 <- bar_plt2+
 
 bar_pl_3
 
-pdf(file = file.path(output_dir,"4_Figures_paper","14_Figure_4B_Most_Least_enrich_DOWN_wo_Rest.pdf"),width=7,height=4)
+pdf(file = file.path(output_dir,"001_Figures_paper","14_Figure_4B_Most_Least_enrich_DOWN_wo_Rest.pdf"),width=7,height=4)
 print(bar_pl_3)
 dev.off()

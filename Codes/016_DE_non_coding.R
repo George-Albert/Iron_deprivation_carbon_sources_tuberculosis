@@ -7,6 +7,7 @@
   library(writexl)
   library(ComplexHeatmap)
   library(circlize)
+  library(shadowtext)
 }
 
 ############################
@@ -135,11 +136,11 @@ col <- c( "#852121", "#8f4a17","#2c682c","#355f91")
 DE_genes_df <- data.frame(DE=DE_genes_vec,Contrast=names_samples,color=col)
 
 ### Save the list of DE genes in Lipids
-write.table(rv_non_coding,file.path(input_dir,"txt/DE_genes_at_stat_RVnc_th<0.05.txt"))
+write.table(rv_non_coding,file.path(input_dir,"txt/DE_genes_at_stat_RVnc_th_0.05.txt"))
 
 rv_non_coding$RV <- rownames(rv_non_coding)
 rv_non_coding <- rv_non_coding %>% relocate(RV, .before = Iron_effect_in_STAT_G_D.LogFC )
-write_xlsx(rv_non_coding,file.path(input_dir,"xlsx/DE_genes_at_stat_RVnc_th<0.05.xlsx"))
+write_xlsx(rv_non_coding,file.path(input_dir,"xlsx/DE_genes_at_stat_RVnc_th_0.05.xlsx"))
 
 df <- DE_genes_df
 df$Contrast <- factor(df$Contrast,levels = df$Contrast)
@@ -543,11 +544,11 @@ col <- c( "#852121", "#8f4a17","#2c682c","#355f91")
 DE_genes_df <- data.frame(DE=DE_genes_vec,Contrast=names_samples,color=col)
 
 ### Save the list of DE genes in Lipids
-write.table(rv_non_coding,file.path(input_dir,"txt/DE_genes_at_Interaction_RVnc_th<0.05.txt"))
+write.table(rv_non_coding,file.path(input_dir,"txt/DE_genes_at_Interaction_RVnc_th_0.05.txt"))
 
 rv_non_coding$RV <- rownames(rv_non_coding)
 rv_non_coding <- rv_non_coding %>% relocate(RV, .before = Interaction_G_D.LogFC )
-write_xlsx(rv_non_coding,file.path(input_dir,"xlsx/DE_genes_at_Interaction_RVnc_th<0.05.xlsx"))
+write_xlsx(rv_non_coding,file.path(input_dir,"xlsx/DE_genes_at_Interaction_RVnc_th_0.05.xlsx"))
 
 df <- DE_genes_df
 df$Contrast <- factor(df$Contrast,levels = df$Contrast)
@@ -649,7 +650,7 @@ ht_plt <- Heatmap(int_effects_matrix,
                   show_row_names = T ,
                   show_row_dend = T,
                   cell_fun = function(j, i, x, y, width, height, fill) {
-                    grid.text(round(iron_effects[i, j],digits = 2), x, y, gp = gpar(fontsize = 3))},
+                    grid.text(round(int_effects[i, j],digits = 2), x, y, gp = gpar(fontsize = 3))},
                   heatmap_legend_param = list(title = "LogFC",
                                               title_position = "leftcenter-rot",
                                               labels_gp = gpar(font = 3),

@@ -4,7 +4,6 @@
 {
   library(qvalue)
   library(igraph)
-  library(xlsx)
   library(ComplexHeatmap)
   library(RColorBrewer)
   library(circlize)
@@ -70,8 +69,8 @@ new_names <- gsub("/Enhanced_UP_twosided/Enrichment_GO.txt", "_EU", new_names)
 names(lista_EU) <- new_names
 ### Save the lists in Excel files
 
-openxlsx::write.xlsx(lista_EU,file = file.path("GO_enrichment_up_OR_4_fdr_0.05.xlsx"))
-openxlsx::write.xlsx(lista_ED,file = file.path("GO_enrichment_down_OR_4_fdr_0.05.xlsx"))
+openxlsx::write.xlsx(lista_EU,file = file.path(input_folder, "GO_enrichment_up_OR_4_fdr_0.05.xlsx"))
+openxlsx::write.xlsx(lista_ED,file = file.path(input_folder, "GO_enrichment_down_OR_4_fdr_0.05.xlsx"))
 
 OR_list_up <- lapply(lista_EU, function(x)
 {

@@ -6,13 +6,15 @@
 {
 library(qvalue)
 library(igraph)
-library(xlsx)
+library(openxlsx)
 library(ComplexHeatmap)
 library(RColorBrewer)
 library(circlize)
 library(ggsci)
 library(ggdendro)
 library(dendextend)
+library(ggplot2)
+library(reshape2)
 }
 
 #########################
@@ -493,7 +495,7 @@ list_enhanced_upreg_genes <- list_upreg_genes[c(2,4,6,8)]
 names(list_enhanced_upreg_genes) <- condition_name
 list_damped_upreg_genes <- list_upreg_genes[c(1,3,5,7)]
 names(list_damped_upreg_genes) <- condition_name
-input_dir <- "Inputs/2_Processed_data"
+input_dir <- "Inputs/002_Processed_data"
 
 background_df <- read.table(file.path(input_dir,"txt/LogFC_0.05.txt"))
 background <- rownames(background_df)
@@ -550,7 +552,7 @@ for (j in seq_along(list_var)) {
 
     print(paste("the length of the gene query is:",length(query_genes)))
 
-    tryCatch(enrichment <- GO(query = query_genes,                           #Here we enter the query
+    enrichment <- tryCatch(GO(query = query_genes,                           #Here we enter the query
                               background_matrix = GO_gene_term_matrix_all, #Here we load the matrix
                               metadata_matrix = ALL_metadata_matrix,       #Here we load the metadata matrix
                               bg=background,                               #Here we load the background, THIS IS OPTIONAL, YOU CAN RUN IT WITHOUT BACKGROUND
@@ -565,9 +567,8 @@ for (j in seq_along(list_var)) {
                               threshold_links = 0.5,              #And here you select  the threshold for connectivity, to create the networks
                               merge_duplicates=TRUE ),              #There are terms that have exactly the same genes. This option removes them and leaves only one
              error=function(e) e)
-    if(inherits("Error in if (P > threshold) { :
-      valor ausente donde TRUE/FALSE es necesario", "error")){
-      print("There was an error")
+    if(inherits(enrichment, "error")){
+      print(paste("There was an error:", enrichment$message))
       next
     }
 
@@ -580,11 +581,11 @@ for (j in seq_along(list_var)) {
     file_name_enrichment <-vector_of_names[i]
     dir.create(file.path(enrichment_dir,file_name_enrichment,type_of_enhanced),recursive = T,showWarnings = F)
     write.table(res_enrichment,file = file.path(enrichment_dir,file_name_enrichment,type_of_enhanced,"Enrichment_GO.txt"))
-    write.xlsx(res_enrichment,file = file.path(enrichment_dir,file_name_enrichment,type_of_enhanced,"Enrichment_GO.xlsx"))
+    openxlsx::write.xlsx(res_enrichment,file = file.path(enrichment_dir,file_name_enrichment,type_of_enhanced,"Enrichment_GO.xlsx"))
 
     enrichment=res_enrichment[which(!is.na(res_enrichment$community)),]
     write.table(enrichment,file = file.path(enrichment_dir,file_name_enrichment,type_of_enhanced,"Enrichment_GO_community.txt"))
-    write.xlsx(enrichment,file = file.path(enrichment_dir,file_name_enrichment,type_of_enhanced,"Enrichment_GO_community.xlsx"))
+    openxlsx::write.xlsx(enrichment,file = file.path(enrichment_dir,file_name_enrichment,type_of_enhanced,"Enrichment_GO_community.xlsx"))
 
   }
 }
