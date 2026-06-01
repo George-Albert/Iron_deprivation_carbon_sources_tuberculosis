@@ -19,8 +19,8 @@ dcols=function(x){data.frame(colnames(x))}
 
 main_wd <- getwd()
 setwd(main_wd)
-input_dir <- "Analysis/Inputs/2_Processed_data"
-output_dir <- "Analysis/Outputs"
+input_dir <- "Inputs/002_Processed_data"
+output_dir <- "Outputs"
 
 ###########################
 ####### 3. Load data ######
@@ -58,5 +58,6 @@ for (nombre_df in names(data_to_save)) {
   writeData(wb, sheet = nombre_df, x = data_to_save[[nombre_df]])
 }
 
-### Save the data
-saveWorkbook(wb, file = file.path(input_dir,"xlsx","Iron_effects.xlsx"), overwrite = TRUE)
+### Save the selected DESeq2 contrast tables without overwriting the compact
+### Iron_effects.xlsx summary produced by 016_DE_non_coding.R.
+saveWorkbook(wb, file = file.path(input_dir,"xlsx","DESeq2_selected_contrasts.xlsx"), overwrite = TRUE)

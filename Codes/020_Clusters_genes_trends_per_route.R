@@ -11,6 +11,7 @@
   library(ggdendro)
   library(dendextend)
   # library(dendsort)
+  library(tidyverse)
 }
 
 ###########################
@@ -37,8 +38,8 @@ calc_ht_size = function(ht, unit = "inch") {
 
 main_wd <- getwd()
 setwd(main_wd)
-input_dir <- "Analysis/Inputs/2_Processed_data"
-output_dir <- "Analysis/Outputs"
+input_dir <- "Inputs/002_Processed_data"
+output_dir <- "Outputs"
 routes_dir <- file.path(input_dir,"Routes_GO")
 
 ###################################
@@ -46,6 +47,9 @@ routes_dir <- file.path(input_dir,"Routes_GO")
 ###################################
 
 list_files <- list.files(routes_dir,pattern = ".*.txt")
+if (length(list_files) == 0) {
+  stop("No route gene lists were found in ", routes_dir)
+}
 datalist = lapply(list_files, function(x) read.table(file.path(routes_dir,x),header=F))
 names(datalist) <- gsub(".txt","", list_files)
 ### Fix the RV codes
@@ -137,7 +141,7 @@ ht_by_route <- function(df,row_title="",column_title="",filename){
 
   size <- calc_ht_size(ht_plt)
 
-  dir.create(file.path(output_dir,"Figures_paper"),recursive = T,showWarnings=F)
+  dir.create(dirname(filename),recursive = T,showWarnings=F)
 
   pdf(file =filename ,width=size[1]+0.5,height=size[2]+1)
   draw(ht_plt)
@@ -146,19 +150,19 @@ ht_by_route <- function(df,row_title="",column_title="",filename){
   return(draw(ht_plt))
 }
 
-filename <- file.path(output_dir,"4_Figures_paper","15_Figure_4C_Heatmap_glycolisis.pdf")
+filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_glycolisis.pdf")
 glycolisis_plt <- ht_by_route (glycolisis,row_title="",column_title="Interactions",filename)
 
-# filename <- file.path(output_dir,"4_Figures_paper","15_Figure_4C_Heatmap_methylcitrate.pdf")
+# filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_methylcitrate.pdf")
 # methylcitrate_plt <- ht_by_route (methylcitrate,row_title="",column_title="Interactions",filename)
 
-filename <- file.path(output_dir,"4_Figures_paper","15_Figure_4C_Heatmap_oxidative_phosph.pdf")
+filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_oxidative_phosph.pdf")
 oxidative_phosph_plt <- ht_by_route (oxidative_phosph,row_title="",column_title="Interactions",filename)
 
-# filename <- file.path(output_dir,"4_Figures_paper","15_Figure_4C_Heatmap_pentose_phosphate.pdf")
+# filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_pentose_phosphate.pdf")
 # pentose_phosphate_plt <- ht_by_route (pentose_phosphate,row_title="",column_title="Interactions",filename)
 
-filename <- file.path(output_dir,"4_Figures_paper","15_Figure_4C_Heatmap_TCA.pdf")
+filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_TCA.pdf")
 TCA_plt <- ht_by_route (TCA,row_title="",column_title="Interactions",filename)
 
 #####################
@@ -300,7 +304,8 @@ plot_and_save <- function(dataframe, filename) {
   dev.off()
 }
 
-filename <- file.path(output_dir,"4_Figures_paper","Trends",paste0(name_of_path,"_plot_mean.pdf"))
+filename <- file.path(output_dir,"001_Figures_paper","Trends",paste0(name_of_path,"_plot_mean.pdf"))
+dir.create(dirname(filename), recursive = TRUE, showWarnings = FALSE)
 plot_and_save(data, filename)
 return(data)
 }
@@ -349,7 +354,8 @@ mean_plt_fun <- ggplot(data = dataframe,aes(x = x,y = abs(Mean), color = Routes)
 
 print(mean_plt_fun)
 
-filename <- file.path(output_dir,"4_Figures_paper","16_Figure_4C_Trends_per_route_error_bar.pdf")
+filename <- file.path(output_dir,"001_Figures_paper","16_Figure_4C_Trends_per_route_error_bar.pdf")
+dir.create(dirname(filename), recursive = TRUE, showWarnings = FALSE)
 
 pdf(file =filename,width = 9)
 print(mean_plt_fun)

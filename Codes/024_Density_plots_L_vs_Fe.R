@@ -15,6 +15,13 @@ setwd(main_wd)
 input_dir  <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
 
+safe_path_name <- function(x) {
+  x <- gsub("->", "to", x, fixed = TRUE)
+  x <- gsub("[<>:\"/\\\\|?*]", "_", x)
+  x <- gsub("\\s+", "_", x)
+  x
+}
+
 ###########################
 ####### 3. Load data ######
 ###########################
@@ -37,13 +44,14 @@ unique(batch)
 # [3] "HN00189620_C11_C15_Abril_2023"     "HN00166209_C11_C12_C2r_Marzo_2022"
 
 # Get the contrasts names of interest and its file names
-file_names <- paste0(df_name_contrast$title,".txt")
+file_names <- paste0(safe_path_name(df_name_contrast$title),".txt")
 file_names <- file_names[c(11:12,15:16,33:34,37,41)]
 current_folder <- file.path(output_dir,"Data/txt/th_0.05_th_size_0")
 ### Get full names including folder path
 list.of.files = list.files(current_folder, full.names = TRUE)
 ### Keep only the basename (file names) matching dataframe column
 clean_list <- list.of.files[basename(list.of.files) %in% file_names]
+stopifnot(length(clean_list) >= 2)
 data_name <- basename(clean_list)
 data_name <- substr(data_name,1,nchar(data_name)-4)
 
@@ -140,13 +148,14 @@ unique(batch)
 #  "HN00166209_C11_C12_C2r Marzo_2022"
 
 # Get the contrasts names of interest and its file names
-file_names <- paste0(df_name_contrast$title,".txt")
+file_names <- paste0(safe_path_name(df_name_contrast$title),".txt")
 file_names <- file_names[50:51]
 current_folder <- file.path(output_dir,"Data/txt/th_0.05_th_size_0")
 ### Get full names including folder path
 list.of.files = list.files(current_folder, full.names = TRUE)
 ### Keep only the basename (file names) matching dataframe column
 clean_list <- list.of.files[basename(list.of.files) %in% file_names]
+stopifnot(length(clean_list) >= 2)
 data_name <- basename(clean_list)
 data_name <- substr(data_name,1,nchar(data_name)-4)
 
@@ -160,6 +169,7 @@ colnames(CS_effect_wo_Fe) <- c("LogFC","BH")
 CS_effect_w_Fe <- myData[[2]][,c("log2FoldChange_shrunken","BH")]
 colnames(CS_effect_w_Fe) <- c("LogFC","BH")
 
+feature_data_filtered <- feature_data[rownames(CS_effect_wo_Fe),]
 length(which(rownames(CS_effect_wo_Fe)!=rownames(feature_data_filtered)))
 length(which(rownames(CS_effect_w_Fe)!=rownames(feature_data_filtered)))
 

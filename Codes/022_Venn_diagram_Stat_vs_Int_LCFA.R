@@ -18,18 +18,18 @@ dcols=function(x){data.frame(colnames(x))}
 getwd()
 main_wd    <-getwd()
 setwd(main_wd)
-input_dir  <- "Analysis/Inputs/2_Processed_data"
-output_dir <- "Analysis/Outputs"
+input_dir  <- "Inputs/002_Processed_data"
+output_dir <- "Outputs"
 
 ###########################
 ####### 3. Load data ######
 ###########################
 
 ### Load genes name of the LCFA interaction
-L_int_genes <- read.table(file.path(input_dir,"txt/DE_genes_in_Lipids_th<0.05.txt"))
+L_int_genes <- read.table(file.path(input_dir,"txt/DE_genes_in_Lipids_th_0.05.txt"))
 L_int_genes[order(L_int_genes$genes),]
 ### Load genes name of the LCFA iron effects at STAT
-L_stat_genes <- read.table(file.path(input_dir,"txt/DE_genes_iron_effects_in_lipids_th<0.05.txt"))
+L_stat_genes <- read.table(file.path(input_dir,"txt/DE_genes_iron_effects_in_lipids_th_0.05.txt"))
 L_stat_genes[order(L_stat_genes$x),]
 Genes_list <- list("Iron effects at STAT (LCFA)"=L_stat_genes$x,
                    "Interaction (LCFA)" = L_int_genes$genes)
@@ -48,6 +48,7 @@ venn2 <- plot(euler(Genes_list),quantities=list(type = c("counts", "percent"),co
 
 venn2
 
-pdf(file.path(output_dir,"4_Figures_paper","Venn_Stat_vs_Int_LCFA.pdf"),width=12,height=7)
+dir.create(file.path(output_dir,"001_Figures_paper"), recursive = TRUE, showWarnings = FALSE)
+pdf(file.path(output_dir,"001_Figures_paper","Venn_Stat_vs_Int_LCFA.pdf"),width=12,height=7)
 print(venn2)
 dev.off()
