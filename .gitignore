@@ -1,0 +1,37 @@
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+
+# R session and IDE artifacts
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rapp.history
+.Renviron
+.Rprofile
+.positai/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Local data and generated outputs
+Inputs/
+Outputs/
+
+# Legacy or exploratory trash folders
+Codes/trash_codes/
+Codes/.gitignore
+
+# Local generated/reporting artifacts kept out of the code repository
+Table_1_Section_2.xlsx
+GO_enrichment_*.xlsx
+Figure_*.pdf
+Docs/*.xlsx
+
+# Generic temporary files
+*.tmp
+*.temp
+*~
