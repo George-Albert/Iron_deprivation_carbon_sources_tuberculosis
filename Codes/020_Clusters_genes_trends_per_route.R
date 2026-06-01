@@ -41,20 +41,75 @@ setwd(main_wd)
 input_dir <- "Inputs/002_Processed_data"
 output_dir <- "Outputs"
 routes_dir <- file.path(input_dir,"Routes_GO")
+go_terms_dir <- file.path(input_dir, "GO_terms")
 
 ###################################
 ### 3. Load GO genes per route  ###
 ###################################
 
-list_files <- list.files(routes_dir,pattern = ".*.txt")
-if (length(list_files) == 0) {
-  stop("No route gene lists were found in ", routes_dir)
+split_gene_string <- function(x) {
+  genes <- trimws(unlist(strsplit(paste(x, collapse = ", "), ",")))
+  unique(genes[nzchar(genes)])
 }
-datalist = lapply(list_files, function(x) read.table(file.path(routes_dir,x),header=F))
-names(datalist) <- gsub(".txt","", list_files)
-### Fix the RV codes
-datalist[[1]][2,] <- "Rv1099c"
-datalist[[3]][19,] <- "Rv3043c"
+
+route_from_cluster_terms <- function(cluster_file, term_patterns) {
+  if (!file.exists(cluster_file)) {
+    return(character(0))
+  }
+
+  go_clusters <- read.table(cluster_file, check.names = FALSE)
+  term_hits <- Reduce(`|`, lapply(term_patterns, grepl, x = rownames(go_clusters), ignore.case = TRUE))
+  if (!any(term_hits)) {
+    return(character(0))
+  }
+
+  split_gene_string(unlist(go_clusters[term_hits, c("query_G_D", "query_G", "query_G_L")]))
+}
+
+route_from_final_heatmaps <- function(final_gene_sets_file, heatmap_name) {
+  if (!file.exists(final_gene_sets_file)) {
+    return(character(0))
+  }
+
+  gene_sets <- read.table(final_gene_sets_file, header = TRUE, sep = "\t")
+  unique(gene_sets$gene[gene_sets$heatmap == heatmap_name])
+}
+
+load_route_gene_lists <- function(routes_dir, go_terms_dir, input_dir) {
+  route_files <- list.files(routes_dir, pattern = "\\.txt$", full.names = TRUE)
+
+  if (length(route_files) > 0) {
+    route_lists <- lapply(route_files, function(x) unique(read.table(x, header = FALSE)[[1]]))
+    names(route_lists) <- tools::file_path_sans_ext(basename(route_files))
+    return(route_lists)
+  }
+
+  cluster_file <- file.path(go_terms_dir, "cluster_GO_OR_4_fdr_0.05_down.txt")
+  final_gene_sets_file <- file.path(dirname(input_dir), "..", "Outputs", "Final_GO_gene_heatmaps", "final_7_heatmaps_gene_sets.txt")
+
+  route_lists <- list(
+    Glycolisis = unique(c(
+      route_from_final_heatmaps(final_gene_sets_file, "Heatmap_4_ED_glycolysis"),
+      route_from_cluster_terms(cluster_file, c("glycolytic process", "glucose metabolic process", "gluconeogenesis"))
+    )),
+    Methylcitrate = route_from_cluster_terms(
+      cluster_file,
+      c("methylcitrate", "propionate metabolic process")
+    ),
+    Oxidative_phosphorilation = unique(c(
+      route_from_final_heatmaps(final_gene_sets_file, "Heatmap_6_ED_OXPHOS"),
+      route_from_cluster_terms(cluster_file, c("oxidative phosphorylation", "respiratory electron transport chain"))
+    )),
+    Pentose_phosphate = route_from_cluster_terms(cluster_file, c("pentose phosphate")),
+    TCA = unique(c(
+      route_from_final_heatmaps(final_gene_sets_file, "Heatmap_5_ED_TCA"),
+      route_from_cluster_terms(cluster_file, c("tricarboxylic acid cycle"))
+    ))
+  )
+
+  route_lists <- lapply(route_lists, function(x) unique(x[nzchar(x)]))
+  route_lists
+}
 
 ### load LogFC
 LogFC_df <- read.table(file.path(input_dir,"txt/LogFC_0.05.txt"))
@@ -62,20 +117,25 @@ LogFC_df <- LogFC_df[,17:19]
 
 colnames(LogFC_df) <- c("G_D","G", "G_L")
 
+route_gene_lists <- load_route_gene_lists(routes_dir, go_terms_dir, input_dir)
+print(vapply(route_gene_lists, length, integer(1)))
+
 # Create cluster by metabolic route
-clusters = lapply(datalist, function(x) {
-
-  vec <- unlist(x,use.names = F)
-  LogFC_df_filt <- LogFC_df[vec,]
+clusters = lapply(route_gene_lists, function(x) {
+  vec <- intersect(x, rownames(LogFC_df))
+  LogFC_df_filt <- LogFC_df[vec,, drop = FALSE]
   return(LogFC_df_filt)
-
 })
 
-glycolisis <- clusters[[1]]
-methylcitrate <- clusters[[2]]
-oxidative_phosph <- clusters[[3]]
-pentose_phosphate <- clusters[[4]]
-TCA <- clusters[[5]]
+glycolisis <- clusters[["Glycolisis"]]
+methylcitrate <- clusters[["Methylcitrate"]]
+oxidative_phosph <- clusters[["Oxidative_phosphorilation"]]
+pentose_phosphate <- clusters[["Pentose_phosphate"]]
+TCA <- clusters[["TCA"]]
+
+has_route <- function(df) {
+  !is.null(df) && nrow(df) > 1 && ncol(df) > 0
+}
 
 # Plot
 ht_by_route <- function(df,row_title="",column_title="",filename){
@@ -151,19 +211,19 @@ ht_by_route <- function(df,row_title="",column_title="",filename){
 }
 
 filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_glycolisis.pdf")
-glycolisis_plt <- ht_by_route (glycolisis,row_title="",column_title="Interactions",filename)
+if (has_route(glycolisis)) glycolisis_plt <- ht_by_route(glycolisis,row_title="",column_title="Interactions",filename)
 
 # filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_methylcitrate.pdf")
 # methylcitrate_plt <- ht_by_route (methylcitrate,row_title="",column_title="Interactions",filename)
 
 filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_oxidative_phosph.pdf")
-oxidative_phosph_plt <- ht_by_route (oxidative_phosph,row_title="",column_title="Interactions",filename)
+if (has_route(oxidative_phosph)) oxidative_phosph_plt <- ht_by_route(oxidative_phosph,row_title="",column_title="Interactions",filename)
 
 # filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_pentose_phosphate.pdf")
 # pentose_phosphate_plt <- ht_by_route (pentose_phosphate,row_title="",column_title="Interactions",filename)
 
 filename <- file.path(output_dir,"001_Figures_paper","15_Figure_4C_Heatmap_TCA.pdf")
-TCA_plt <- ht_by_route (TCA,row_title="",column_title="Interactions",filename)
+if (has_route(TCA)) TCA_plt <- ht_by_route(TCA,row_title="",column_title="Interactions",filename)
 
 #####################
 ### Bars per gene ###
@@ -238,19 +298,19 @@ ht_by_gene <- function(df,name_of_path){
 
 # Glycolisis
 row_title <- ""
-ht_by_gene(df=glycolisis,name_of_path="Glycolisis")
+if (has_route(glycolisis)) ht_by_gene(df=glycolisis,name_of_path="Glycolisis")
 
 # Methylcitrate
-ht_by_gene(df=methylcitrate,name_of_path="Methylcitrate")
+if (has_route(methylcitrate)) ht_by_gene(df=methylcitrate,name_of_path="Methylcitrate")
 
 # Oxidative_phosphorilation
-ht_by_gene(df=oxidative_phosph,name_of_path="Oxidative_phosphorilation")
+if (has_route(oxidative_phosph)) ht_by_gene(df=oxidative_phosph,name_of_path="Oxidative_phosphorilation")
 
 # Pentose_phosphate
-ht_by_gene(df=pentose_phosphate,name_of_path="Pentose_phosphate")
+if (has_route(pentose_phosphate)) ht_by_gene(df=pentose_phosphate,name_of_path="Pentose_phosphate")
 
 # TCA
-ht_by_gene(df=TCA,name_of_path="TCA")
+if (has_route(TCA)) ht_by_gene(df=TCA,name_of_path="TCA")
 
 #################################
 ### Trends by clusters Fig. ###
@@ -311,25 +371,32 @@ return(data)
 }
 
 # Glycolisis
-Gly_mean <- trend_function(df=glycolisis,name_of_path="Glycolisis")
+route_means <- list()
+if (has_route(glycolisis)) route_means[["Glycolysis"]] <- trend_function(df=glycolisis,name_of_path="Glycolisis")
 
 # Methylcitrate
-trend_function(df=methylcitrate,name_of_path="Methylcitrate")
+if (has_route(methylcitrate)) route_means[["Methylcitrate"]] <- trend_function(df=methylcitrate,name_of_path="Methylcitrate")
 
 # Oxidative_phosphorilation
-OP_mean <-trend_function(df=oxidative_phosph,name_of_path="Oxidative_phosphorilation")
+if (has_route(oxidative_phosph)) route_means[["Oxidative_phosphorylation"]] <- trend_function(df=oxidative_phosph,name_of_path="Oxidative_phosphorilation")
 
 # Pentose_phosphate
-trend_function(df=pentose_phosphate,name_of_path="Pentose_phosphate")
+if (has_route(pentose_phosphate)) route_means[["Pentose_phosphate"]] <- trend_function(df=pentose_phosphate,name_of_path="Pentose_phosphate")
 
 # TCA
-TCA_mean <-trend_function(df=TCA,name_of_path="TCA")
+if (has_route(TCA)) route_means[["TCA"]] <- trend_function(df=TCA,name_of_path="TCA")
 
-dataframe <- rbind(Gly_mean,OP_mean,TCA_mean)
-dataframe$Routes <- rep(c("Glycolysis","Oxidative_phosphorylation","TCA"),each=3)
+dataframe <- bind_rows(route_means, .id = "Routes")
 
 myarrow=arrow(angle = 15, ends = "last", type = "closed")
-col <- c("red", "green", "blue")
+route_colors <- c(
+  "Glycolysis" = "red",
+  "Methylcitrate" = "purple",
+  "Oxidative_phosphorylation" = "green",
+  "Pentose_phosphate" = "orange",
+  "TCA" = "blue"
+)
+route_colors <- route_colors[intersect(names(route_colors), unique(dataframe$Routes))]
 x <- dataframe$Conditions
 
 # dataframe$Cond_route <- paste(dataframe$Conditions,dataframe$Routes,sep="_")
@@ -338,7 +405,7 @@ x <- dataframe$Conditions
 mean_plt_fun <- ggplot(data = dataframe,aes(x = x,y = abs(Mean), color = Routes))+
   geom_line(aes(group = Routes),arrow=myarrow,lwd=2)+
   geom_point(aes(color = Routes),size=4)+
-  scale_color_manual(name = "Routes",values = col)+
+  scale_color_manual(name = "Routes",values = route_colors)+
   # geom_errorbar(aes(ymin = abs(Mean)-sd, ymax=abs(Mean)+sd),
   #               linewidth = 0.6, width = 0.3, position = position_dodge(0.2),alpha=0.5)+
   ylab("Mean")+
